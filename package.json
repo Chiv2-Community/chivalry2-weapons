@@ -1,11 +1,14 @@
 {
   "name": "chivalry2-weapons",
-  "private": true,
+  "description": "Chivalry 2 weapons data",
+  "author": "Jacob Barber",
+  "license": "GPL3",
   "type": "module",
   "version": "0.1.0",
   "scripts": {
     "build": "tsc"
   },
+  "prepackage": "npm run build",
   "main": "./dist/index.js",
   "types": "./dist/index.d.js",
   "devDependencies": {

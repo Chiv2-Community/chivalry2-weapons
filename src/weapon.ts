@@ -4,7 +4,7 @@ export type Attacks = {
   overhead: Swing;
   stab: Swing;
   sprintAttack: SpecialAttack;
-  sprintCharge: { damage: number; }
+  sprintCharge: SpecialAttack;
   special: SpecialAttack;
   throw: SpecialAttack;
 };
@@ -13,6 +13,8 @@ export type Weapon = {
   id: string;
   name: string;
   aliases?: string[];
+  classes: CharacterClass[];
+  subclasses: CharacterSubclass[];
   weaponTypes: WeaponType[];
   damageType: DamageType;
   attacks: Attacks;
@@ -81,15 +83,44 @@ export enum WeaponType {
   DEVASTATOR = "Devastator",
   RAIDER = "Raider",
   AMBUSHER = "Ambusher",
+
   FOOTMAN = "Footman",
   POLEMAN = "Poleman",
   MAN_AT_ARMS = "Man at Arms",
   ENGINEER = "Engineer",
+
   KNIGHT = "Knight",
   OFFICER = "Officer",
   GUARDIAN = "Guardian",
   CRUSADER = "Crusader"
 };
+
+export enum CharacterClass {
+  ARCHER = "Archer",
+  VANGUARD = "Vanguard",
+  FOOTMAN = "Footman",
+  KNIGHT = "Knight"
+}
+
+export enum CharacterSubclass {
+  LONGBOWMAN = "Longbowman",
+  CROSSBOWMAN = "Crossbowman",
+  SKIRMISHER = "Skirmisher",
+
+  DEVASTATOR = "Devastator",
+  RAIDER = "Raider",
+  AMBUSHER = "Ambusher",
+
+  POLEMAN = "Poleman",
+  MAN_AT_ARMS = "Man at Arms",
+  ENGINEER = "Engineer",
+
+  OFFICER = "Officer",
+  GUARDIAN = "Guardian",
+  CRUSADER = "Crusader"
+}
+
+
 
 export enum Target {
   VANGUARD_ARCHER = "Vanguard / Archer",

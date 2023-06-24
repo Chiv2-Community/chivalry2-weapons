@@ -3,14 +3,7 @@
   "name": "Mace",
   "weaponTypes": [
     "Club",
-    "One Handed",
-    "Archer",
-    "Skirmisher",
-    "Footman",
-    "Man at Arms",
-    "Knight",
-    "Officer",
-    "Guardian"
+    "One Handed"
   ],
   "damageType": "Blunt",
   "attacks": {
@@ -398,5 +391,16 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Archer",
+    "Footman",
+    "Knight"
+  ],
+  "subclasses": [
+    "Skirmisher",
+    "Man at Arms",
+    "Officer",
+    "Guardian"
+  ]
 }

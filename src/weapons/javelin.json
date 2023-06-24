@@ -3,9 +3,7 @@
   "name": "Javelin",
   "weaponTypes": [
     "Spear",
-    "One Handed",
-    "Archer",
-    "Skirmisher"
+    "One Handed"
   ],
   "damageType": "Cut",
   "attacks": {
@@ -393,5 +391,11 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Archer"
+  ],
+  "subclasses": [
+    "Skirmisher"
+  ]
 }

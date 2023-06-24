@@ -7,9 +7,7 @@
   "weaponTypes": [
     "Tool",
     "Axe",
-    "One Handed",
-    "Footman",
-    "Engineer"
+    "One Handed"
   ],
   "damageType": "Chop",
   "attacks": {
@@ -397,5 +395,11 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Footman"
+  ],
+  "subclasses": [
+    "Engineer"
+  ]
 }

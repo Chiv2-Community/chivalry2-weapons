@@ -6,9 +6,7 @@
   ],
   "weaponTypes": [
     "Hammer",
-    "One Handed",
-    "Knight",
-    "Guardian"
+    "One Handed"
   ],
   "damageType": "Blunt",
   "attacks": {
@@ -396,5 +394,11 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Knight"
+  ],
+  "subclasses": [
+    "Guardian"
+  ]
 }

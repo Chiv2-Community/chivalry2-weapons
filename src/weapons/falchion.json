@@ -3,13 +3,7 @@
   "name": "Falchion",
   "weaponTypes": [
     "Sword",
-    "One Handed",
-    "Archer",
-    "Skirmisher",
-    "Footman",
-    "Man at Arms",
-    "Crusader",
-    "Knight"
+    "One Handed"
   ],
   "damageType": "Cut",
   "attacks": {
@@ -397,5 +391,15 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Archer",
+    "Footman",
+    "Knight"
+  ],
+  "subclasses": [
+    "Skirmisher",
+    "Man at Arms",
+    "Crusader"
+  ]
 }

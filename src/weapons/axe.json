@@ -3,16 +3,7 @@
   "name": "Axe",
   "weaponTypes": [
     "Axe",
-    "One Handed",
-    "Archer",
-    "Knight",
-    "Footman",
-    "Crossbowman",
-    "Skirmisher",
-    "Man at Arms",
-    "Officer",
-    "Guardian",
-    "Crusader"
+    "One Handed"
   ],
   "damageType": "Chop",
   "attacks": {
@@ -400,5 +391,18 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Archer",
+    "Footman",
+    "Knight"
+  ],
+  "subclasses": [
+    "Crossbowman",
+    "Skirmisher",
+    "Man at Arms",
+    "Officer",
+    "Guardian",
+    "Crusader"
+  ]
 }

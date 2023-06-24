@@ -3,9 +3,7 @@
   "name": "Rapier",
   "weaponTypes": [
     "Sword",
-    "One Handed",
-    "Man at Arms",
-    "Footman"
+    "One Handed"
   ],
   "damageType": "Cut",
   "attacks": {
@@ -395,5 +393,11 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Footman"
+  ],
+  "subclasses": [
+    "Man at Arms"
+  ]
 }

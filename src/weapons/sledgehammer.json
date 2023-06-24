@@ -8,8 +8,6 @@
   "weaponTypes": [
     "Hammer",
     "Two Handed",
-    "Footman",
-    "Engineer",
     "Tool"
   ],
   "damageType": "Blunt",
@@ -398,5 +396,11 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Footman"
+  ],
+  "subclasses": [
+    "Engineer"
+  ]
 }

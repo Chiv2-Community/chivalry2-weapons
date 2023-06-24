@@ -3,16 +3,7 @@
   "name": "Knife",
   "weaponTypes": [
     "Dagger",
-    "One Handed",
-    "Archer",
-    "Crossbowman",
-    "Skirmisher",
-    "Devastator",
-    "Raider",
-    "Poleman",
-    "Man at Arms",
-    "Vanguard",
-    "Footman"
+    "One Handed"
   ],
   "damageType": "Cut",
   "attacks": {
@@ -402,5 +393,18 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Archer",
+    "Vanguard",
+    "Footman"
+  ],
+  "subclasses": [
+    "Crossbowman",
+    "Skirmisher",
+    "Devastator",
+    "Raider",
+    "Poleman",
+    "Man at Arms"
+  ]
 }

@@ -9,11 +9,7 @@
   ],
   "weaponTypes": [
     "Spear",
-    "One Handed",
-    "Footman",
-    "Man at Arms",
-    "Knight",
-    "Guardian"
+    "One Handed"
   ],
   "damageType": "Cut",
   "attacks": {
@@ -401,5 +397,13 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Footman",
+    "Knight"
+  ],
+  "subclasses": [
+    "Man at Arms",
+    "Guardian"
+  ]
 }

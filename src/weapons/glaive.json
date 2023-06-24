@@ -7,11 +7,7 @@
   "weaponTypes": [
     "Polearm",
     "Axe",
-    "Two Handed",
-    "Vanguard",
-    "Raider",
-    "Footman",
-    "Poleman"
+    "Two Handed"
   ],
   "damageType": "Chop",
   "attacks": {
@@ -399,5 +395,13 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Vanguard",
+    "Footman"
+  ],
+  "subclasses": [
+    "Raider",
+    "Poleman"
+  ]
 }

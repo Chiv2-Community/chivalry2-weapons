@@ -3,14 +3,7 @@
   "name": "Cudgel",
   "weaponTypes": [
     "Club",
-    "One Handed",
-    "Longbowman",
-    "Archer",
-    "Crossbowman",
-    "Vanguard",
-    "Ambusher",
-    "Poleman",
-    "Footman"
+    "One Handed"
   ],
   "damageType": "Blunt",
   "attacks": {
@@ -398,5 +391,16 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Archer",
+    "Vanguard",
+    "Footman"
+  ],
+  "subclasses": [
+    "Longbowman",
+    "Crossbowman",
+    "Ambusher",
+    "Poleman"
+  ]
 }

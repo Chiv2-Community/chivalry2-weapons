@@ -3,11 +3,7 @@
   "name": "Throwing Axe",
   "weaponTypes": [
     "Axe",
-    "One Handed",
-    "Skirmisher",
-    "Archer",
-    "Knight",
-    "Crusader"
+    "One Handed"
   ],
   "damageType": "Chop",
   "attacks": {
@@ -395,5 +391,13 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Archer",
+    "Knight"
+  ],
+  "subclasses": [
+    "Skirmisher",
+    "Crusader"
+  ]
 }

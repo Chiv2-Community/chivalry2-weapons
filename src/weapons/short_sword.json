@@ -3,17 +3,7 @@
   "name": "Short Sword",
   "weaponTypes": [
     "Sword",
-    "One Handed",
-    "Archer",
-    "Longbowman",
-    "Crossbowman",
-    "Vanguard",
-    "Ambusher",
-    "Footman",
-    "Poleman",
-    "Man at Arms",
-    "Knight",
-    "Guardian"
+    "One Handed"
   ],
   "damageType": "Cut",
   "attacks": {
@@ -401,5 +391,19 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Archer",
+    "Vanguard",
+    "Footman",
+    "Knight"
+  ],
+  "subclasses": [
+    "Longbowman",
+    "Crossbowman",
+    "Ambusher",
+    "Poleman",
+    "Man at Arms",
+    "Guardian"
+  ]
 }

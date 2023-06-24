@@ -3,9 +3,7 @@
   "name": "Throwing Mallet",
   "weaponTypes": [
     "Hammer",
-    "One Handed",
-    "Vanguard",
-    "Devastator"
+    "One Handed"
   ],
   "aliases": [
     "mallet"
@@ -396,5 +394,11 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Vanguard"
+  ],
+  "subclasses": [
+    "Devastator"
+  ]
 }

@@ -3,11 +3,7 @@
   "name": "Messer",
   "weaponTypes": [
     "Sword",
-    "Two Handed",
-    "Vanguard",
-    "Raider",
-    "Knight",
-    "Crusader"
+    "Two Handed"
   ],
   "damageType": "Cut",
   "twoHanded": true,
@@ -396,5 +392,13 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Vanguard",
+    "Knight"
+  ],
+  "subclasses": [
+    "Raider",
+    "Crusader"
+  ]
 }

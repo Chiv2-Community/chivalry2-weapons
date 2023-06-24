@@ -3,11 +3,7 @@
   "name": "Battle Axe",
   "weaponTypes": [
     "Axe",
-    "Two Handed",
-    "Devastator",
-    "Vanguard",
-    "Knight",
-    "Crusader"
+    "Two Handed"
   ],
   "damageType": "Chop",
   "attacks": {
@@ -395,5 +391,13 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Vanguard",
+    "Knight"
+  ],
+  "subclasses": [
+    "Devastator",
+    "Crusader"
+  ]
 }

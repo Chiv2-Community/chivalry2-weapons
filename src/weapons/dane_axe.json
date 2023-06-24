@@ -3,9 +3,7 @@
   "name": "Dane Axe",
   "weaponTypes": [
     "Axe",
-    "Two Handed",
-    "Vanguard",
-    "Raider"
+    "Two Handed"
   ],
   "damageType": "Chop",
   "attacks": {
@@ -393,5 +391,11 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Vanguard"
+  ],
+  "subclasses": [
+    "Raider"
+  ]
 }

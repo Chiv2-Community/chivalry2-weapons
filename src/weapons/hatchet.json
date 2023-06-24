@@ -3,15 +3,7 @@
   "name": "Hatchet",
   "weaponTypes": [
     "Axe",
-    "One Handed",
-    "Archer",
-    "Longbowman",
-    "Vanguard",
-    "Ambusher",
-    "Footman",
-    "Poleman",
-    "Knight",
-    "Guardian"
+    "One Handed"
   ],
   "damageType": "Chop",
   "attacks": {
@@ -399,5 +391,17 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Archer",
+    "Vanguard",
+    "Footman",
+    "Knight"
+  ],
+  "subclasses": [
+    "Longbowman",
+    "Ambusher",
+    "Poleman",
+    "Guardian"
+  ]
 }

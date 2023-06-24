@@ -7,9 +7,7 @@
   "weaponTypes": [
     "Hammer",
     "Polearm",
-    "Two Handed",
-    "Footman",
-    "Poleman"
+    "Two Handed"
   ],
   "damageType": "Blunt",
   "attacks": {
@@ -397,5 +395,11 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Footman"
+  ],
+  "subclasses": [
+    "Poleman"
+  ]
 }

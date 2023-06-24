@@ -3,9 +3,7 @@
   "name": "Katars",
   "weaponTypes": [
     "Sword",
-    "Two Handed",
-    "Vanguard",
-    "Ambusher"
+    "Two Handed"
   ],
   "damageType": "Cut",
   "attacks": {
@@ -441,5 +439,11 @@
       "range": 16.333333333333332,
       "altRange": 16.0
     }
-  }
+  },
+  "classes": [
+    "Vanguard"
+  ],
+  "subclasses": [
+    "Ambusher"
+  ]
 }

@@ -3,9 +3,7 @@
   "name": "Quarterstaff",
   "weaponTypes": [
     "Polearm",
-    "Two Handed",
-    "Knight",
-    "Officer"
+    "Two Handed"
   ],
   "damageType": "Blunt",
   "attacks": {
@@ -441,5 +439,11 @@
       "range": 25.666666666666668,
       "altRange": 25.666666666666668
     }
-  }
+  },
+  "classes": [
+    "Knight"
+  ],
+  "subclasses": [
+    "Officer"
+  ]
 }

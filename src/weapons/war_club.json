@@ -3,9 +3,7 @@
   "name": "War Club",
   "weaponTypes": [
     "Club",
-    "Two Handed",
-    "Vanguard",
-    "Devastator"
+    "Two Handed"
   ],
   "damageType": "Blunt",
   "attacks": {
@@ -393,5 +391,11 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Vanguard"
+  ],
+  "subclasses": [
+    "Devastator"
+  ]
 }

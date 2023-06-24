@@ -12,9 +12,7 @@
   "name": "Highland Sword",
   "weaponTypes": [
     "Sword",
-    "Two Handed",
-    "Vanguard",
-    "Devastator"
+    "Two Handed"
   ],
   "damageType": "Cut",
   "attacks": {
@@ -402,5 +400,11 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Vanguard"
+  ],
+  "subclasses": [
+    "Devastator"
+  ]
 }

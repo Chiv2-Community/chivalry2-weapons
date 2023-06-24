@@ -6,11 +6,7 @@
   ],
   "weaponTypes": [
     "Sword",
-    "Two Handed",
-    "Vanguard",
-    "Devastator",
-    "Knight",
-    "Officer"
+    "Two Handed"
   ],
   "damageType": "Cut",
   "attacks": {
@@ -398,5 +394,13 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Vanguard",
+    "Knight"
+  ],
+  "subclasses": [
+    "Devastator",
+    "Officer"
+  ]
 }

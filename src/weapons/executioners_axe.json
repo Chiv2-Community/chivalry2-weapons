@@ -7,11 +7,7 @@
   ],
   "weaponTypes": [
     "Axe",
-    "Two Handed",
-    "Crusader",
-    "Knight",
-    "Vanguard",
-    "Devastator"
+    "Two Handed"
   ],
   "damageType": "Chop",
   "attacks": {
@@ -399,5 +395,13 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Vanguard",
+    "Knight"
+  ],
+  "subclasses": [
+    "Devastator",
+    "Crusader"
+  ]
 }

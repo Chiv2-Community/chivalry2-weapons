@@ -6,9 +6,7 @@
   ],
   "weaponTypes": [
     "Sword",
-    "Two Handed",
-    "Knight",
-    "Officer"
+    "Two Handed"
   ],
   "damageType": "Cut",
   "twoHanded": false,
@@ -397,5 +395,11 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Knight"
+  ],
+  "subclasses": [
+    "Officer"
+  ]
 }

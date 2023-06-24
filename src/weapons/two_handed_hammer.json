@@ -10,11 +10,7 @@
   ],
   "weaponTypes": [
     "Hammer",
-    "Two Handed",
-    "Knight",
-    "Crusader",
-    "Vanguard",
-    "Raider"
+    "Two Handed"
   ],
   "damageType": "Blunt",
   "attacks": {
@@ -402,5 +398,13 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Vanguard",
+    "Knight"
+  ],
+  "subclasses": [
+    "Raider",
+    "Crusader"
+  ]
 }

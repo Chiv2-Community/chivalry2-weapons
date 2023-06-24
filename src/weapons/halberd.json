@@ -4,9 +4,7 @@
   "weaponTypes": [
     "Axe",
     "Polearm",
-    "Two Handed",
-    "Poleman",
-    "Footman"
+    "Two Handed"
   ],
   "damageType": "Chop",
   "attacks": {
@@ -394,5 +392,11 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Footman"
+  ],
+  "subclasses": [
+    "Poleman"
+  ]
 }

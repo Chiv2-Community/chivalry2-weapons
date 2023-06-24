@@ -3,11 +3,7 @@
   "name": "Sword",
   "weaponTypes": [
     "Sword",
-    "One Handed",
-    "Knight",
-    "Officer",
-    "Footman",
-    "Man at Arms"
+    "One Handed"
   ],
   "damageType": "Cut",
   "attacks": {
@@ -395,5 +391,13 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Footman",
+    "Knight"
+  ],
+  "subclasses": [
+    "Man at Arms",
+    "Officer"
+  ]
 }

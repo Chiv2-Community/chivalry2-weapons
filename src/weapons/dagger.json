@@ -3,9 +3,7 @@
   "name": "Dagger",
   "weaponTypes": [
     "Dagger",
-    "One Handed",
-    "Vanguard",
-    "Ambusher"
+    "One Handed"
   ],
   "damageType": "Cut",
   "attacks": {
@@ -395,5 +393,11 @@
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": 0.0
     }
-  }
+  },
+  "classes": [
+    "Vanguard"
+  ],
+  "subclasses": [
+    "Ambusher"
+  ]
 }

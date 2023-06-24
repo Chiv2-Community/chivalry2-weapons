@@ -79,7 +79,7 @@ export const WAR_AXE = WAR_AXE_IMPORT as Weapon;
 export const WAR_CLUB = WAR_CLUB_IMPORT as Weapon;
 export const WARHAMMER = WARHAMMER_IMPORT as Weapon;
 
-const ALL_WEAPONS: Weapon[] = [
+export const ALL_WEAPONS: Weapon[] = [
   AXE,
   BATTLE_AXE,
   CUDGEL,
@@ -128,5 +128,3 @@ export function weaponByName(name: string) {
 export function weaponById(id: string) {
   return ALL_WEAPONS.find((w) => w.id === id);
 }
-
-export default ALL_WEAPONS;

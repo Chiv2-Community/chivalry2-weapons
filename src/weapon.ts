@@ -103,10 +103,11 @@ export enum CharacterSubclass {
 
 
 export enum Target {
-  VANGUARD_ARCHER = "Vanguard / Archer",
-  FOOTMAN = "Footman",
-  KNIGHT = "Knight",
-  AVERAGE = "Average"
+  ARCHER = "ARCHER",
+  VANGUARD = "VANGUARD",
+  FOOTMAN = "FOOTMAN",
+  KNIGHT = "KNIGHT",
+  AVERAGE = "AVERAGE"
 }
 
 export function canCleave(w: Weapon, path: string): boolean {
@@ -136,7 +137,7 @@ export function extract<T>(weapon: Weapon, path: string, optional: boolean = fal
       current = current[part];
     } else {
       if(!optional)
-        console.warn(`Invalid stat ${weapon.name} path specified: ${path}`);
+        throw new Error(`Invalid stat ${weapon.name} path specified: ${path}`);
       return undefined;
     }
   }
@@ -149,12 +150,13 @@ export function bonusMult(numberOfTargets: number, target: Target, type: DamageT
   // Multiply Vanguard / Archer by 2 assuming equal distribution of target classes
   if (target === Target.AVERAGE) {
     const sum =
-      2 * bonusMult(numberOfTargets, Target.VANGUARD_ARCHER, type, cleaves) +
+      bonusMult(numberOfTargets, Target.ARCHER, type, cleaves) +
+      bonusMult(numberOfTargets, Target.VANGUARD, type, cleaves) +
       bonusMult(numberOfTargets, Target.FOOTMAN, type, cleaves) +
       bonusMult(numberOfTargets, Target.KNIGHT, type, cleaves);
 
     return sum / 4;
-  } else if (target === Target.VANGUARD_ARCHER) {
+  } else if ([Target.VANGUARD, Target.ARCHER].includes(target)) {
     return cleavingMultiplier;
   } else if (type === DamageType.CHOP) {
     return (target === Target.FOOTMAN ? 1.175 : 1.25) * cleavingMultiplier;

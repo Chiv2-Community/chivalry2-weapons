@@ -1,6 +1,7 @@
 import AXE_IMPORT from "./weapons/axe.json" assert { type: "json" };
 import BATTLE_AXE_IMPORT from "./weapons/battle_axe.json" assert { type: "json" };
 import CUDGEL_IMPORT from "./weapons/cudgel.json" assert { type: "json" };
+import DAGGER_IMPORT from "./weapons/dagger.json" assert { type: "json" };
 import DANE_AXE_IMPORT from "./weapons/dane_axe.json" assert { type: "json" };
 import EXECUTIONERS_AXE_IMPORT from "./weapons/executioners_axe.json" assert { type: "json" };
 import FALCHION_IMPORT from "./weapons/falchion.json" assert { type: "json" };

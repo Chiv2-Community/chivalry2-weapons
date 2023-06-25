@@ -37,7 +37,7 @@ import SPEAR_IMPORT from "./weapons/spear.json" assert { type: "json" };
 import WAR_AXE_IMPORT from "./weapons/war_axe.json" assert { type: "json" };
 import WAR_CLUB_IMPORT from "./weapons/war_club.json" assert { type: "json" };
 import WARHAMMER_IMPORT from "./weapons/warhammer.json" assert { type: "json" };
-import { Weapon } from "./weapon" assert { type: "json" };
+import { Weapon } from "./weapon.js" assert { type: "json" };
 
 export const AXE = AXE_IMPORT as Weapon;
 export const BATTLE_AXE = BATTLE_AXE_IMPORT as Weapon;

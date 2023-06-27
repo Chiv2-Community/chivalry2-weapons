@@ -27,6 +27,8 @@ export type SpecialAttack = {
   release: number; 
   recovery: number; 
   combo: number;
+  thwack: number;
+  riposte: number;
   range?: number; // Not measured yet
   cleaveOverride?: boolean;
   damageTypeOverride?: DamageType;
@@ -46,7 +48,10 @@ export type MeleeAttack = {
   release: number; 
   recovery: number; 
   combo: number;
+  thwack: number;
+  riposte: number;
   cleaveOverride?: boolean;
+  damageTypeOverride?: DamageType;
 };
 
 export type ProjectileDamage = {
@@ -100,48 +105,12 @@ export enum CharacterSubclass {
   CRUSADER = "Crusader"
 }
 
-
-
 export enum Target {
   ARCHER = "ARCHER",
   VANGUARD = "VANGUARD",
   FOOTMAN = "FOOTMAN",
   KNIGHT = "KNIGHT",
   AVERAGE = "AVERAGE"
-}
-
-export function canCleave(w: Weapon, path: string): boolean {
-  let pathParts = path.split(".")
-  pathParts.pop()
-  let overridePath = pathParts.join(".") + ".cleaveOverride",
-      cleaveOverride = extract<boolean>(w, overridePath, true)
-
-  if (cleaveOverride != undefined) 
-    return cleaveOverride
-
-  if(path.startsWith("attacks")) {
-    if(path.includes('heavy'))
-      return true;
-    
-    return w.damageType != DamageType.BLUNT;
-  }
-  return false;
-}
-
-
-export function extract<T>(weapon: Weapon, path: string, optional: boolean = false): T|undefined {
-  let current: any = weapon; // eslint-disable-line
-  const parts = path.split(".");
-  for (const part of parts) {
-    if (part in current) {
-      current = current[part];
-    } else {
-      if(!optional)
-        throw new Error(`Invalid stat ${weapon.name} path specified: ${path}`);
-      return undefined;
-    }
-  }
-  return current 
 }
 
 export function bonusMult(numberOfTargets: number, target: Target, type: DamageType, cleaves: boolean): number {
@@ -165,83 +134,4 @@ export function bonusMult(numberOfTargets: number, target: Target, type: DamageT
   }
 
   return cleavingMultiplier;
-}
-
-export function extractNumber(weapon: Weapon, path: string): number {
-  let result = extract<number>(weapon, path);
-
-  if(result == undefined) {
-    return 0;
-  }
-
-  return result
-};
-
-export function withBonusMultipliers(w: Weapon, numberOfTargets: number, horsebackDamageMult: number, target: Target): Weapon {
-  return {
-    ...w,
-    "attacks": {
-      ...w.attacks,
-      "slash": {
-        ...w.attacks.slash,
-        "light": {
-          ...w.attacks.slash.light,
-          "damage": w.attacks.slash.light.damage * bonusMult(numberOfTargets, target, w.damageType, canCleave(w, "attacks.slash.light.damage")) * horsebackDamageMult
-        },
-        "heavy": {
-          ...w.attacks.slash.heavy,
-          "damage": w.attacks.slash.heavy.damage * bonusMult(numberOfTargets, target, w.damageType, canCleave(w, "attacks.slash.heavy.damage")) * horsebackDamageMult
-        }
-      },
-      "overhead": {
-        ...w.attacks.overhead,
-        "light": {
-          ...w.attacks.overhead.light,
-          "damage": w.attacks.overhead.light.damage * bonusMult(numberOfTargets, target, w.damageType, canCleave(w, "attacks.overhead.light.damage")) * horsebackDamageMult
-        },
-        "heavy": {
-          ...w.attacks.overhead.heavy,
-          "damage": w.attacks.overhead.heavy.damage * bonusMult(numberOfTargets, target, w.damageType, canCleave(w, "attacks.overhead.heavy.damage")) * horsebackDamageMult
-        }
-      },
-      "stab": {
-        ...w.attacks.stab,
-        "light": {
-          ...w.attacks.stab.light,  
-          "damage": w.attacks.stab.light.damage * bonusMult(numberOfTargets, target, w.damageType, canCleave(w, "attacks.stab.light.damage")) * horsebackDamageMult
-        },
-        "heavy": {
-          ...w.attacks.stab.heavy,  
-          "damage": w.attacks.stab.heavy.damage * bonusMult(numberOfTargets, target, w.damageType, canCleave(w, "attacks.stab.heavy.damage")) * horsebackDamageMult
-        }
-      },
-      "average": {
-        ...w.attacks.average,
-        "light": {
-          ...w.attacks.average.light,
-          "damage": w.attacks.average.light.damage * bonusMult(numberOfTargets, target, w.damageType, canCleave(w, "attacks.average.light.damage")) * horsebackDamageMult
-        },
-        "heavy": {
-          ...w.attacks.average.heavy,
-          "damage": w.attacks.average.heavy.damage * bonusMult(numberOfTargets, target, w.damageType, canCleave(w, "attacks.average.heavy.damage")) * horsebackDamageMult
-        }
-      },
-      "sprintAttack": {
-        ...w.attacks.sprintAttack,
-          "damage": w.attacks.sprintAttack.damage * bonusMult(numberOfTargets, target, w.damageType, canCleave(w, "attacks.sprintAttack.damage")) * horsebackDamageMult
-      },
-      "sprintCharge": {
-        ...w.attacks.sprintCharge,
-          "damage": w.attacks.sprintCharge.damage * bonusMult(numberOfTargets, target, w.damageType, false) * horsebackDamageMult
-      },
-      "special": {
-        ...w.attacks.special,
-          "damage": w.attacks.special.damage * bonusMult(numberOfTargets, target, w.damageType, canCleave(w, "attacks.special.damage")) * horsebackDamageMult
-      },
-      "throw": {
-        ...w.attacks.throw,
-        "damage": w.attacks.throw.damage * bonusMult(numberOfTargets, target, w.damageType, canCleave(w, "attacks.throw.damage")) * horsebackDamageMult
-      },
-    }
-  } as Weapon
 }

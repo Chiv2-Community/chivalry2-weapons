@@ -70,13 +70,6 @@ def calculate_matchups(weapons):
         current_matchups["tied_matchups"] = len(weapons) - current_matchups["winning_matchups"] - current_matchups["losing_matchups"]
         current_matchups["average_matchup"] = sum(matchup_numbers) / len(matchup_numbers);
 
-        print("Matchups for " + weapon["name"] + ": ")
-        print("\tAverage matchup: " + str(current_matchups["average_matchup"]))
-        print("\tWinning matchups: " + str(current_matchups["winning_matchups"]))
-        print("\tLosing matchups: " + str(current_matchups["losing_matchups"]))
-        print("\tTied matchups: " + str(current_matchups["tied_matchups"]))
-        print("")
-
         matchups.append(current_matchups)
     
     matchups.sort(key=lambda x: x["average_matchup"], reverse=True)

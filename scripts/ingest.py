@@ -2,40 +2,10 @@ import json
 import re
 import sys
 import os
-import copy
-import csv
 from collections.abc import Mapping
 import argparse
 
-#VALID_STATS = ["Holding", "Windup", "Release", "Recovery", "Combo", "Riposte", "Damage", "TurnLimitStrength", "VerticalTurnLimitStrength", "ReverseTurnLimitStrength"]
-VALID_ATTACKS = ["slash", "slashHeavy", "overhead","overheadHeavy", "stab", "stabHeavy", "throw", "special", "sprintAttack", "sprintCharge"]
-
-MATCHUP_STAT_WEIGHTS = {
-    "windup": -0.25, 
-    "release": 0.25, 
-    "recovery": -0.25, 
-    "combo": -0.25, 
-
-    "damage": 1, 
-
-    "range": 1, 
-    "altRange": 1 
-}
-
-
-MATCHUP_ATTACK_WEIGHTS = {
-    "average": 0,
-    "slash": 1,
-    "overhead": 1,
-    "stab": 1,
-    "special": 0,
-    "sprintAttack": 0,
-    "sprintCharge": 0,
-    "throw": 0,
-}
-
-HEAVY_WEIGHT = 1
-LIGHT_WEIGHT = 1
+from common import write_dicts_to_csv, VALID_ATTACKS
 
 def seconds_to_millis(n):
     return n * 1000 if n != -1 else -1
@@ -46,6 +16,8 @@ STAT_TRANSFORMS = {
     "recovery": seconds_to_millis,
     "combo": seconds_to_millis,
     "holding": seconds_to_millis,
+    "thwack": seconds_to_millis,
+    "riposte": seconds_to_millis,
 }
 
 def main():
@@ -122,96 +94,6 @@ def process_attack(attack_type, item, attacks):
             attacks[attack_type] = {}
         attacks[attack_type] = apply_stat_transforms(item)
     return attacks
-
-def calculate_matchups(weapons):
-    weapons = list(filter(lambda w : "id" in w, weapons))
-    weapons = calculate_damage_output(weapons)
-    matchups = []
-    for weapon in weapons:
-        current_matchups = {}
-        current_matchups["name"] = weapon["name"]
-        for other_weapon in weapons:
-            current_matchups[other_weapon["name"]] = calculate_matchup(weapon, other_weapon)
-
-        matchup_numbers = [v for k, v in current_matchups.items() if type(v) in [int, float]]
-
-        current_matchups["winning_matchups"] = len([v for v in matchup_numbers if v > 0.01])
-        current_matchups["losing_matchups"] = len([v for v in matchup_numbers if v < -0.01])
-        current_matchups["tied_matchups"] = len(weapons) - current_matchups["winning_matchups"] - current_matchups["losing_matchups"]
-        current_matchups["average_matchup"] = sum(matchup_numbers) / len(matchup_numbers);
-
-        matchups.append(current_matchups)
-    
-    matchups.sort(key=lambda x: x["average_matchup"], reverse=True)
-    return matchups
-
-def calculate_matchup(weapon, other_weapon):
-    matchup = 0
-    print("Comparing " + weapon["name"] + " to " + other_weapon["name"])
-    for attack_name, attack in weapon["attacks"].items():
-        if attack_name not in VALID_ATTACKS:
-            continue 
-
-        other_attack = other_weapon["attacks"][attack_name]
-        matchup += calculate_matchup_stats(attack_name, attack, other_attack)
-    return matchup
-
-def calculate_matchup_stats(attack_name, source_weapon_attack, other_weapon_attack):
-    if attack_name not in VALID_ATTACKS or MATCHUP_ATTACK_WEIGHTS[attack_name] == 0:
-        return 0
-
-    matchup = 0
-
-    attack_weight = MATCHUP_ATTACK_WEIGHTS[attack_name]
-
-    if attack_name in ["slash", "overhead", "stab", "average"]:
-        matchup += calculate_matchup_winner(
-            attack_weight * MATCHUP_STAT_WEIGHTS["range"], 
-            source_weapon_attack["range"], 
-            other_weapon_attack["range"]
-        ) 
-        
-        matchup += calculate_matchup_winner(
-            attack_weight * MATCHUP_STAT_WEIGHTS["altRange"], 
-            source_weapon_attack["altRange"], 
-            other_weapon_attack["altRange"]
-        )
-        
-        for stat, value in source_weapon_attack["light"].items():
-            if stat not in MATCHUP_STAT_WEIGHTS:
-                continue
-
-            other_value = other_weapon_attack["light"][stat]
-            weight = attack_weight * MATCHUP_STAT_WEIGHTS[stat] * LIGHT_WEIGHT
-            matchup += calculate_matchup_winner(weight, value, other_value)
-
-        for stat, value in source_weapon_attack["heavy"].items():
-            if stat not in MATCHUP_STAT_WEIGHTS:
-                continue
-            
-            print(stat + ": " + str(value) + " vs " + str(other_weapon_attack["heavy"][stat]))
-            other_value = other_weapon_attack["heavy"][stat]
-            weight = attack_weight * MATCHUP_STAT_WEIGHTS[stat] * HEAVY_WEIGHT
-            matchup += calculate_matchup_winner(weight, value, other_value)
-
-    else:
-        for stat, value in source_weapon_attack.items():
-            if stat not in MATCHUP_STAT_WEIGHTS:
-                continue
-
-            other_value = other_weapon_attack[stat]
-            weight = attack_weight * MATCHUP_STAT_WEIGHTS[stat]
-            matchup += calculate_matchup_winner(weight, value, other_value)
-
-    return matchup
-
-def calculate_matchup_winner(weight, a, b):
-    if a > b:
-        return weight
-    elif a < b:
-        return -weight
-    else:
-        return 0
 
 def make_averages(weapon):
     if "slash" not in weapon["attacks"]:
@@ -310,40 +192,18 @@ def write_to_file(data, foldername, changelog_location):
         
         write_dicts_to_csv(data, foldername + "/data.csv")
 
-        matchups = calculate_matchups(merged_weapons)
-
-        write_dicts_to_csv(matchups, foldername + "matchups.csv", ["name"] + list(map(lambda r: r["name"], matchups)) + ["average_matchup", "winning_matchups", "losing_matchups", "tied_matchups"])
+        changelog_text = ""
+        for (name, changes) in changelog.items():
+            changelog_text += name + ":\n"
+            for change in changes:
+                changelog_text += "\t" + '.'.join(change['path']) + ": " + str(change['old']) + " -> " + str(change['new']) + "\n"
 
         with open(changelog_location, 'w') as changelog_file: 
-            json.dump(changelog, changelog_file, indent=2)
+            changelog_file.write(changelog_text)
+
     except IOError as e:
         print(e)
         sys.exit("Unable to write to JSON file!")
-
-import csv
-
-def flatten_dict(d, parent_key='', sep='_'):
-    items = []
-    for k, v in d.items():
-        new_key = f"{parent_key}{sep}{k}" if parent_key else k
-        if isinstance(v, dict):
-            items.extend(flatten_dict(v, new_key, sep=sep).items())
-        else:
-            items.append((new_key, v))
-    return dict(items)
-
-def write_dicts_to_csv(data, csv_file_path, keys = None):
-    with open(csv_file_path, 'w', newline='') as f:
-        writer = None
-        for d in data:
-            flat_d = flatten_dict(d)
-            if writer is None:
-                if keys is None:
-                    keys = flat_d.keys()
-                writer = csv.DictWriter(f, fieldnames=keys)
-                writer.writeheader()
-            writer.writerow(flat_d)
-
 
 
 def pascal_to_camel(s):
@@ -384,28 +244,6 @@ def deep_merge(name, dict1, dict2, path=None):
             dict1[key] = value
     return (changes, dict1)
 
-def calculate_damage_output(weapons):
-    updated_weapons = []
-    for weapon in weapons:
-        damage_type = weapon["damageType"]
-        damage_multiplier = 1
-        if damage_type == "Blunt":
-            damage_multiplier = 1.2125 # (1 + 1 +1.35 + 1.5) / 4
-        elif damage_type == "Slash":
-            damage_multiplier = 1.10625
-
-        for attack_name, attack in weapon["attacks"].items():
-            if attack_name in ["slash", "overhead", "stab", "average"]:
-                print(attack_name)
-                attack["light"]["damage"] = attack["light"]["damage"] * damage_multiplier
-                attack["heavy"]["damage"] = attack["heavy"]["damage"] * damage_multiplier
-            else:
-                attack["damage"] = attack["damage"] * damage_multiplier
-
-            weapon[attack_name] = attack
-        updated_weapons.append(weapon)
-
-    return updated_weapons
 
 if __name__ == '__main__':
     main()

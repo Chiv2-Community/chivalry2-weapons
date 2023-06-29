@@ -20,6 +20,12 @@ STAT_TRANSFORMS = {
     "riposte": seconds_to_millis,
 }
 
+# When the stats on the left are undefined (-1 or 0), they should fall back to the stat on the right.
+STAT_FALLBACKS = {
+    "riposte": "windup",
+    "thwack": "release"
+}
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--input_json", required=True, help="Path to the input JSON file")
@@ -112,7 +118,7 @@ def make_averages(weapon):
         for stat in weapon["attacks"][attack]["light"].keys():
             if stat in ignore_keys:
                 continue 
-
+            
             lightStatValue = weapon["attacks"][attack]["light"][stat]
             heavyStatValue = weapon["attacks"][attack]["heavy"][stat]
 
@@ -123,11 +129,13 @@ def make_averages(weapon):
                     print(f"WARNING: {stat} has type {type(lightStatValue)}, with value {lightStatValue}")
                     continue
                 continue
-
+            
             currentLightSum = sums["light"][stat] if stat in sums["light"] else 0
             currentHeavySum = sums["heavy"][stat] if stat in sums["heavy"] else 0
+
             sums["light"][stat] = currentLightSum + lightStatValue
             sums["heavy"][stat] = currentHeavySum + heavyStatValue
+            
         
         if has_range:
             sums["range"] = currentRangeSum + weapon["attacks"][attack]["range"]
@@ -216,6 +224,14 @@ def apply_stat_transforms(data):
     for key, value in data.items():
         if key in STAT_TRANSFORMS:
             data[key] = STAT_TRANSFORMS[key](value)
+    
+    # after applying transformations, apply fallbacks
+    for key, value in data.items():
+        if value in [-1, 0]:
+            if key in STAT_FALLBACKS:
+                data[key] = data[STAT_FALLBACKS[key]]
+            else:
+                print("WARNING: -1 or 0 value found for " + key)
 
     return data
 

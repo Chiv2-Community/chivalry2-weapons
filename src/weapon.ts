@@ -113,16 +113,16 @@ export enum Target {
   AVERAGE = "AVERAGE"
 }
 
-export function bonusMult(numberOfTargets: number, target: Target, type: DamageType, cleaves: boolean): number {
+export function bonusDamageMult(numberOfTargets: number, target: Target, type: DamageType, cleaves: boolean): number {
   const cleavingMultiplier = cleaves ? numberOfTargets : 1
 
   // Multiply Vanguard / Archer by 2 assuming equal distribution of target classes
   if (target === Target.AVERAGE) {
     const sum =
-      bonusMult(numberOfTargets, Target.ARCHER, type, cleaves) +
-      bonusMult(numberOfTargets, Target.VANGUARD, type, cleaves) +
-      bonusMult(numberOfTargets, Target.FOOTMAN, type, cleaves) +
-      bonusMult(numberOfTargets, Target.KNIGHT, type, cleaves);
+      bonusDamageMult(numberOfTargets, Target.ARCHER, type, cleaves) +
+      bonusDamageMult(numberOfTargets, Target.VANGUARD, type, cleaves) +
+      bonusDamageMult(numberOfTargets, Target.FOOTMAN, type, cleaves) +
+      bonusDamageMult(numberOfTargets, Target.KNIGHT, type, cleaves);
 
     return sum / 4;
   } else if ([Target.VANGUARD, Target.ARCHER].includes(target)) {
@@ -134,4 +134,17 @@ export function bonusMult(numberOfTargets: number, target: Target, type: DamageT
   }
 
   return cleavingMultiplier;
+}
+  
+let BASE_STAMINA_DAMAGE_MULT = 0.3;
+export function staminaDamageMult(damageType: DamageType): number {
+  if (damageType === DamageType.CHOP) {
+    // Chop does +10% damage
+    return BASE_STAMINA_DAMAGE_MULT * 1.1;
+  } else if (damageType === DamageType.BLUNT) {
+    // Blunt does +25% damage
+    return BASE_STAMINA_DAMAGE_MULT * 1.25;
+  }
+
+  return 1;
 }

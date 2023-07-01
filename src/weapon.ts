@@ -147,5 +147,5 @@ export function staminaDamageMult(damageType: DamageType): number {
     return BASE_STAMINA_DAMAGE_MULT * 1.25;
   }
 
-  return 1;
+  return BASE_STAMINA_DAMAGE_MULT;
 }

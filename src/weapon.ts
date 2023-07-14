@@ -1,3 +1,5 @@
+import { CharacterClass, CharacterSubclass } from "./classes";
+
 export type Attacks = {
   average: Swing;
   slash: Swing;
@@ -80,63 +82,6 @@ export enum WeaponType {
   ONE_HANDED = "One Handed",
 };
 
-export enum CharacterClass {
-  ARCHER = "Archer",
-  VANGUARD = "Vanguard",
-  FOOTMAN = "Footman",
-  KNIGHT = "Knight"
-}
-
-export enum CharacterSubclass {
-  LONGBOWMAN = "Longbowman",
-  CROSSBOWMAN = "Crossbowman",
-  SKIRMISHER = "Skirmisher",
-
-  DEVASTATOR = "Devastator",
-  RAIDER = "Raider",
-  AMBUSHER = "Ambusher",
-
-  POLEMAN = "Poleman",
-  MAN_AT_ARMS = "Man at Arms",
-  ENGINEER = "Engineer",
-
-  OFFICER = "Officer",
-  GUARDIAN = "Guardian",
-  CRUSADER = "Crusader"
-}
-
-export enum Target {
-  ARCHER = "ARCHER",
-  VANGUARD = "VANGUARD",
-  FOOTMAN = "FOOTMAN",
-  KNIGHT = "KNIGHT",
-  AVERAGE = "AVERAGE"
-}
-
-export function bonusDamageMult(target: Target, type: DamageType): number {
-
-  // Multiply Vanguard / Archer by 2 assuming equal distribution of target classes
-  if (target === Target.AVERAGE) {
-    const sum =
-      bonusDamageMult(Target.ARCHER, type) +
-      bonusDamageMult(Target.VANGUARD, type) +
-      bonusDamageMult(Target.FOOTMAN, type) +
-      bonusDamageMult(Target.KNIGHT, type);
-
-    return sum / 4;
-  } else if ([Target.VANGUARD, Target.ARCHER].includes(target)) {
-    return 1;
-  } else if (type === DamageType.CHOP) {
-    return (target === Target.FOOTMAN ? 1.175 : 1.25);
-  } else if (type === DamageType.BLUNT) {
-    return (target === Target.FOOTMAN ? 1.35 : 1.5);
-  } else if (type === DamageType.CUT) {
-    return 1;
-  } else {
-    throw new Error("Invalid target or damage type");
-  }
-}
-  
 let BASE_STAMINA_DAMAGE_MULT = 0.3;
 export function staminaDamageMult(damageType: DamageType): number {
   if (damageType === DamageType.CHOP) {

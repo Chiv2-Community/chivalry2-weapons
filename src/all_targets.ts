@@ -4,31 +4,49 @@ import { DamageType } from "./weapon";
 
 export const ARCHER = new Target(
     CharacterClass.ARCHER, 
-    [], 
+    [CharacterSubclass.LONGBOWMAN, CharacterSubclass.CROSSBOWMAN, CharacterSubclass.SKIRMISHER], 
     90, 
     60, 
     _ => 1
 );
 
-export const VANGUARD = new Target(CharacterClass.VANGUARD, [], , 130, 100, _ => 1);
+export const VANGUARD = new Target(
+    CharacterClass.VANGUARD, 
+    [CharacterSubclass.DEVASTATOR, CharacterSubclass.RAIDER, CharacterSubclass.AMBUSHER], 
+    130, 
+    100, 
+    _ => 1
+);
 
-export const FOOTMAN = new Target(CharacterClass.FOOTMAN, [],  150, 80, dt => { 
-    switch(dt) {
-        case DamageType.CHOP: return 1.175;
-        case DamageType.BLUNT: return 1.35;
-        case DamageType.CUT: return 1;
-        default: return 1;
+export const FOOTMAN = new Target(
+    CharacterClass.FOOTMAN, 
+    [CharacterSubclass.POLEMAN, CharacterSubclass.MAN_AT_ARMS, CharacterSubclass.ENGINEER],  
+    150, 
+    80, 
+    dt => { 
+        switch(dt) {
+            case DamageType.CHOP: return 1.175;
+            case DamageType.BLUNT: return 1.35;
+            case DamageType.CUT: return 1;
+            default: return 1;
+        }
     }
-});
+);
 
-export const KNIGHT = new Target(CharacterClass.KNIGHT, [], 175, 80, dt => {
-    switch(dt) {
-        case DamageType.CHOP: return 1.25;
-        case DamageType.BLUNT: return 1.5;
-        case DamageType.CUT: return 1;
-        default: return 1;
+export const KNIGHT = new Target(
+    CharacterClass.KNIGHT, 
+    [CharacterSubclass.OFFICER, CharacterSubclass.GUARDIAN, CharacterSubclass.CRUSADER], 
+    175, 
+    80, 
+    dt => {
+        switch(dt) {
+            case DamageType.CHOP: return 1.25;
+            case DamageType.BLUNT: return 1.5;
+            case DamageType.CUT: return 1;
+            default: return 1;
+        }
     }
-});
+);
 
 const allTargetsNoAverage = [ARCHER, VANGUARD, FOOTMAN, KNIGHT];
 

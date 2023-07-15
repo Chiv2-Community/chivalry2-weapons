@@ -36,6 +36,9 @@ export type SpecialAttack = {
   range?: number; // Not measured yet
   cleaveOverride?: boolean;
   damageTypeOverride?: DamageType;
+  turnLimitStrength: number;
+  verticalTurnLimitStrength: number;
+  reverseTurnLimitStrength: number;
 };
 
 export type Swing = {
@@ -57,6 +60,9 @@ export type MeleeAttack = {
   riposte: number;
   cleaveOverride?: boolean;
   damageTypeOverride?: DamageType;
+  turnLimitStrength: number;
+  verticalTurnLimitStrength: number;
+  reverseTurnLimitStrength: number;
 };
 
 export type ProjectileDamage = {

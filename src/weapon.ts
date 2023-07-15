@@ -19,6 +19,7 @@ export type Weapon = {
   subclasses: CharacterSubclass[];
   weaponTypes: WeaponType[];
   damageType: DamageType;
+  staminaDamageNegation: number?;
   attacks: Attacks;
 };
 

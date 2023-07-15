@@ -10,6 +10,7 @@
     "Two Handed"
   ],
   "damageType": "Chop",
+  "staminaDamageNegation": 0.1,
   "attacks": {
     "slash": {
       "range": 26,
@@ -43,7 +44,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 14.850000000000001
       },
       "heavy": {
         "damage": 60.0,
@@ -74,7 +76,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 19.8
       }
     },
     "overhead": {
@@ -109,7 +112,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 16.5
       },
       "heavy": {
         "damage": 70,
@@ -140,7 +144,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 23.1
       }
     },
     "stab": {
@@ -175,7 +180,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 16.5
       },
       "heavy": {
         "damage": 70,
@@ -206,7 +212,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 23.1
       }
     },
     "special": {
@@ -238,7 +245,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": -1.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 23.1
     },
     "throw": {
       "holding": 500.0,
@@ -269,7 +277,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": -1.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 16.5
     },
     "sprintAttack": {
       "holding": -1.0,
@@ -300,7 +309,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": -1.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 21.450000000000003
     },
     "average": {
       "light": {
@@ -330,7 +340,8 @@
         "weaponTipCheckReverse": -1.0,
         "weaponTipCheckReverseAlt": -1.0,
         "weaponTipCheckDisable": -1.0,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 15.950000000000001
       },
       "heavy": {
         "windup": 600.0,
@@ -359,7 +370,8 @@
         "weaponTipCheckReverse": -1.0,
         "weaponTipCheckReverseAlt": -1.0,
         "weaponTipCheckDisable": -1.0,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 22.0
       },
       "range": 27.0,
       "altRange": 25.666666666666668
@@ -393,7 +405,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": 0.0
+      "comboFromBlocked": 0.0,
+      "staminaDamage": 18.150000000000002
     }
   },
   "classes": [

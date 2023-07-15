@@ -121,10 +121,10 @@ export const ALL_WEAPONS: Weapon[] = [
   WARHAMMER,
 ]
 
-export function weaponByName(name: string) {
+export function weaponByName(name: string): Weapon | undefined {
   return ALL_WEAPONS.find((w) => w.name === name);
 }
 
-export function weaponById(id: string) {
+export function weaponById(id: string): Weapon | undefined {
   return ALL_WEAPONS.find((w) => w.id === id);
 }

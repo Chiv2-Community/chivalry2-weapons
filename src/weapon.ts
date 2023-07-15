@@ -1,3 +1,5 @@
+import { CharacterClass, CharacterSubclass } from "./classes";
+
 export type Attacks = {
   average: Swing;
   slash: Swing;
@@ -17,11 +19,13 @@ export type Weapon = {
   subclasses: CharacterSubclass[];
   weaponTypes: WeaponType[];
   damageType: DamageType;
+  staminaDamageNegation?: number;
   attacks: Attacks;
 };
 
 export type SpecialAttack = {
   damage: number;
+  staminaDamage: number;
   holding: number;
   windup: number; 
   release: number; 
@@ -43,6 +47,7 @@ export type Swing = {
 
 export type MeleeAttack = {
   damage: number;
+  staminaDamage: number;
   holding: number;
   windup: number; 
   release: number; 
@@ -80,58 +85,3 @@ export enum WeaponType {
   ONE_HANDED = "One Handed",
 };
 
-export enum CharacterClass {
-  ARCHER = "Archer",
-  VANGUARD = "Vanguard",
-  FOOTMAN = "Footman",
-  KNIGHT = "Knight"
-}
-
-export enum CharacterSubclass {
-  LONGBOWMAN = "Longbowman",
-  CROSSBOWMAN = "Crossbowman",
-  SKIRMISHER = "Skirmisher",
-
-  DEVASTATOR = "Devastator",
-  RAIDER = "Raider",
-  AMBUSHER = "Ambusher",
-
-  POLEMAN = "Poleman",
-  MAN_AT_ARMS = "Man at Arms",
-  ENGINEER = "Engineer",
-
-  OFFICER = "Officer",
-  GUARDIAN = "Guardian",
-  CRUSADER = "Crusader"
-}
-
-export enum Target {
-  ARCHER = "ARCHER",
-  VANGUARD = "VANGUARD",
-  FOOTMAN = "FOOTMAN",
-  KNIGHT = "KNIGHT",
-  AVERAGE = "AVERAGE"
-}
-
-export function bonusMult(numberOfTargets: number, target: Target, type: DamageType, cleaves: boolean): number {
-  const cleavingMultiplier = cleaves ? numberOfTargets : 1
-
-  // Multiply Vanguard / Archer by 2 assuming equal distribution of target classes
-  if (target === Target.AVERAGE) {
-    const sum =
-      bonusMult(numberOfTargets, Target.ARCHER, type, cleaves) +
-      bonusMult(numberOfTargets, Target.VANGUARD, type, cleaves) +
-      bonusMult(numberOfTargets, Target.FOOTMAN, type, cleaves) +
-      bonusMult(numberOfTargets, Target.KNIGHT, type, cleaves);
-
-    return sum / 4;
-  } else if ([Target.VANGUARD, Target.ARCHER].includes(target)) {
-    return cleavingMultiplier;
-  } else if (type === DamageType.CHOP) {
-    return (target === Target.FOOTMAN ? 1.175 : 1.25) * cleavingMultiplier;
-  } else if (type === DamageType.BLUNT) {
-    return (target === Target.FOOTMAN ? 1.35 : 1.5) * cleavingMultiplier;
-  }
-
-  return cleavingMultiplier;
-}

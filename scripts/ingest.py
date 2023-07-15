@@ -21,6 +21,12 @@ STAT_TRANSFORMS = {
     "riposte": seconds_to_millis,
 }
 
+# When the stats on the left are undefined (-1 or 0), they should fall back to the stat on the right.
+STAT_FALLBACKS = {
+    "riposte": "windup",
+    "thwack": "release"
+}
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--input_json", required=True, help="Path to the input JSON file")
@@ -174,6 +180,14 @@ def apply_stat_transforms(data):
     for key, value in data.items():
         if key in STAT_TRANSFORMS:
             data[key] = STAT_TRANSFORMS[key](value)
+    
+    # after applying transformations, apply fallbacks
+    for key, value in data.items():
+        if value in [-1, 0]:
+            if key in STAT_FALLBACKS:
+                data[key] = data[STAT_FALLBACKS[key]]
+            else:
+                print("WARNING: -1 or 0 value found for " + key)
 
     return data
 

@@ -113,11 +113,17 @@ def apply_defaults(weapons, attack_defaults):
                     for key in item.keys():
                         if item[key] == -1:
                             item[key] = attack_defaults[attack][attack_subtype][key]
+                    # Set up riposte default fallbacks
+                    if item["riposte"] in [-1, 0]:
+                        item["riposte"] = item["windup"]
             else:
                 for key in attack_data.keys():
                     if attack_data[key] == -1:
                         if key in attack_defaults.get(attack, {}):
                             attack_data[key] = attack_defaults[attack][key]
+                # Set up riposte default fallbacks
+                if item["riposte"] in [-1, 0]:
+                    item["riposte"] = item["windup"]
 
 def write_to_file(data, foldername, changelog_location):
     try:

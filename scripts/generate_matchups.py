@@ -1,8 +1,13 @@
 import json
 import argparse
 import os
+import copy
+from typing import Callable
 
 from common import VALID_ATTACKS, write_dicts_to_csv
+
+# slashHeavy, stabHeavy, and overheadHeavy get filtered out, because after processing they are nested under the heavy key
+VALID_PROCESSED_ATTACKS = list(filter(lambda name: not name.endswith("Heavy") ,VALID_ATTACKS))
 
 MATCHUP_STAT_WEIGHTS = {
     "windup": -0.25, 
@@ -11,6 +16,7 @@ MATCHUP_STAT_WEIGHTS = {
     "combo": -0.25, 
 
     "damage": 1, 
+
     "staminaDamage": 1, 
 
     "range": 1, 
@@ -56,7 +62,6 @@ def main():
 
 def calculate_matchups(weapons):
     weapons = list(filter(lambda w : "id" in w, weapons))
-    weapons = calculate_damage_output(weapons)
     matchups = []
     for weapon in weapons:
         current_matchups = {}
@@ -78,18 +83,25 @@ def calculate_matchups(weapons):
 
 def calculate_matchup(weapon, other_weapon):
     matchup = 0
-    for attack_name, attack in weapon["attacks"].items():
-        if attack_name not in VALID_ATTACKS:
-            continue 
+    
+    # We're about to mutate the weapon dicts, so we need to copy them first
+    weapon = copy.deepcopy(weapon)
+    other_weapon = copy.deepcopy(other_weapon)
 
+    calculate_damage_output(weapon)
+    calculate_damage_output(other_weapon)
+    calculate_stamina_damage_output(weapon, other_weapon)
+
+    for attack_name in VALID_PROCESSED_ATTACKS:
+        attack = weapon["attacks"][attack_name]
         other_attack = other_weapon["attacks"][attack_name]
-        matchup += calculate_matchup_stats(attack_name, attack, other_attack)
+        matchup += calculate_matchup_stats(weapon, other_weapon, attack_name, attack, other_attack)
     return matchup
 
-def calculate_matchup_stats(attack_name, source_weapon_attack, other_weapon_attack):
-    if attack_name not in VALID_ATTACKS or MATCHUP_ATTACK_WEIGHTS[attack_name] == 0:
+def calculate_matchup_stats(weapon, other_weapon, attack_name, source_weapon_attack, other_weapon_attack):
+    if attack_name not in VALID_PROCESSED_ATTACKS or MATCHUP_ATTACK_WEIGHTS[attack_name] == 0:
         return 0
-
+    
     matchup = 0
 
     attack_weight = MATCHUP_ATTACK_WEIGHTS[attack_name]
@@ -107,28 +119,24 @@ def calculate_matchup_stats(attack_name, source_weapon_attack, other_weapon_atta
             other_weapon_attack["altRange"]
         )
         
-        for stat, value in source_weapon_attack["light"].items():
-            if stat not in MATCHUP_STAT_WEIGHTS:
-                continue
-
-            other_value = other_weapon_attack["light"][stat]
+        for stat in MATCHUP_STAT_WEIGHTS:
+            other_value = other_weapon_attack["light"].get(stat, 0)
+            value = source_weapon_attack["light"].get(stat, 0)
             weight = attack_weight * MATCHUP_STAT_WEIGHTS[stat] * LIGHT_WEIGHT
             matchup += calculate_matchup_winner(weight, value, other_value)
 
-        for stat, value in source_weapon_attack["heavy"].items():
-            if stat not in MATCHUP_STAT_WEIGHTS:
-                continue
-            
-            other_value = other_weapon_attack["heavy"][stat]
+        for stat in MATCHUP_STAT_WEIGHTS:
+            other_value = other_weapon_attack["heavy"].get(stat, 0)
+            value = source_weapon_attack["heavy"].get(stat, 0)
             weight = attack_weight * MATCHUP_STAT_WEIGHTS[stat] * HEAVY_WEIGHT
             matchup += calculate_matchup_winner(weight, value, other_value)
 
-    else:
-        for stat, value in source_weapon_attack.items():
-            if stat not in MATCHUP_STAT_WEIGHTS:
-                continue
+        
 
-            other_value = other_weapon_attack[stat]
+    else:
+        for stat in MATCHUP_STAT_WEIGHTS:
+            other_value = other_weapon_attack.get(stat, 0)
+            value = source_weapon_attack.get(stat, 0)
             weight = attack_weight * MATCHUP_STAT_WEIGHTS[stat]
             matchup += calculate_matchup_winner(weight, value, other_value)
 
@@ -142,27 +150,31 @@ def calculate_matchup_winner(weight, a, b):
     else:
         return 0
 
-def calculate_damage_output(weapons):
-    updated_weapons = []
-    for weapon in weapons:
-        damage_type = weapon["damageType"]
-        damage_multiplier = 1
-        if damage_type == "Blunt":
-            damage_multiplier = 1.2125 # (1 + 1 +1.35 + 1.5) / 4
-        elif damage_type == "Slash":
-            damage_multiplier = 1.10625
+def calculate_damage_output(weapon):
+    damage_type = weapon["damageType"]
+    damage_multiplier = 1
+    if damage_type == "Blunt":
+        damage_multiplier = 1.2125 # (1 + 1 + 1.35 + 1.5) / 4
+    elif damage_type == "Slash":
+        damage_multiplier = 1.10625
 
-        for attack_name, attack in weapon["attacks"].items():
-            if attack_name in ["slash", "overhead", "stab", "average"]:
-                attack["light"]["damage"] = attack["light"]["damage"] * damage_multiplier
-                attack["heavy"]["damage"] = attack["heavy"]["damage"] * damage_multiplier
-            else:
-                attack["damage"] = attack["damage"] * damage_multiplier
+    apply_to_all_attacks(weapon, lambda attack: attack.update({"damage": attack["damage"] * damage_multiplier}))
+    
+def calculate_stamina_damage_output(weapon: dict, other_weapon: dict) -> None:
+    weapon_stamina_damage_multiplier = 1 - other_weapon.get("staminaDamageNegation", 0)
+    other_weapon_stamina_damage_multiplier = 1 - weapon.get("staminaDamageNegation", 0)
 
-            weapon[attack_name] = attack
-        updated_weapons.append(weapon)
+    apply_to_all_attacks(weapon, lambda attack: attack.update({"staminaDamage": attack["staminaDamage"] * weapon_stamina_damage_multiplier}))
+    apply_to_all_attacks(other_weapon, lambda attack: attack.update({"staminaDamage": attack["staminaDamage"] * other_weapon_stamina_damage_multiplier}))
 
-    return updated_weapons
+
+def apply_to_all_attacks(weapon: dict, func: Callable[[dict], None]) -> None:
+    for attack_name, attack in weapon["attacks"].items():
+        if attack_name in ["slash", "overhead", "stab", "average"]:
+            func(attack["light"])
+            func(attack["heavy"])
+        else:
+            func(attack)
         
 if __name__ == '__main__':
     main()

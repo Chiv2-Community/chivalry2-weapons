@@ -2,6 +2,7 @@ import csv
 
 VALID_ATTACKS = ["slash", "slashHeavy", "overhead","overheadHeavy", "stab", "stabHeavy", "throw", "special", "sprintAttack", "sprintCharge"]
 
+
 def write_dicts_to_csv(data, csv_file_path, keys = None):
     with open(csv_file_path, 'w', newline='') as f:
         writer = None

@@ -162,8 +162,8 @@ def calculate_damage_output(weapon):
     apply_to_all_attacks(weapon, lambda attack: attack.update({"damage": attack["damage"] * damage_multiplier}))
     
 def calculate_stamina_damage_output(weapon: dict, other_weapon: dict) -> None:
-    weapon_stamina_damage_multiplier = 1 - other_weapon.get("staminaDamageNegation", 0)
-    other_weapon_stamina_damage_multiplier = 1 - weapon.get("staminaDamageNegation", 0)
+    weapon_stamina_damage_multiplier = (100 - other_weapon.get("staminaDamageNegation", 0)) / 100
+    other_weapon_stamina_damage_multiplier = (100 - weapon.get("staminaDamageNegation", 0)) / 100
 
     apply_to_all_attacks(weapon, lambda attack: attack.update({"staminaDamage": attack["staminaDamage"] * weapon_stamina_damage_multiplier}))
     apply_to_all_attacks(other_weapon, lambda attack: attack.update({"staminaDamage": attack["staminaDamage"] * other_weapon_stamina_damage_multiplier}))

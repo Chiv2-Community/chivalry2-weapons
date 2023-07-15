@@ -10,7 +10,7 @@
     "Two Handed"
   ],
   "damageType": "Chop",
-  "staminaDamageNegation": 0.1,
+  "staminaDamageNegation": 10,
   "attacks": {
     "slash": {
       "range": 26,

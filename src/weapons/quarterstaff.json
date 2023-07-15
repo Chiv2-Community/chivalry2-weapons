@@ -5,7 +5,7 @@
     "Polearm",
     "Two Handed"
   ],
-  "staminaDamageNegation": 0.1,
+  "staminaDamageNegation": 10,
   "damageType": "Blunt",
   "attacks": {
     "slash": {

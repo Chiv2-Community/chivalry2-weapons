@@ -12,15 +12,20 @@ def stamina_damage(damage: int, damage_type: str) -> float:
 
 def make_stamina_damage(weapon):
     damage_type = weapon["damageType"]
+
+    def add_stamina_damage(attack, damage_type: str):
+        attack_damage_type = attack["damageTypeOverride"] if "damageTypeOverride" in attack else damage_type
+        attack["staminaDamage"] = stamina_damage(attack["damage"], attack_damage_type)
+
     for attack, attack_data in weapon["attacks"].items():
         if attack == "average":
             # average attack is calculated later
             continue
         if attack in ["slash", "overhead", "stab"]:
-            attack_data["light"]["staminaDamage"] = stamina_damage(attack_data["light"]["damage"], damage_type)
-            attack_data["heavy"]["staminaDamage"] = stamina_damage(attack_data["heavy"]["damage"], damage_type)
+            add_stamina_damage(attack_data["light"], damage_type)
+            add_stamina_damage(attack_data["heavy"], damage_type)
         else:
-            attack_data["staminaDamage"] = stamina_damage(attack_data["damage"], damage_type)
+            add_stamina_damage(attack_data, damage_type)
 
 def make_average_attack(weapon):
     ignore_keys = ["cleaveOverride", "damageTypeOverride"]

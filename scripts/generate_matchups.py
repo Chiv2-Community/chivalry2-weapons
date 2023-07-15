@@ -11,6 +11,7 @@ MATCHUP_STAT_WEIGHTS = {
     "combo": -0.25, 
 
     "damage": 1, 
+    "staminaDamage": 1, 
 
     "range": 1, 
     "altRange": 1 

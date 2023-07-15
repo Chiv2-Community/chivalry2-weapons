@@ -95,10 +95,24 @@ def process_attack(attack_type, item, attacks):
         attacks[attack_type] = apply_stat_transforms(item)
     return attacks
 
-def make_averages(weapon):
+def derive_stats(weapon):
     if "slash" not in weapon["attacks"]:
         return 
 
+    make_average_attack(weapon)
+    make_stamina_damage(weapon)
+
+def make_stamina_damage(weapon):
+    for attack in weapon["attacks"]:
+        if attack in ["slash", "overhead", "stab"]:
+            for attack_subtype, item in weapon["attacks"][attack].items():
+                if "staminaDamage" not in item:
+                    item["staminaDamage"] = stamina_damage(item["damage"], item["damageType"])
+        else:
+            if "staminaDamage" not in weapon["attacks"][attack]:
+                weapon["attacks"][attack]["staminaDamage"] = stamina_damage(weapon["attacks"][attack]["damage"], weapon["attacks"][attack]["damageType"])
+
+def make_average_attack(weapon):
     ignore_keys = ["cleaveOverride", "damageTypeOverride"]
     has_range = "range" in weapon["attacks"]["slash"]
 
@@ -178,7 +192,7 @@ def write_to_file(data, foldername, changelog_location):
 
             with open(path, 'w') as outfile:
                 (changes, merged) = deep_merge(weapon["name"], existing_data, weapon)
-                make_averages(merged)
+                derive_stats(merged)
                 if len(changes) > 0:
                     changelog[weapon["name"]] = changes
                 merged["name"] = pascal_to_space(weapon["name"])
@@ -245,5 +259,18 @@ def deep_merge(name, dict1, dict2, path=None):
     return (changes, dict1)
 
 
+BASE_STAMINA_DAMAGE_MULT = 0.3;
+def stamina_damage(damage: int, damage_type: str) -> float:
+    damage_type = damage_type.lower()
+    if  damage_type == "chop":
+        return damage * BASE_STAMINA_DAMAGE_MULT * 1.1;
+    elif damage_type == "blunt":
+        return damage * BASE_STAMINA_DAMAGE_MULT * 1.25;
+    elif damage_type == "cut":
+        return damage * BASE_STAMINA_DAMAGE_MULT;
+
+    raise Exception(f"Unknown damage type: {damage_type}")
+
 if __name__ == '__main__':
     main()
+

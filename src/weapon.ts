@@ -25,6 +25,7 @@ export type Weapon = {
 
 export type SpecialAttack = {
   damage: number;
+  staminaDamage: number;
   holding: number;
   windup: number; 
   release: number; 
@@ -46,6 +47,7 @@ export type Swing = {
 
 export type MeleeAttack = {
   damage: number;
+  staminaDamage: number;
   holding: number;
   windup: number; 
   release: number; 
@@ -83,15 +85,3 @@ export enum WeaponType {
   ONE_HANDED = "One Handed",
 };
 
-let BASE_STAMINA_DAMAGE_MULT = 0.3;
-export function staminaDamageMult(damageType: DamageType): number {
-  if (damageType === DamageType.CHOP) {
-    // Chop does +10% damage
-    return BASE_STAMINA_DAMAGE_MULT * 1.1;
-  } else if (damageType === DamageType.BLUNT) {
-    // Blunt does +25% damage
-    return BASE_STAMINA_DAMAGE_MULT * 1.25;
-  }
-
-  return BASE_STAMINA_DAMAGE_MULT;
-}

@@ -10,7 +10,8 @@ from common import VALID_ATTACKS, write_dicts_to_csv
 VALID_PROCESSED_ATTACKS = list(filter(lambda name: not name.endswith("Heavy") ,VALID_ATTACKS))
 
 MATCHUP_STAT_WEIGHTS = {
-    "windup": -0.25, 
+    # Riposte replaces windup when riposting. 
+    "windup": -0.125, "riposte": -0.125, 
     "release": 0.25, 
     "recovery": -0.25, 
     "combo": -0.25, 

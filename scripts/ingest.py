@@ -39,7 +39,7 @@ def main():
     weapon_defaults = {}
     weapons = {}
 
-    data = fetch_data(args.input_json)["Rows"]
+    data = fetch_data(args.input_json)[0]["Rows"]
 
     for name, item in data.items():
         process_item(name, item, base_defaults, attack_defaults, weapon_defaults, weapons)
@@ -154,7 +154,7 @@ def write_to_file(data, foldername, changelog_location):
                 full_path = name + "." + '.'.join(change['path'])
                 print(full_path + ": " + str(change['old']) + " -> " + str(change['new']))
         
-        write_dicts_to_csv(data, foldername + "/data.csv")
+        #write_dicts_to_csv(data, foldername + "/data.csv")
 
         changelog_text = ""
         for (name, changes) in changelog.items():

@@ -161,7 +161,7 @@ def write_to_file(data, foldername, changelog_location):
         for (name, changes) in changelog.items():
             changelog_text += name + ":\n"
             for change in changes:
-		new_string = str(change['new']) if not isinstance(change['new'], dict) else json.dumps(change['new'], indent=4)
+                new_string = str(change['new']) if not isinstance(change['new'], dict) else json.dumps(change['new'], indent=12)
                 changelog_text += "\t" + '.'.join(change['path']) + ": " + str(change['old']) + " -> " + new_string + "\n"
 
         with open(changelog_location, 'w') as changelog_file: 

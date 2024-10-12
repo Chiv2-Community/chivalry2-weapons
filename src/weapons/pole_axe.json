@@ -13,8 +13,8 @@
   "staminaDamageNegation": 10,
   "attacks": {
     "slash": {
-      "range": 26,
-      "altRange": 20,
+      "range": 218.665,
+      "altRange": 186.111,
       "light": {
         "windup": 350.0,
         "damage": 45.0,
@@ -81,8 +81,8 @@
       }
     },
     "overhead": {
-      "range": 28,
-      "altRange": 28,
+      "range": 234.384,
+      "altRange": 238.2,
       "light": {
         "windup": 300.0,
         "damage": 50,
@@ -149,8 +149,8 @@
       }
     },
     "stab": {
-      "range": 27,
-      "altRange": 29,
+      "range": 231.551,
+      "altRange": 228.831,
       "light": {
         "windup": 350.0,
         "damage": 50,
@@ -246,7 +246,8 @@
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": -1.0,
-      "staminaDamage": 23.1
+      "staminaDamage": 23.1,
+      "range": 274.659
     },
     "throw": {
       "holding": 500.0,

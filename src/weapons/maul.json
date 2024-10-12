@@ -8,8 +8,8 @@
   "damageType": "Blunt",
   "attacks": {
     "slash": {
-      "range": 22,
-      "altRange": 22,
+      "range": 196.635,
+      "altRange": 192.229,
       "light": {
         "windup": 375.0,
         "damage": 50,
@@ -76,8 +76,8 @@
       }
     },
     "overhead": {
-      "range": 21,
-      "altRange": 21,
+      "range": 188.165,
+      "altRange": 187.009,
       "light": {
         "windup": 450.0,
         "damage": 60,
@@ -144,8 +144,8 @@
       }
     },
     "stab": {
-      "range": 20,
-      "altRange": 20,
+      "range": 188.476,
+      "altRange": 190.288,
       "light": {
         "windup": 350.0,
         "damage": 30,
@@ -241,7 +241,8 @@
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": -1.0,
-      "staminaDamage": 45.0
+      "staminaDamage": 45.0,
+      "range": 173.1
     },
     "throw": {
       "holding": 500.0,

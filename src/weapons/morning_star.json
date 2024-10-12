@@ -9,8 +9,8 @@
   "twoHanded": false,
   "attacks": {
     "slash": {
-      "range": 19,
-      "altRange": 20,
+      "range": 172.851,
+      "altRange": 169.885,
       "light": {
         "windup": 150.0,
         "damage": 40,
@@ -77,8 +77,8 @@
       }
     },
     "overhead": {
-      "range": 17,
-      "altRange": 19,
+      "range": 170.735,
+      "altRange": 158.614,
       "light": {
         "windup": 150.0,
         "damage": 40,
@@ -145,8 +145,8 @@
       }
     },
     "stab": {
-      "range": 22,
-      "altRange": 23,
+      "range": 197.16,
+      "altRange": 204.349,
       "light": {
         "windup": 200.0,
         "damage": 35,
@@ -242,7 +242,8 @@
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": -1.0,
-      "staminaDamage": 24.375
+      "staminaDamage": 24.375,
+      "range": 162.059
     },
     "throw": {
       "holding": 400.0,

@@ -63,7 +63,9 @@
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
         "comboFromBlocked": -1.0
-      }
+      },
+      "range": 202.378,
+      "altRange": 198.163
     },
     "overhead": {
       "light": {
@@ -127,7 +129,9 @@
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
         "comboFromBlocked": -1.0
-      }
+      },
+      "range": 193.755,
+      "altRange": 193.124
     },
     "stab": {
       "light": {
@@ -191,7 +195,9 @@
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
         "comboFromBlocked": -1.0
-      }
+      },
+      "range": 195.8,
+      "altRange": 195.983
     },
     "jab": {
       "holding": -1.0,
@@ -277,7 +283,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": -1.0
+      "comboFromBlocked": -1.0,
+      "range": 158.437
     },
     "sprintAttack": {
       "holding": -1.0,

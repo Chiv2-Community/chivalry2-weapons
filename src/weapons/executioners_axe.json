@@ -44,8 +44,8 @@
         "comboFromBlocked": -1.0,
         "staminaDamage": 14.850000000000001
       },
-      "range": 27,
-      "altRange": 27,
+      "range": 231.444,
+      "altRange": 225.463,
       "heavy": {
         "damage": 70,
         "holding": 350.0,
@@ -112,8 +112,8 @@
         "comboFromBlocked": -1.0,
         "staminaDamage": 19.8
       },
-      "range": 24,
-      "altRange": 21,
+      "range": 222.833,
+      "altRange": 220.242,
       "heavy": {
         "damage": 70,
         "holding": 350.0,
@@ -180,8 +180,8 @@
         "comboFromBlocked": -1.0,
         "staminaDamage": 9.9
       },
-      "range": 26,
-      "altRange": 26,
+      "range": 225.406,
+      "altRange": 223.632,
       "heavy": {
         "damage": 50,
         "holding": 350.0,
@@ -245,7 +245,8 @@
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": -1.0,
-      "staminaDamage": 26.400000000000002
+      "staminaDamage": 26.400000000000002,
+      "range": 204.152
     },
     "throw": {
       "holding": 400.0,

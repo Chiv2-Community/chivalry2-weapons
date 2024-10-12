@@ -8,8 +8,8 @@
   "damageType": "Cut",
   "attacks": {
     "slash": {
-      "range": 20,
-      "altRange": 21,
+      "range": 178.714,
+      "altRange": 175.355,
       "light": {
         "windup": 200.0,
         "damage": 50,
@@ -76,8 +76,8 @@
       }
     },
     "overhead": {
-      "range": 19,
-      "altRange": 20,
+      "range": 174.708,
+      "altRange": 176.095,
       "light": {
         "windup": 200.0,
         "damage": 55,
@@ -144,8 +144,8 @@
       }
     },
     "stab": {
-      "range": 23,
-      "altRange": 24,
+      "range": 201.163,
+      "altRange": 208.495,
       "light": {
         "windup": 200.0,
         "damage": 40,
@@ -241,7 +241,8 @@
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": -1.0,
-      "staminaDamage": 24.0
+      "staminaDamage": 24.0,
+      "range": 165.074
     },
     "throw": {
       "holding": 400.0,

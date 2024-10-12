@@ -9,8 +9,8 @@
   "damageType": "Chop",
   "attacks": {
     "slash": {
-      "range": 33,
-      "altRange": 27,
+      "range": 253.907,
+      "altRange": 218.783,
       "light": {
         "windup": 350.0,
         "damage": 45,
@@ -77,8 +77,8 @@
       }
     },
     "overhead": {
-      "range": 35,
-      "altRange": 35,
+      "range": 269.498,
+      "altRange": 274.856,
       "light": {
         "windup": 350.0,
         "damage": 55,
@@ -145,8 +145,8 @@
       }
     },
     "stab": {
-      "range": 34,
-      "altRange": 36,
+      "range": 267.56,
+      "altRange": 261.718,
       "light": {
         "windup": 400.0,
         "damage": 55,
@@ -242,7 +242,8 @@
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": -1.0,
-      "staminaDamage": 28.05
+      "staminaDamage": 28.05,
+      "range": 261.762
     },
     "throw": {
       "holding": 600.0,

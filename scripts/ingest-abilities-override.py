@@ -19,7 +19,7 @@ WEAPON_NAME_OVERRIDES = {
 
 def adapt_name(name: str) -> str:
     """Adapt weapon name to match the JSON file name."""
-    return WEAPON_NAME_OVERRIDES[name] if name in WEAPON_NAME_OVERRIDES else name
+    return WEAPON_NAME_OVERRIDES[name] if name in WEAPON_NAME_OVERRIDES else pascal_to_space(name)
 
 STAT_TRANSFORMS = {
     "windup": seconds_to_millis,

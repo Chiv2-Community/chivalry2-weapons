@@ -1121,6 +1121,10 @@
         "HATCHET-Overhead": {
           "type": "FloatProperty",
           "value": 128.14351
+        },
+        "HATCHET-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 135.09409
         }
       }
     }

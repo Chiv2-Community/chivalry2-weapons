@@ -162,7 +162,7 @@ if __name__ == "__main__":
     # Write the changelog to a file
     changelog_string = ""
     for key, v in changelog.items():
-        changelog_string += f"{key}: {v.old_value} -> {v.new_value}\n"
+        changelog_string += f"{key}: {v['old_value']} -> {v['new_value']}\n"
 
     with open(changelog_path, "w") as changelog_file:
         changelog_file.write(changelog_string)

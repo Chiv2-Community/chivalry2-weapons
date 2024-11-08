@@ -1,0 +1,267 @@
+Greatsword:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Greatsword Mounted:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Highland Sword:
+	attacks.slash.light.damage: 50 -> 55.0
+	attacks.slash.heavy.damage: 70 -> 75.0
+	attacks.stab.light.damage: 40 -> 45.0
+	attacks.stab.heavy.damage: 60 -> 65.0
+	attacks.special.damage: 55.0 -> 60.0
+	attacks.throw.damage: 80.0 -> 85.0
+	attacks.sprintAttack.damage: 100.0 -> 105.0
+	attacks.sprintCharge.damage: 60.0 -> 65.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Longsword:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Messer:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Halberd:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Pole Axe:
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Glaive:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Dane Axe:
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Battle Axe:
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+War Axe:
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Executioners Axe:
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Heavy Mace:
+	attacks.slash.light.windup: 250.0 -> 285.0
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+War Club:
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Two Handed Hammer:
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Maul:
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Polehammer:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Katars:
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Spear:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Javelin:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Javelin Mounted:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Lance:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Lance Mounted:
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Quarterstaff:
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Goedendag:
+	attacks.slash.light.damage: 40.0 -> 45.0
+	attacks.slash.heavy.windup: 700.0 -> 625.0
+	attacks.slash.heavy.release: 500.0 -> 550.0
+	attacks.slash.heavy.damage: 55.0 -> 65.0
+	attacks.overhead.light.windup: 500.0 -> 475.0
+	attacks.overhead.light.release: 450.0 -> 500.0
+	attacks.overhead.light.damage: 45.0 -> 55.0
+	attacks.overhead.heavy.windup: 800.0 -> 625.0
+	attacks.overhead.heavy.release: 450.0 -> 550.0
+	attacks.overhead.heavy.damage: 60.0 -> 75.0
+	attacks.stab.light.release: 350.0 -> 400.0
+	attacks.stab.light.combo: 325.0 -> 250.0
+	attacks.stab.light.thwack: 350.0 -> 400.0
+	attacks.stab.light.damage: 55.0 -> 60.0
+	attacks.stab.heavy.windup: 725.0 -> 625.0
+	attacks.stab.heavy.release: 400.0 -> 450.0
+	attacks.stab.heavy.combo: 325.0 -> 250.0
+	attacks.stab.heavy.thwack: 400.0 -> 450.0
+	attacks.stab.heavy.damage: 75.0 -> 80.0
+	attacks.special.damage: 85.0 -> 90.0
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Sword:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Sword Mounted:
+	attacks.sprintAttack: None -> {
+            "holding": -1,
+            "windup": 600.0,
+            "release": 400.0,
+            "recovery": 1000.0,
+            "combo": 225.0,
+            "riposte": 600.0,
+            "feint": -1.0,
+            "thwack": 400.0,
+            "hitSuccess": 1.0,
+            "blocked": 0.75,
+            "worldHit": -1.0,
+            "damage": 70.0,
+            "staminaCost": 15.0,
+            "playRate": 1.0,
+            "drawStrength": -1.0,
+            "worldHitStartPercentage": -1.0,
+            "worldHitStopPercentage": -1.0,
+            "turnLimitStrength": 57.5,
+            "verticalTurnLimitStrength": -1.0,
+            "reverseTurnLimitStrength": -1.0,
+            "thwackOnHit": 0,
+            "hitSuccessOnHit": 1,
+            "direction": "-1",
+            "altDirection": "-1",
+            "cooldown": 2.25,
+            "weaponTipCheckReverse": -1,
+            "weaponTipCheckReverseAlt": -1,
+            "weaponTipCheckDisable": -1,
+            "comboFromBlocked": -1.0
+}
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Falchion:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Falchion Mounted:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Axe:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Hatchet:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Cudgel:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Short Sword:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Mace:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Morning Star:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Warhammer:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+One Handed Spear:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Rapier:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Heavy Cavalry Sword:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Heavy Cavalry Sword Mounted:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Pickaxe:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Shovel:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Sledgehammer:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Argon's Sword:
+	name: Longsword_ Argon_ Citadel -> Argon's Sword
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Lion's Bane:
+	name: Greatsword_ Malric -> Lion's Bane
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Light Shield:
+	attacks.throw.feint: 0.0 -> 0.175
+Medium Shield:
+	attacks.throw.feint: 0.0 -> 0.175
+Heavy Shield:
+	attacks.throw.feint: 0.0 -> 0.175
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+Bow:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Crossbow:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+War Bow:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Heavy Crossbow:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Throwing Knife:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Throwing Axe:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Throwing Mallet:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Knife:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Dagger:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Fists:
+	attacks.sprintAttack.feint: 0.0 -> -1.0
+Base Carryable_2h Loot:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Base Carryable_ Two Handed:
+	attacks.sprintAttack: None -> {
+            "holding": -1,
+            "windup": 600.0,
+            "release": 450.0,
+            "recovery": 1000.0,
+            "combo": 150.0,
+            "riposte": 600.0,
+            "feint": -1.0,
+            "thwack": 450.0,
+            "hitSuccess": 1.0,
+            "blocked": 0.75,
+            "worldHit": -1.0,
+            "damage": 40.0,
+            "staminaCost": 15.0,
+            "playRate": 1.0,
+            "drawStrength": -1.0,
+            "worldHitStartPercentage": -1.0,
+            "worldHitStopPercentage": -1.0,
+            "turnLimitStrength": 57.5,
+            "verticalTurnLimitStrength": -1.0,
+            "reverseTurnLimitStrength": -1.0,
+            "thwackOnHit": 0,
+            "hitSuccessOnHit": -1,
+            "direction": "-1",
+            "altDirection": "-1",
+            "cooldown": 2.25,
+            "weaponTipCheckReverse": -1,
+            "weaponTipCheckReverseAlt": -1,
+            "weaponTipCheckDisable": -1,
+            "comboFromBlocked": -1.0
+}
+Base Carryable_ One Handed:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Base One Handed:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Base Two Handed:
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Base Carryable_2h Breakable:
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Base Carryable_1h Breakable:
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0
+Candelabra:
+	name: Carryable_ Candelabra -> Candelabra
+	attacks.sprintCharge.feint: 0.0 -> -1.0
+	attacks.sprintCharge.comboFromBlocked: 0.0 -> -1.0

@@ -123,9 +123,6 @@ def derive_stats(weapon):
 
     make_average_attack(weapon)
 
-    if "sprintCharge" not in weapon["attacks"]:
-        weapon["attacks"]["sprintCharge"] = weapon["attacks"]["sprintAttack"]
-
 def apply_defaults(weapons, attack_defaults):
     for weapon, weapon_data in weapons.items():
         for attack, attack_data in weapon_data["attacks"].items():

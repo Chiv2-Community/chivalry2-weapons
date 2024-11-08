@@ -167,8 +167,6 @@ def write_to_file(data, foldername, changelog_location):
 		
                 print(full_path + ": " + str(change['old']) + " -> " + str(change['new']))
         
-        #write_dicts_to_csv(data, foldername + "/data.csv")
-
         changelog_text = ""
         for (name, changes) in changelog.items():
             changelog_text += name + ":\n"

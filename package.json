@@ -4,7 +4,7 @@
   "author": "Jacob Barber",
   "license": "GPL3",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "build": "tsc"
   },

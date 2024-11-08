@@ -1,4 +1,5 @@
 BASE_STAMINA_DAMAGE_MULT = 0.3;
+
 def stamina_damage(damage: int, damage_type: str) -> float:
     damage_type = damage_type.lower()
     if  damage_type == "chop":

@@ -1,0 +1,3 @@
+python scripts\process_range_save.py raw_data\range_test_iterations processed_data\range-output.json processed_data\range-output.csv
+python scripts\ingest-abilities-override.py -i raw_data\AbilitiesOverride.json -o src\weapons -c processed_data\abilities-override-output.csv --changelog_location processed_data/abilities-override-changelog.txt
+python scripts\ingest-range-data.py processed_data\range-output.csv src\weapons processed_data\range-changelog.txt

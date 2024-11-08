@@ -1,0 +1,2459 @@
+{
+  "rangeData": {
+    "AXE": {
+      "Slash": {
+        "averageRangeMeasurement": 154.29996,
+        "rawMeasurements": [
+          154.29996
+        ],
+        "stdDeviation": 0.0,
+        "min": 154.29996,
+        "max": 154.29996
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 160.311,
+        "rawMeasurements": [
+          160.311
+        ],
+        "stdDeviation": 0.0,
+        "min": 160.311,
+        "max": 160.311
+      },
+      "Stab": {
+        "averageRangeMeasurement": 175.49374,
+        "rawMeasurements": [
+          175.49374
+        ],
+        "stdDeviation": 0.0,
+        "min": 175.49374,
+        "max": 175.49374
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 181.68544,
+        "rawMeasurements": [
+          181.68544
+        ],
+        "stdDeviation": 0.0,
+        "min": 181.68544,
+        "max": 181.68544
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 147.82063,
+        "rawMeasurements": [
+          147.82063
+        ],
+        "stdDeviation": 0.0,
+        "min": 147.82063,
+        "max": 147.82063
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 158.65196,
+        "rawMeasurements": [
+          158.65196
+        ],
+        "stdDeviation": 0.0,
+        "min": 158.65196,
+        "max": 158.65196
+      }
+    },
+    "BATTLE AXE": {
+      "Slash": {
+        "averageRangeMeasurement": 181.83571,
+        "rawMeasurements": [
+          181.83571
+        ],
+        "stdDeviation": 0.0,
+        "min": 181.83571,
+        "max": 181.83571
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 181.81503,
+        "rawMeasurements": [
+          181.81503
+        ],
+        "stdDeviation": 0.0,
+        "min": 181.81503,
+        "max": 181.81503
+      },
+      "Stab": {
+        "averageRangeMeasurement": 170.49419,
+        "rawMeasurements": [
+          170.49419
+        ],
+        "stdDeviation": 0.0,
+        "min": 170.49419,
+        "max": 170.49419
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 165.73956,
+        "rawMeasurements": [
+          165.73956
+        ],
+        "stdDeviation": 0.0,
+        "min": 165.73956,
+        "max": 165.73956
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 179.17424,
+        "rawMeasurements": [
+          179.17424
+        ],
+        "stdDeviation": 0.0,
+        "min": 179.17424,
+        "max": 179.17424
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 166.56393,
+        "rawMeasurements": [
+          166.56393
+        ],
+        "stdDeviation": 0.0,
+        "min": 166.56393,
+        "max": 166.56393
+      }
+    },
+    "CARRYABLE  CANDELABRA": {
+      "Slash": {
+        "averageRangeMeasurement": 243.63326,
+        "rawMeasurements": [
+          243.63326
+        ],
+        "stdDeviation": 0.0,
+        "min": 243.63326,
+        "max": 243.63326
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 231.43567,
+        "rawMeasurements": [
+          231.43567
+        ],
+        "stdDeviation": 0.0,
+        "min": 231.43567,
+        "max": 231.43567
+      },
+      "Stab": {
+        "averageRangeMeasurement": 248.39423,
+        "rawMeasurements": [
+          248.39423
+        ],
+        "stdDeviation": 0.0,
+        "min": 248.39423,
+        "max": 248.39423
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 253.27185,
+        "rawMeasurements": [
+          253.27185
+        ],
+        "stdDeviation": 0.0,
+        "min": 253.27185,
+        "max": 253.27185
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 204.19438,
+        "rawMeasurements": [
+          204.19438
+        ],
+        "stdDeviation": 0.0,
+        "min": 204.19438,
+        "max": 204.19438
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 219.38058,
+        "rawMeasurements": [
+          219.38058
+        ],
+        "stdDeviation": 0.0,
+        "min": 219.38058,
+        "max": 219.38058
+      }
+    },
+    "CUDGEL": {
+      "Slash": {
+        "averageRangeMeasurement": 148.43651,
+        "rawMeasurements": [
+          148.43651
+        ],
+        "stdDeviation": 0.0,
+        "min": 148.43651,
+        "max": 148.43651
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 153.28552,
+        "rawMeasurements": [
+          153.28552
+        ],
+        "stdDeviation": 0.0,
+        "min": 153.28552,
+        "max": 153.28552
+      },
+      "Stab": {
+        "averageRangeMeasurement": 169.60988,
+        "rawMeasurements": [
+          169.60988
+        ],
+        "stdDeviation": 0.0,
+        "min": 169.60988,
+        "max": 169.60988
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 175.83388,
+        "rawMeasurements": [
+          175.83388
+        ],
+        "stdDeviation": 0.0,
+        "min": 175.83388,
+        "max": 175.83388
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 145.83125,
+        "rawMeasurements": [
+          145.83125
+        ],
+        "stdDeviation": 0.0,
+        "min": 145.83125,
+        "max": 145.83125
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 151.55583,
+        "rawMeasurements": [
+          151.55583
+        ],
+        "stdDeviation": 0.0,
+        "min": 151.55583,
+        "max": 151.55583
+      }
+    },
+    "DAGGER": {
+      "Slash": {
+        "averageRangeMeasurement": 142.69188,
+        "rawMeasurements": [
+          142.69188
+        ],
+        "stdDeviation": 0.0,
+        "min": 142.69188,
+        "max": 142.69188
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 148.00502,
+        "rawMeasurements": [
+          148.00502
+        ],
+        "stdDeviation": 0.0,
+        "min": 148.00502,
+        "max": 148.00502
+      },
+      "Stab": {
+        "averageRangeMeasurement": 163.7519,
+        "rawMeasurements": [
+          163.7519
+        ],
+        "stdDeviation": 0.0,
+        "min": 163.7519,
+        "max": 163.7519
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 170.05461,
+        "rawMeasurements": [
+          170.05461
+        ],
+        "stdDeviation": 0.0,
+        "min": 170.05461,
+        "max": 170.05461
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 140.35501,
+        "rawMeasurements": [
+          140.35501
+        ],
+        "stdDeviation": 0.0,
+        "min": 140.35501,
+        "max": 140.35501
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 146.67323,
+        "rawMeasurements": [
+          146.67323
+        ],
+        "stdDeviation": 0.0,
+        "min": 146.67323,
+        "max": 146.67323
+      }
+    },
+    "DANE AXE": {
+      "Slash": {
+        "averageRangeMeasurement": 189.97368,
+        "rawMeasurements": [
+          189.97368
+        ],
+        "stdDeviation": 0.0,
+        "min": 189.97368,
+        "max": 189.97368
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 188.4235,
+        "rawMeasurements": [
+          188.4235
+        ],
+        "stdDeviation": 0.0,
+        "min": 188.4235,
+        "max": 188.4235
+      },
+      "Stab": {
+        "averageRangeMeasurement": 178.9397,
+        "rawMeasurements": [
+          178.9397
+        ],
+        "stdDeviation": 0.0,
+        "min": 178.9397,
+        "max": 178.9397
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 176.34969,
+        "rawMeasurements": [
+          176.34969
+        ],
+        "stdDeviation": 0.0,
+        "min": 176.34969,
+        "max": 176.34969
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 182.35857,
+        "rawMeasurements": [
+          182.35857
+        ],
+        "stdDeviation": 0.0,
+        "min": 182.35857,
+        "max": 182.35857
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 174.08688,
+        "rawMeasurements": [
+          174.08688
+        ],
+        "stdDeviation": 0.0,
+        "min": 174.08688,
+        "max": 174.08688
+      }
+    },
+    "EXECUTIONERS AXE": {
+      "Slash": {
+        "averageRangeMeasurement": 219.51657,
+        "rawMeasurements": [
+          219.51657
+        ],
+        "stdDeviation": 0.0,
+        "min": 219.51657,
+        "max": 219.51657
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 217.86536,
+        "rawMeasurements": [
+          217.86536
+        ],
+        "stdDeviation": 0.0,
+        "min": 217.86536,
+        "max": 217.86536
+      },
+      "Stab": {
+        "averageRangeMeasurement": 210.24203,
+        "rawMeasurements": [
+          210.24203
+        ],
+        "stdDeviation": 0.0,
+        "min": 210.24203,
+        "max": 210.24203
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 207.22656,
+        "rawMeasurements": [
+          207.22656
+        ],
+        "stdDeviation": 0.0,
+        "min": 207.22656,
+        "max": 207.22656
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 204.21727,
+        "rawMeasurements": [
+          204.21727
+        ],
+        "stdDeviation": 0.0,
+        "min": 204.21727,
+        "max": 204.21727
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 204.36859,
+        "rawMeasurements": [
+          204.36859
+        ],
+        "stdDeviation": 0.0,
+        "min": 204.36859,
+        "max": 204.36859
+      }
+    },
+    "FALCHION": {
+      "Slash": {
+        "averageRangeMeasurement": 173.16882,
+        "rawMeasurements": [
+          173.16882
+        ],
+        "stdDeviation": 0.0,
+        "min": 173.16882,
+        "max": 173.16882
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 176.73645,
+        "rawMeasurements": [
+          176.73645
+        ],
+        "stdDeviation": 0.0,
+        "min": 176.73645,
+        "max": 176.73645
+      },
+      "Stab": {
+        "averageRangeMeasurement": 193.0036,
+        "rawMeasurements": [
+          193.0036
+        ],
+        "stdDeviation": 0.0,
+        "min": 193.0036,
+        "max": 193.0036
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 199.05347,
+        "rawMeasurements": [
+          199.05347
+        ],
+        "stdDeviation": 0.0,
+        "min": 199.05347,
+        "max": 199.05347
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 165.2532,
+        "rawMeasurements": [
+          165.2532
+        ],
+        "stdDeviation": 0.0,
+        "min": 165.2532,
+        "max": 165.2532
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 174.57542,
+        "rawMeasurements": [
+          174.57542
+        ],
+        "stdDeviation": 0.0,
+        "min": 174.57542,
+        "max": 174.57542
+      }
+    },
+    "GLAIVE": {
+      "Slash": {
+        "averageRangeMeasurement": 246.63309,
+        "rawMeasurements": [
+          246.63309
+        ],
+        "stdDeviation": 0.0,
+        "min": 246.63309,
+        "max": 246.63309
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 218.1777,
+        "rawMeasurements": [
+          218.1777
+        ],
+        "stdDeviation": 0.0,
+        "min": 218.1777,
+        "max": 218.1777
+      },
+      "Stab": {
+        "averageRangeMeasurement": 253.66136,
+        "rawMeasurements": [
+          253.66136
+        ],
+        "stdDeviation": 0.0,
+        "min": 253.66136,
+        "max": 253.66136
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 261.7244,
+        "rawMeasurements": [
+          261.7244
+        ],
+        "stdDeviation": 0.0,
+        "min": 261.7244,
+        "max": 261.7244
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 259.3626,
+        "rawMeasurements": [
+          259.3626
+        ],
+        "stdDeviation": 0.0,
+        "min": 259.3626,
+        "max": 259.3626
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 262.1145,
+        "rawMeasurements": [
+          262.1145
+        ],
+        "stdDeviation": 0.0,
+        "min": 262.1145,
+        "max": 262.1145
+      }
+    },
+    "GOEDENDAG": {
+      "Slash": {
+        "averageRangeMeasurement": 191.88905,
+        "rawMeasurements": [
+          191.88905
+        ],
+        "stdDeviation": 0.0,
+        "min": 191.88905,
+        "max": 191.88905
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 189.8455,
+        "rawMeasurements": [
+          189.8455
+        ],
+        "stdDeviation": 0.0,
+        "min": 189.8455,
+        "max": 189.8455
+      },
+      "Stab": {
+        "averageRangeMeasurement": 181.97882,
+        "rawMeasurements": [
+          181.97882
+        ],
+        "stdDeviation": 0.0,
+        "min": 181.97882,
+        "max": 181.97882
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 179.26663,
+        "rawMeasurements": [
+          179.26663
+        ],
+        "stdDeviation": 0.0,
+        "min": 179.26663,
+        "max": 179.26663
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 173.84775,
+        "rawMeasurements": [
+          173.84775
+        ],
+        "stdDeviation": 0.0,
+        "min": 173.84775,
+        "max": 173.84775
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 175.36174,
+        "rawMeasurements": [
+          175.36174
+        ],
+        "stdDeviation": 0.0,
+        "min": 175.36174,
+        "max": 175.36174
+      }
+    },
+    "GREATSWORD": {
+      "Slash": {
+        "averageRangeMeasurement": 234.26308,
+        "rawMeasurements": [
+          234.26308
+        ],
+        "stdDeviation": 0.0,
+        "min": 234.26308,
+        "max": 234.26308
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 207.52417,
+        "rawMeasurements": [
+          207.52417
+        ],
+        "stdDeviation": 0.0,
+        "min": 207.52417,
+        "max": 207.52417
+      },
+      "Stab": {
+        "averageRangeMeasurement": 205.49118,
+        "rawMeasurements": [
+          205.49118
+        ],
+        "stdDeviation": 0.0,
+        "min": 205.49118,
+        "max": 205.49118
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 214.13683,
+        "rawMeasurements": [
+          214.13683
+        ],
+        "stdDeviation": 0.0,
+        "min": 214.13683,
+        "max": 214.13683
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 213.82138,
+        "rawMeasurements": [
+          213.82138
+        ],
+        "stdDeviation": 0.0,
+        "min": 213.82138,
+        "max": 213.82138
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 227.59204,
+        "rawMeasurements": [
+          227.59204
+        ],
+        "stdDeviation": 0.0,
+        "min": 227.59204,
+        "max": 227.59204
+      }
+    },
+    "greatsword__malric": {
+      "Slash": {
+        "averageRangeMeasurement": 234.26306,
+        "rawMeasurements": [
+          234.26306
+        ],
+        "stdDeviation": 0.0,
+        "min": 234.26306,
+        "max": 234.26306
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 207.52408,
+        "rawMeasurements": [
+          207.52408
+        ],
+        "stdDeviation": 0.0,
+        "min": 207.52408,
+        "max": 207.52408
+      },
+      "Stab": {
+        "averageRangeMeasurement": 205.49118,
+        "rawMeasurements": [
+          205.49118
+        ],
+        "stdDeviation": 0.0,
+        "min": 205.49118,
+        "max": 205.49118
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 214.13683,
+        "rawMeasurements": [
+          214.13683
+        ],
+        "stdDeviation": 0.0,
+        "min": 214.13683,
+        "max": 214.13683
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 213.82138,
+        "rawMeasurements": [
+          213.82138
+        ],
+        "stdDeviation": 0.0,
+        "min": 213.82138,
+        "max": 213.82138
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 227.59204,
+        "rawMeasurements": [
+          227.59204
+        ],
+        "stdDeviation": 0.0,
+        "min": 227.59204,
+        "max": 227.59204
+      }
+    },
+    "HALBERD": {
+      "Slash": {
+        "averageRangeMeasurement": 241.33958,
+        "rawMeasurements": [
+          241.33958
+        ],
+        "stdDeviation": 0.0,
+        "min": 241.33958,
+        "max": 241.33958
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 212.83804,
+        "rawMeasurements": [
+          212.83804
+        ],
+        "stdDeviation": 0.0,
+        "min": 212.83804,
+        "max": 212.83804
+      },
+      "Stab": {
+        "averageRangeMeasurement": 249.26233,
+        "rawMeasurements": [
+          249.26233
+        ],
+        "stdDeviation": 0.0,
+        "min": 249.26233,
+        "max": 249.26233
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 257.47104,
+        "rawMeasurements": [
+          257.47104
+        ],
+        "stdDeviation": 0.0,
+        "min": 257.47104,
+        "max": 257.47104
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 254.6012,
+        "rawMeasurements": [
+          254.6012
+        ],
+        "stdDeviation": 0.0,
+        "min": 254.6012,
+        "max": 254.6012
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 257.06927,
+        "rawMeasurements": [
+          257.06927
+        ],
+        "stdDeviation": 0.0,
+        "min": 257.06927,
+        "max": 257.06927
+      }
+    },
+    "HEAVY CAVALRY SWORD": {
+      "Slash": {
+        "averageRangeMeasurement": 199.33054,
+        "rawMeasurements": [
+          199.33054
+        ],
+        "stdDeviation": 0.0,
+        "min": 199.33054,
+        "max": 199.33054
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 191.85559,
+        "rawMeasurements": [
+          191.85559
+        ],
+        "stdDeviation": 0.0,
+        "min": 191.85559,
+        "max": 191.85559
+      },
+      "Stab": {
+        "averageRangeMeasurement": 222.17738,
+        "rawMeasurements": [
+          222.17738
+        ],
+        "stdDeviation": 0.0,
+        "min": 222.17738,
+        "max": 222.17738
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 228.60298,
+        "rawMeasurements": [
+          228.60298
+        ],
+        "stdDeviation": 0.0,
+        "min": 228.60298,
+        "max": 228.60298
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 194.84593,
+        "rawMeasurements": [
+          194.84593
+        ],
+        "stdDeviation": 0.0,
+        "min": 194.84593,
+        "max": 194.84593
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 202.28557,
+        "rawMeasurements": [
+          202.28557
+        ],
+        "stdDeviation": 0.0,
+        "min": 202.28557,
+        "max": 202.28557
+      }
+    },
+    "HEAVY MACE": {
+      "Slash": {
+        "averageRangeMeasurement": 206.41544,
+        "rawMeasurements": [
+          206.41544
+        ],
+        "stdDeviation": 0.0,
+        "min": 206.41544,
+        "max": 206.41544
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 204.57399,
+        "rawMeasurements": [
+          204.57399
+        ],
+        "stdDeviation": 0.0,
+        "min": 204.57399,
+        "max": 204.57399
+      },
+      "Stab": {
+        "averageRangeMeasurement": 197.00275,
+        "rawMeasurements": [
+          197.00275
+        ],
+        "stdDeviation": 0.0,
+        "min": 197.00275,
+        "max": 197.00275
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 194.12,
+        "rawMeasurements": [
+          194.12
+        ],
+        "stdDeviation": 0.0,
+        "min": 194.12,
+        "max": 194.12
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 197.56145,
+        "rawMeasurements": [
+          197.56145
+        ],
+        "stdDeviation": 0.0,
+        "min": 197.56145,
+        "max": 197.56145
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 191.06593,
+        "rawMeasurements": [
+          191.06593
+        ],
+        "stdDeviation": 0.0,
+        "min": 191.06593,
+        "max": 191.06593
+      }
+    },
+    "HIGHLAND SWORD": {
+      "Slash": {
+        "averageRangeMeasurement": 228.62549,
+        "rawMeasurements": [
+          228.62549
+        ],
+        "stdDeviation": 0.0,
+        "min": 228.62549,
+        "max": 228.62549
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 227.35745,
+        "rawMeasurements": [
+          227.35745
+        ],
+        "stdDeviation": 0.0,
+        "min": 227.35745,
+        "max": 227.35745
+      },
+      "Stab": {
+        "averageRangeMeasurement": 202.60776,
+        "rawMeasurements": [
+          202.60776
+        ],
+        "stdDeviation": 0.0,
+        "min": 202.60776,
+        "max": 202.60776
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 196.58841,
+        "rawMeasurements": [
+          196.58841
+        ],
+        "stdDeviation": 0.0,
+        "min": 196.58841,
+        "max": 196.58841
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 215.11009,
+        "rawMeasurements": [
+          215.11009
+        ],
+        "stdDeviation": 0.0,
+        "min": 215.11009,
+        "max": 215.11009
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 229.70149,
+        "rawMeasurements": [
+          229.70149
+        ],
+        "stdDeviation": 0.0,
+        "min": 229.70149,
+        "max": 229.70149
+      }
+    },
+    "JAVELIN": {
+      "Slash": {
+        "averageRangeMeasurement": 215.66267,
+        "rawMeasurements": [
+          215.66267
+        ],
+        "stdDeviation": 0.0,
+        "min": 215.66267,
+        "max": 215.66267
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 222.36438,
+        "rawMeasurements": [
+          222.36438
+        ],
+        "stdDeviation": 0.0,
+        "min": 222.36438,
+        "max": 222.36438
+      },
+      "Stab": {
+        "averageRangeMeasurement": 240.34404,
+        "rawMeasurements": [
+          240.34404
+        ],
+        "stdDeviation": 0.0,
+        "min": 240.34404,
+        "max": 240.34404
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 240.91072,
+        "rawMeasurements": [
+          240.91072
+        ],
+        "stdDeviation": 0.0,
+        "min": 240.91072,
+        "max": 240.91072
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 214.14117,
+        "rawMeasurements": [
+          214.14117
+        ],
+        "stdDeviation": 0.0,
+        "min": 214.14117,
+        "max": 214.14117
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 194.16002,
+        "rawMeasurements": [
+          194.16002
+        ],
+        "stdDeviation": 0.0,
+        "min": 194.16002,
+        "max": 194.16002
+      }
+    },
+    "KATARS": {
+      "Slash": {
+        "averageRangeMeasurement": 156.52014,
+        "rawMeasurements": [
+          156.52014
+        ],
+        "stdDeviation": 0.0,
+        "min": 156.52014,
+        "max": 156.52014
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 177.52061,
+        "rawMeasurements": [
+          177.52061
+        ],
+        "stdDeviation": 0.0,
+        "min": 177.52061,
+        "max": 177.52061
+      },
+      "Stab": {
+        "averageRangeMeasurement": 160.76028,
+        "rawMeasurements": [
+          160.76028
+        ],
+        "stdDeviation": 0.0,
+        "min": 160.76028,
+        "max": 160.76028
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 171.70154,
+        "rawMeasurements": [
+          171.70154
+        ],
+        "stdDeviation": 0.0,
+        "min": 171.70154,
+        "max": 171.70154
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 155.72444,
+        "rawMeasurements": [
+          155.72444
+        ],
+        "stdDeviation": 0.0,
+        "min": 155.72444,
+        "max": 155.72444
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 162.30573,
+        "rawMeasurements": [
+          162.30573
+        ],
+        "stdDeviation": 0.0,
+        "min": 162.30573,
+        "max": 162.30573
+      }
+    },
+    "KNIFE": {
+      "Slash": {
+        "averageRangeMeasurement": 131.21382,
+        "rawMeasurements": [
+          131.21382
+        ],
+        "stdDeviation": 0.0,
+        "min": 131.21382,
+        "max": 131.21382
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 137.60815,
+        "rawMeasurements": [
+          137.60815
+        ],
+        "stdDeviation": 0.0,
+        "min": 137.60815,
+        "max": 137.60815
+      },
+      "Stab": {
+        "averageRangeMeasurement": 152.01309,
+        "rawMeasurements": [
+          152.01309
+        ],
+        "stdDeviation": 0.0,
+        "min": 152.01309,
+        "max": 152.01309
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 158.40833,
+        "rawMeasurements": [
+          158.40833
+        ],
+        "stdDeviation": 0.0,
+        "min": 158.40833,
+        "max": 158.40833
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 129.53645,
+        "rawMeasurements": [
+          129.53645
+        ],
+        "stdDeviation": 0.0,
+        "min": 129.53645,
+        "max": 129.53645
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 136.23555,
+        "rawMeasurements": [
+          136.23555
+        ],
+        "stdDeviation": 0.0,
+        "min": 136.23555,
+        "max": 136.23555
+      }
+    },
+    "LONGSWORD": {
+      "Slash": {
+        "averageRangeMeasurement": 196.13673,
+        "rawMeasurements": [
+          196.13673
+        ],
+        "stdDeviation": 0.0,
+        "min": 196.13673,
+        "max": 196.13673
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 190.71544,
+        "rawMeasurements": [
+          190.71544
+        ],
+        "stdDeviation": 0.0,
+        "min": 190.71544,
+        "max": 190.71544
+      },
+      "Stab": {
+        "averageRangeMeasurement": 205.7156,
+        "rawMeasurements": [
+          205.7156
+        ],
+        "stdDeviation": 0.0,
+        "min": 205.7156,
+        "max": 205.7156
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 208.55128,
+        "rawMeasurements": [
+          208.55128
+        ],
+        "stdDeviation": 0.0,
+        "min": 208.55128,
+        "max": 208.55128
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 185.86803,
+        "rawMeasurements": [
+          185.86803
+        ],
+        "stdDeviation": 0.0,
+        "min": 185.86803,
+        "max": 185.86803
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 199.92816,
+        "rawMeasurements": [
+          199.92816
+        ],
+        "stdDeviation": 0.0,
+        "min": 199.92816,
+        "max": 199.92816
+      }
+    },
+    "longsword__argon__citadel": {
+      "Slash": {
+        "averageRangeMeasurement": 196.13686,
+        "rawMeasurements": [
+          196.13686
+        ],
+        "stdDeviation": 0.0,
+        "min": 196.13686,
+        "max": 196.13686
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 190.71544,
+        "rawMeasurements": [
+          190.71544
+        ],
+        "stdDeviation": 0.0,
+        "min": 190.71544,
+        "max": 190.71544
+      },
+      "Stab": {
+        "averageRangeMeasurement": 205.71562,
+        "rawMeasurements": [
+          205.71562
+        ],
+        "stdDeviation": 0.0,
+        "min": 205.71562,
+        "max": 205.71562
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 208.55133,
+        "rawMeasurements": [
+          208.55133
+        ],
+        "stdDeviation": 0.0,
+        "min": 208.55133,
+        "max": 208.55133
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 185.86807,
+        "rawMeasurements": [
+          185.86807
+        ],
+        "stdDeviation": 0.0,
+        "min": 185.86807,
+        "max": 185.86807
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 199.92809,
+        "rawMeasurements": [
+          199.92809
+        ],
+        "stdDeviation": 0.0,
+        "min": 199.92809,
+        "max": 199.92809
+      }
+    },
+    "MACE": {
+      "Slash": {
+        "averageRangeMeasurement": 169.89227,
+        "rawMeasurements": [
+          169.89227
+        ],
+        "stdDeviation": 0.0,
+        "min": 169.89227,
+        "max": 169.89227
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 174.89825,
+        "rawMeasurements": [
+          174.89825
+        ],
+        "stdDeviation": 0.0,
+        "min": 174.89825,
+        "max": 174.89825
+      },
+      "Stab": {
+        "averageRangeMeasurement": 191.07372,
+        "rawMeasurements": [
+          191.07372
+        ],
+        "stdDeviation": 0.0,
+        "min": 191.07372,
+        "max": 191.07372
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 197.11081,
+        "rawMeasurements": [
+          197.11081
+        ],
+        "stdDeviation": 0.0,
+        "min": 197.11081,
+        "max": 197.11081
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 163.30936,
+        "rawMeasurements": [
+          163.30936
+        ],
+        "stdDeviation": 0.0,
+        "min": 163.30936,
+        "max": 163.30936
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 172.74818,
+        "rawMeasurements": [
+          172.74818
+        ],
+        "stdDeviation": 0.0,
+        "min": 172.74818,
+        "max": 172.74818
+      }
+    },
+    "MAUL": {
+      "Slash": {
+        "averageRangeMeasurement": 186.11,
+        "rawMeasurements": [
+          186.11
+        ],
+        "stdDeviation": 0.0,
+        "min": 186.11,
+        "max": 186.11
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 184.61292,
+        "rawMeasurements": [
+          184.61292
+        ],
+        "stdDeviation": 0.0,
+        "min": 184.61292,
+        "max": 184.61292
+      },
+      "Stab": {
+        "averageRangeMeasurement": 175.77835,
+        "rawMeasurements": [
+          175.77835
+        ],
+        "stdDeviation": 0.0,
+        "min": 175.77835,
+        "max": 175.77835
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 172.85817,
+        "rawMeasurements": [
+          172.85817
+        ],
+        "stdDeviation": 0.0,
+        "min": 172.85817,
+        "max": 172.85817
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 180.56447,
+        "rawMeasurements": [
+          180.56447
+        ],
+        "stdDeviation": 0.0,
+        "min": 180.56447,
+        "max": 180.56447
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 170.82088,
+        "rawMeasurements": [
+          170.82088
+        ],
+        "stdDeviation": 0.0,
+        "min": 170.82088,
+        "max": 170.82088
+      }
+    },
+    "MESSER": {
+      "Slash": {
+        "averageRangeMeasurement": 206.3931,
+        "rawMeasurements": [
+          206.3931
+        ],
+        "stdDeviation": 0.0,
+        "min": 206.3931,
+        "max": 206.3931
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 201.12152,
+        "rawMeasurements": [
+          201.12152
+        ],
+        "stdDeviation": 0.0,
+        "min": 201.12152,
+        "max": 201.12152
+      },
+      "Stab": {
+        "averageRangeMeasurement": 216.68356,
+        "rawMeasurements": [
+          216.68356
+        ],
+        "stdDeviation": 0.0,
+        "min": 216.68356,
+        "max": 216.68356
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 219.21213,
+        "rawMeasurements": [
+          219.21213
+        ],
+        "stdDeviation": 0.0,
+        "min": 219.21213,
+        "max": 219.21213
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 199.2454,
+        "rawMeasurements": [
+          199.2454
+        ],
+        "stdDeviation": 0.0,
+        "min": 199.2454,
+        "max": 199.2454
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 209.64183,
+        "rawMeasurements": [
+          209.64183
+        ],
+        "stdDeviation": 0.0,
+        "min": 209.64183,
+        "max": 209.64183
+      }
+    },
+    "MORNING STAR": {
+      "Slash": {
+        "averageRangeMeasurement": 166.9694,
+        "rawMeasurements": [
+          166.9694
+        ],
+        "stdDeviation": 0.0,
+        "min": 166.9694,
+        "max": 166.9694
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 172.14935,
+        "rawMeasurements": [
+          172.14935
+        ],
+        "stdDeviation": 0.0,
+        "min": 172.14935,
+        "max": 172.14935
+      },
+      "Stab": {
+        "averageRangeMeasurement": 188.18105,
+        "rawMeasurements": [
+          188.18105
+        ],
+        "stdDeviation": 0.0,
+        "min": 188.18105,
+        "max": 188.18105
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 194.19957,
+        "rawMeasurements": [
+          194.19957
+        ],
+        "stdDeviation": 0.0,
+        "min": 194.19957,
+        "max": 194.19957
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 163.59764,
+        "rawMeasurements": [
+          163.59764
+        ],
+        "stdDeviation": 0.0,
+        "min": 163.59764,
+        "max": 163.59764
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 170.01595,
+        "rawMeasurements": [
+          170.01595
+        ],
+        "stdDeviation": 0.0,
+        "min": 170.01595,
+        "max": 170.01595
+      }
+    },
+    "PICKAXE": {
+      "Slash": {
+        "averageRangeMeasurement": 153.6611,
+        "rawMeasurements": [
+          153.6611
+        ],
+        "stdDeviation": 0.0,
+        "min": 153.6611,
+        "max": 153.6611
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 159.73558,
+        "rawMeasurements": [
+          159.73558
+        ],
+        "stdDeviation": 0.0,
+        "min": 159.73558,
+        "max": 159.73558
+      },
+      "Stab": {
+        "averageRangeMeasurement": 174.8325,
+        "rawMeasurements": [
+          174.8325
+        ],
+        "stdDeviation": 0.0,
+        "min": 174.8325,
+        "max": 174.8325
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 180.98172,
+        "rawMeasurements": [
+          180.98172
+        ],
+        "stdDeviation": 0.0,
+        "min": 180.98172,
+        "max": 180.98172
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 150.74727,
+        "rawMeasurements": [
+          150.74727
+        ],
+        "stdDeviation": 0.0,
+        "min": 150.74727,
+        "max": 150.74727
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 156.40205,
+        "rawMeasurements": [
+          156.40205
+        ],
+        "stdDeviation": 0.0,
+        "min": 156.40205,
+        "max": 156.40205
+      }
+    },
+    "POLEHAMMER": {
+      "Slash": {
+        "averageRangeMeasurement": 218.38776,
+        "rawMeasurements": [
+          218.38776
+        ],
+        "stdDeviation": 0.0,
+        "min": 218.38776,
+        "max": 218.38776
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 190.67181,
+        "rawMeasurements": [
+          190.67181
+        ],
+        "stdDeviation": 0.0,
+        "min": 190.67181,
+        "max": 190.67181
+      },
+      "Stab": {
+        "averageRangeMeasurement": 224.88187,
+        "rawMeasurements": [
+          224.88187
+        ],
+        "stdDeviation": 0.0,
+        "min": 224.88187,
+        "max": 224.88187
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 232.58636,
+        "rawMeasurements": [
+          232.58636
+        ],
+        "stdDeviation": 0.0,
+        "min": 232.58636,
+        "max": 232.58636
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 230.55086,
+        "rawMeasurements": [
+          230.55086
+        ],
+        "stdDeviation": 0.0,
+        "min": 230.55086,
+        "max": 230.55086
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 233.39764,
+        "rawMeasurements": [
+          233.39764
+        ],
+        "stdDeviation": 0.0,
+        "min": 233.39764,
+        "max": 233.39764
+      }
+    },
+    "POLE AXE": {
+      "Slash": {
+        "averageRangeMeasurement": 208.85464,
+        "rawMeasurements": [
+          208.85464
+        ],
+        "stdDeviation": 0.0,
+        "min": 208.85464,
+        "max": 208.85464
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 180.42038,
+        "rawMeasurements": [
+          180.42038
+        ],
+        "stdDeviation": 0.0,
+        "min": 180.42038,
+        "max": 180.42038
+      },
+      "Stab": {
+        "averageRangeMeasurement": 214.09605,
+        "rawMeasurements": [
+          214.09605
+        ],
+        "stdDeviation": 0.0,
+        "min": 214.09605,
+        "max": 214.09605
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 221.50575,
+        "rawMeasurements": [
+          221.50575
+        ],
+        "stdDeviation": 0.0,
+        "min": 221.50575,
+        "max": 221.50575
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 220.49916,
+        "rawMeasurements": [
+          220.49916
+        ],
+        "stdDeviation": 0.0,
+        "min": 220.49916,
+        "max": 220.49916
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 223.67592,
+        "rawMeasurements": [
+          223.67592
+        ],
+        "stdDeviation": 0.0,
+        "min": 223.67592,
+        "max": 223.67592
+      }
+    },
+    "QUARTERSTAFF": {
+      "Slash": {
+        "averageRangeMeasurement": 165.00572,
+        "rawMeasurements": [
+          165.00572
+        ],
+        "stdDeviation": 0.0,
+        "min": 165.00572,
+        "max": 165.00572
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 148.61249,
+        "rawMeasurements": [
+          148.61249
+        ],
+        "stdDeviation": 0.0,
+        "min": 148.61249,
+        "max": 148.61249
+      },
+      "Stab": {
+        "averageRangeMeasurement": 203.63922,
+        "rawMeasurements": [
+          203.63922
+        ],
+        "stdDeviation": 0.0,
+        "min": 203.63922,
+        "max": 203.63922
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 217.37973,
+        "rawMeasurements": [
+          217.37973
+        ],
+        "stdDeviation": 0.0,
+        "min": 217.37973,
+        "max": 217.37973
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 249.17784,
+        "rawMeasurements": [
+          249.17784
+        ],
+        "stdDeviation": 0.0,
+        "min": 249.17784,
+        "max": 249.17784
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 250.09935,
+        "rawMeasurements": [
+          250.09935
+        ],
+        "stdDeviation": 0.0,
+        "min": 250.09935,
+        "max": 250.09935
+      }
+    },
+    "RAPIER": {
+      "Slash": {
+        "averageRangeMeasurement": 182.7536,
+        "rawMeasurements": [
+          182.7536
+        ],
+        "stdDeviation": 0.0,
+        "min": 182.7536,
+        "max": 182.7536
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 181.82368,
+        "rawMeasurements": [
+          181.82368
+        ],
+        "stdDeviation": 0.0,
+        "min": 181.82368,
+        "max": 181.82368
+      },
+      "Stab": {
+        "averageRangeMeasurement": 201.19595,
+        "rawMeasurements": [
+          201.19595
+        ],
+        "stdDeviation": 0.0,
+        "min": 201.19595,
+        "max": 201.19595
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 208.2054,
+        "rawMeasurements": [
+          208.2054
+        ],
+        "stdDeviation": 0.0,
+        "min": 208.2054,
+        "max": 208.2054
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 182.74905,
+        "rawMeasurements": [
+          182.74905
+        ],
+        "stdDeviation": 0.0,
+        "min": 182.74905,
+        "max": 182.74905
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 188.39598,
+        "rawMeasurements": [
+          188.39598
+        ],
+        "stdDeviation": 0.0,
+        "min": 188.39598,
+        "max": 188.39598
+      }
+    },
+    "SHORT SWORD": {
+      "Slash": {
+        "averageRangeMeasurement": 174.9176,
+        "rawMeasurements": [
+          174.9176
+        ],
+        "stdDeviation": 0.0,
+        "min": 174.9176,
+        "max": 174.9176
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 177.96776,
+        "rawMeasurements": [
+          177.96776
+        ],
+        "stdDeviation": 0.0,
+        "min": 177.96776,
+        "max": 177.96776
+      },
+      "Stab": {
+        "averageRangeMeasurement": 194.77501,
+        "rawMeasurements": [
+          194.77501
+        ],
+        "stdDeviation": 0.0,
+        "min": 194.77501,
+        "max": 194.77501
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 200.83427,
+        "rawMeasurements": [
+          200.83427
+        ],
+        "stdDeviation": 0.0,
+        "min": 200.83427,
+        "max": 200.83427
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 170.0801,
+        "rawMeasurements": [
+          170.0801
+        ],
+        "stdDeviation": 0.0,
+        "min": 170.0801,
+        "max": 170.0801
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 175.70186,
+        "rawMeasurements": [
+          175.70186
+        ],
+        "stdDeviation": 0.0,
+        "min": 175.70186,
+        "max": 175.70186
+      }
+    },
+    "SHOVEL": {
+      "Slash": {
+        "averageRangeMeasurement": 163.33588,
+        "rawMeasurements": [
+          163.33588
+        ],
+        "stdDeviation": 0.0,
+        "min": 163.33588,
+        "max": 163.33588
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 162.93823,
+        "rawMeasurements": [
+          162.93823
+        ],
+        "stdDeviation": 0.0,
+        "min": 162.93823,
+        "max": 162.93823
+      },
+      "Stab": {
+        "averageRangeMeasurement": 152.50323,
+        "rawMeasurements": [
+          152.50323
+        ],
+        "stdDeviation": 0.0,
+        "min": 152.50323,
+        "max": 152.50323
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 149.76741,
+        "rawMeasurements": [
+          149.76741
+        ],
+        "stdDeviation": 0.0,
+        "min": 149.76741,
+        "max": 149.76741
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 160.85,
+        "rawMeasurements": [
+          160.85
+        ],
+        "stdDeviation": 0.0,
+        "min": 160.85,
+        "max": 160.85
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 148.26733,
+        "rawMeasurements": [
+          148.26733
+        ],
+        "stdDeviation": 0.0,
+        "min": 148.26733,
+        "max": 148.26733
+      }
+    },
+    "SLEDGEHAMMER": {
+      "Slash": {
+        "averageRangeMeasurement": 163.53238,
+        "rawMeasurements": [
+          163.53238
+        ],
+        "stdDeviation": 0.0,
+        "min": 163.53238,
+        "max": 163.53238
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 163.5056,
+        "rawMeasurements": [
+          163.5056
+        ],
+        "stdDeviation": 0.0,
+        "min": 163.5056,
+        "max": 163.5056
+      },
+      "Stab": {
+        "averageRangeMeasurement": 152.55928,
+        "rawMeasurements": [
+          152.55928
+        ],
+        "stdDeviation": 0.0,
+        "min": 152.55928,
+        "max": 152.55928
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 149.76935,
+        "rawMeasurements": [
+          149.76935
+        ],
+        "stdDeviation": 0.0,
+        "min": 149.76935,
+        "max": 149.76935
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 161.09914,
+        "rawMeasurements": [
+          161.09914
+        ],
+        "stdDeviation": 0.0,
+        "min": 161.09914,
+        "max": 161.09914
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 148.63968,
+        "rawMeasurements": [
+          148.63968
+        ],
+        "stdDeviation": 0.0,
+        "min": 148.63968,
+        "max": 148.63968
+      }
+    },
+    "SPEAR": {
+      "Slash": {
+        "averageRangeMeasurement": 284.2464,
+        "rawMeasurements": [
+          284.2464
+        ],
+        "stdDeviation": 0.0,
+        "min": 284.2464,
+        "max": 284.2464
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 271.41528,
+        "rawMeasurements": [
+          271.41528
+        ],
+        "stdDeviation": 0.0,
+        "min": 271.41528,
+        "max": 271.41528
+      },
+      "Stab": {
+        "averageRangeMeasurement": 288.3927,
+        "rawMeasurements": [
+          288.3927
+        ],
+        "stdDeviation": 0.0,
+        "min": 288.3927,
+        "max": 288.3927
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 292.74628,
+        "rawMeasurements": [
+          292.74628
+        ],
+        "stdDeviation": 0.0,
+        "min": 292.74628,
+        "max": 292.74628
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 241.76045,
+        "rawMeasurements": [
+          241.76045
+        ],
+        "stdDeviation": 0.0,
+        "min": 241.76045,
+        "max": 241.76045
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 259.35193,
+        "rawMeasurements": [
+          259.35193
+        ],
+        "stdDeviation": 0.0,
+        "min": 259.35193,
+        "max": 259.35193
+      }
+    },
+    "SWORD": {
+      "Slash": {
+        "averageRangeMeasurement": 184.31886,
+        "rawMeasurements": [
+          184.31886
+        ],
+        "stdDeviation": 0.0,
+        "min": 184.31886,
+        "max": 184.31886
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 187.1662,
+        "rawMeasurements": [
+          187.1662
+        ],
+        "stdDeviation": 0.0,
+        "min": 187.1662,
+        "max": 187.1662
+      },
+      "Stab": {
+        "averageRangeMeasurement": 204.112,
+        "rawMeasurements": [
+          204.112
+        ],
+        "stdDeviation": 0.0,
+        "min": 204.112,
+        "max": 204.112
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 210.43234,
+        "rawMeasurements": [
+          210.43234
+        ],
+        "stdDeviation": 0.0,
+        "min": 210.43234,
+        "max": 210.43234
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 179.44798,
+        "rawMeasurements": [
+          179.44798
+        ],
+        "stdDeviation": 0.0,
+        "min": 179.44798,
+        "max": 179.44798
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 184.4208,
+        "rawMeasurements": [
+          184.4208
+        ],
+        "stdDeviation": 0.0,
+        "min": 184.4208,
+        "max": 184.4208
+      }
+    },
+    "THROWING AXE": {
+      "Slash": {
+        "averageRangeMeasurement": 126.084915,
+        "rawMeasurements": [
+          126.084915
+        ],
+        "stdDeviation": 0.0,
+        "min": 126.084915,
+        "max": 126.084915
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 132.66588,
+        "rawMeasurements": [
+          132.66588
+        ],
+        "stdDeviation": 0.0,
+        "min": 132.66588,
+        "max": 132.66588
+      },
+      "Stab": {
+        "averageRangeMeasurement": 146.89264,
+        "rawMeasurements": [
+          146.89264
+        ],
+        "stdDeviation": 0.0,
+        "min": 146.89264,
+        "max": 146.89264
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 153.25769,
+        "rawMeasurements": [
+          153.25769
+        ],
+        "stdDeviation": 0.0,
+        "min": 153.25769,
+        "max": 153.25769
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 124.34473,
+        "rawMeasurements": [
+          124.34473
+        ],
+        "stdDeviation": 0.0,
+        "min": 124.34473,
+        "max": 124.34473
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 131.29189,
+        "rawMeasurements": [
+          131.29189
+        ],
+        "stdDeviation": 0.0,
+        "min": 131.29189,
+        "max": 131.29189
+      }
+    },
+    "FISTS": {
+      "Slash": {
+        "averageRangeMeasurement": 114.46807,
+        "rawMeasurements": [
+          114.46807
+        ],
+        "stdDeviation": 0.0,
+        "min": 114.46807,
+        "max": 114.46807
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 112.58423,
+        "rawMeasurements": [
+          112.58423
+        ],
+        "stdDeviation": 0.0,
+        "min": 112.58423,
+        "max": 112.58423
+      },
+      "Stab": {
+        "averageRangeMeasurement": 109.79572,
+        "rawMeasurements": [
+          109.79572
+        ],
+        "stdDeviation": 0.0,
+        "min": 109.79572,
+        "max": 109.79572
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 109.90487,
+        "rawMeasurements": [
+          109.90487
+        ],
+        "stdDeviation": 0.0,
+        "min": 109.90487,
+        "max": 109.90487
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 113.04025,
+        "rawMeasurements": [
+          113.04025
+        ],
+        "stdDeviation": 0.0,
+        "min": 113.04025,
+        "max": 113.04025
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 113.56718,
+        "rawMeasurements": [
+          113.56718
+        ],
+        "stdDeviation": 0.0,
+        "min": 113.56718,
+        "max": 113.56718
+      }
+    },
+    "THROWING MALLET": {
+      "Slash": {
+        "averageRangeMeasurement": 121.25197,
+        "rawMeasurements": [
+          121.25197
+        ],
+        "stdDeviation": 0.0,
+        "min": 121.25197,
+        "max": 121.25197
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 127.76465,
+        "rawMeasurements": [
+          127.76465
+        ],
+        "stdDeviation": 0.0,
+        "min": 127.76465,
+        "max": 127.76465
+      },
+      "Stab": {
+        "averageRangeMeasurement": 141.89417,
+        "rawMeasurements": [
+          141.89417
+        ],
+        "stdDeviation": 0.0,
+        "min": 141.89417,
+        "max": 141.89417
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 148.33101,
+        "rawMeasurements": [
+          148.33101
+        ],
+        "stdDeviation": 0.0,
+        "min": 148.33101,
+        "max": 148.33101
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 119.904915,
+        "rawMeasurements": [
+          119.904915
+        ],
+        "stdDeviation": 0.0,
+        "min": 119.904915,
+        "max": 119.904915
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 127.0286,
+        "rawMeasurements": [
+          127.0286
+        ],
+        "stdDeviation": 0.0,
+        "min": 127.0286,
+        "max": 127.0286
+      }
+    },
+    "TWO HANDED HAMMER": {
+      "Slash": {
+        "averageRangeMeasurement": 204.34193,
+        "rawMeasurements": [
+          204.34193
+        ],
+        "stdDeviation": 0.0,
+        "min": 204.34193,
+        "max": 204.34193
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 202.41418,
+        "rawMeasurements": [
+          202.41418
+        ],
+        "stdDeviation": 0.0,
+        "min": 202.41418,
+        "max": 202.41418
+      },
+      "Stab": {
+        "averageRangeMeasurement": 194.73242,
+        "rawMeasurements": [
+          194.73242
+        ],
+        "stdDeviation": 0.0,
+        "min": 194.73242,
+        "max": 194.73242
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 191.3019,
+        "rawMeasurements": [
+          191.3019
+        ],
+        "stdDeviation": 0.0,
+        "min": 191.3019,
+        "max": 191.3019
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 195.38632,
+        "rawMeasurements": [
+          195.38632
+        ],
+        "stdDeviation": 0.0,
+        "min": 195.38632,
+        "max": 195.38632
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 188.86328,
+        "rawMeasurements": [
+          188.86328
+        ],
+        "stdDeviation": 0.0,
+        "min": 188.86328,
+        "max": 188.86328
+      }
+    },
+    "WARHAMMER": {
+      "Slash": {
+        "averageRangeMeasurement": 155.34613,
+        "rawMeasurements": [
+          155.34613
+        ],
+        "stdDeviation": 0.0,
+        "min": 155.34613,
+        "max": 155.34613
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 161.37222,
+        "rawMeasurements": [
+          161.37222
+        ],
+        "stdDeviation": 0.0,
+        "min": 161.37222,
+        "max": 161.37222
+      },
+      "Stab": {
+        "averageRangeMeasurement": 176.45601,
+        "rawMeasurements": [
+          176.45601
+        ],
+        "stdDeviation": 0.0,
+        "min": 176.45601,
+        "max": 176.45601
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 182.58324,
+        "rawMeasurements": [
+          182.58324
+        ],
+        "stdDeviation": 0.0,
+        "min": 182.58324,
+        "max": 182.58324
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 148.77385,
+        "rawMeasurements": [
+          148.77385
+        ],
+        "stdDeviation": 0.0,
+        "min": 148.77385,
+        "max": 148.77385
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 159.62111,
+        "rawMeasurements": [
+          159.62111
+        ],
+        "stdDeviation": 0.0,
+        "min": 159.62111,
+        "max": 159.62111
+      }
+    },
+    "WAR AXE": {
+      "Slash": {
+        "averageRangeMeasurement": 200.83551,
+        "rawMeasurements": [
+          200.83551
+        ],
+        "stdDeviation": 0.0,
+        "min": 200.83551,
+        "max": 200.83551
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 198.94542,
+        "rawMeasurements": [
+          198.94542
+        ],
+        "stdDeviation": 0.0,
+        "min": 198.94542,
+        "max": 198.94542
+      },
+      "Stab": {
+        "averageRangeMeasurement": 191.20413,
+        "rawMeasurements": [
+          191.20413
+        ],
+        "stdDeviation": 0.0,
+        "min": 191.20413,
+        "max": 191.20413
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 187.89357,
+        "rawMeasurements": [
+          187.89357
+        ],
+        "stdDeviation": 0.0,
+        "min": 187.89357,
+        "max": 187.89357
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 191.93466,
+        "rawMeasurements": [
+          191.93466
+        ],
+        "stdDeviation": 0.0,
+        "min": 191.93466,
+        "max": 191.93466
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 185.36375,
+        "rawMeasurements": [
+          185.36375
+        ],
+        "stdDeviation": 0.0,
+        "min": 185.36375,
+        "max": 185.36375
+      }
+    },
+    "WAR CLUB": {
+      "Slash": {
+        "averageRangeMeasurement": 230.85042,
+        "rawMeasurements": [
+          230.85042
+        ],
+        "stdDeviation": 0.0,
+        "min": 230.85042,
+        "max": 230.85042
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 228.47644,
+        "rawMeasurements": [
+          228.47644
+        ],
+        "stdDeviation": 0.0,
+        "min": 228.47644,
+        "max": 228.47644
+      },
+      "Stab": {
+        "averageRangeMeasurement": 222.32191,
+        "rawMeasurements": [
+          222.32191
+        ],
+        "stdDeviation": 0.0,
+        "min": 222.32191,
+        "max": 222.32191
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 219.49792,
+        "rawMeasurements": [
+          219.49792
+        ],
+        "stdDeviation": 0.0,
+        "min": 219.49792,
+        "max": 219.49792
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 214.53116,
+        "rawMeasurements": [
+          214.53116
+        ],
+        "stdDeviation": 0.0,
+        "min": 214.53116,
+        "max": 214.53116
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 216.54808,
+        "rawMeasurements": [
+          216.54808
+        ],
+        "stdDeviation": 0.0,
+        "min": 216.54808,
+        "max": 216.54808
+      }
+    },
+    "ONE HANDED SPEAR": {
+      "Slash": {
+        "averageRangeMeasurement": 250.43562,
+        "rawMeasurements": [
+          250.43562
+        ],
+        "stdDeviation": 0.0,
+        "min": 250.43562,
+        "max": 250.43562
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 257.34106,
+        "rawMeasurements": [
+          257.34106
+        ],
+        "stdDeviation": 0.0,
+        "min": 257.34106,
+        "max": 257.34106
+      },
+      "Stab": {
+        "averageRangeMeasurement": 257.43997,
+        "rawMeasurements": [
+          257.43997
+        ],
+        "stdDeviation": 0.0,
+        "min": 257.43997,
+        "max": 257.43997
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 275.27426,
+        "rawMeasurements": [
+          275.27426
+        ],
+        "stdDeviation": 0.0,
+        "min": 275.27426,
+        "max": 275.27426
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 248.98463,
+        "rawMeasurements": [
+          248.98463
+        ],
+        "stdDeviation": 0.0,
+        "min": 248.98463,
+        "max": 248.98463
+      },
+      "Alt Overhead": {
+        "averageRangeMeasurement": 227.2158,
+        "rawMeasurements": [
+          227.2158
+        ],
+        "stdDeviation": 0.0,
+        "min": 227.2158,
+        "max": 227.2158
+      }
+    },
+    "HATCHET": {
+      "Slash": {
+        "averageRangeMeasurement": 129.96704,
+        "rawMeasurements": [
+          129.96704
+        ],
+        "stdDeviation": 0.0,
+        "min": 129.96704,
+        "max": 129.96704
+      },
+      "Alt Slash": {
+        "averageRangeMeasurement": 136.576,
+        "rawMeasurements": [
+          136.576
+        ],
+        "stdDeviation": 0.0,
+        "min": 136.576,
+        "max": 136.576
+      },
+      "Stab": {
+        "averageRangeMeasurement": 150.62366,
+        "rawMeasurements": [
+          150.62366
+        ],
+        "stdDeviation": 0.0,
+        "min": 150.62366,
+        "max": 150.62366
+      },
+      "Alt Stab": {
+        "averageRangeMeasurement": 157.09615,
+        "rawMeasurements": [
+          157.09615
+        ],
+        "stdDeviation": 0.0,
+        "min": 157.09615,
+        "max": 157.09615
+      },
+      "Overhead": {
+        "averageRangeMeasurement": 128.14351,
+        "rawMeasurements": [
+          128.14351
+        ],
+        "stdDeviation": 0.0,
+        "min": 128.14351,
+        "max": 128.14351
+      }
+    }
+  }
+}

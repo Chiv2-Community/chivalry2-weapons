@@ -11,6 +11,16 @@ from derived_stats import make_average_attack, make_stamina_damage
 def seconds_to_millis(n):
     return n * 1000 if n != -1 else -1
 
+WEAPON_NAME_OVERRIDES = {
+    "Longsword_Argon_Citadel": "Argon's Sword",
+    "Greatsword_Malric": "Lion's Bane",
+    "Carryable_Candelabra": "Candelabra",
+}
+
+def adapt_name(name: str) -> str:
+    """Adapt weapon name to match the JSON file name."""
+    return WEAPON_NAME_OVERRIDES[name] if name in WEAPON_NAME_OVERRIDES else pascal_to_space(name)
+
 STAT_TRANSFORMS = {
     "windup": seconds_to_millis,
     "release": seconds_to_millis,
@@ -82,6 +92,8 @@ def process_weapon_item(name_parts, attack_type, item, weapon_defaults, weapons)
         weapon_defaults[name_parts[0]] = item
     else:
         weapon_name = name_parts[0].replace("Weapon_", "")
+        
+
         if weapon_name not in weapons:
             weapons[weapon_name] = {"name": weapon_name, "attacks": {}}
         weapons[weapon_name]["attacks"] = process_attack(attack_type, item, weapons[weapon_name]["attacks"])
@@ -111,6 +123,9 @@ def derive_stats(weapon):
 
     make_average_attack(weapon)
 
+    if "sprintCharge" not in weapon["attacks"]:
+        weapon["attacks"]["sprintCharge"] = weapon["attacks"]["sprintAttack"]
+
 def apply_defaults(weapons, attack_defaults):
     for weapon, weapon_data in weapons.items():
         for attack, attack_data in weapon_data["attacks"].items():
@@ -134,7 +149,7 @@ def write_to_file(data, foldername, changelog_location):
         merged_weapons = []
         for weapon in data:
             path = foldername + "/" + pascal_to_camel(weapon["name"]) + ".json"
-            weapon["name"] = pascal_to_space(weapon["name"])
+            weapon["name"] = adapt_name(weapon["name"])
             exists = os.path.isfile(path)
             existing_data = {}
             if exists:

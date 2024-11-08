@@ -1,11 +1,15 @@
+import ARGONS_SWORD_IMPORT from "./weapons/longsword__argon__citadel.json" assert { type: "json" };
 import AXE_IMPORT from "./weapons/axe.json" assert { type: "json" };
 import BATTLE_AXE_IMPORT from "./weapons/battle_axe.json" assert { type: "json" };
+import CANDELABRA_IMPORT from "./weapons/carryable__candelabra.json" assert { type: "json" };
 import CUDGEL_IMPORT from "./weapons/cudgel.json" assert { type: "json" };
 import DAGGER_IMPORT from "./weapons/dagger.json" assert { type: "json" };
 import DANE_AXE_IMPORT from "./weapons/dane_axe.json" assert { type: "json" };
 import EXECUTIONERS_AXE_IMPORT from "./weapons/executioners_axe.json" assert { type: "json" };
 import FALCHION_IMPORT from "./weapons/falchion.json" assert { type: "json" };
+import FISTS_IMPORT from "./weapons/fists.json" assert { type: "json" };
 import GLAIVE_IMPORT from "./weapons/glaive.json" assert { type: "json" };
+import GOEDENDAG_IMPORT from "./weapons/goedendag.json" assert { type: "json" };
 import GREATSWORD_IMPORT from "./weapons/greatsword.json" assert { type: "json" };
 import HALBERD_IMPORT from "./weapons/halberd.json" assert { type: "json" };
 import HATCHET_IMPORT from "./weapons/hatchet.json" assert { type: "json" };
@@ -18,6 +22,7 @@ import KNIFE_IMPORT from "./weapons/knife.json" assert { type: "json" };
 import LONGSWORD_IMPORT from "./weapons/longsword.json" assert { type: "json" };
 import MACE_IMPORT from "./weapons/mace.json" assert { type: "json" };
 import MALLET_IMPORT from "./weapons/throwing_mallet.json" assert { type: "json" };
+import MALRICS_GREATSWORD_IMPORT from "./weapons/greatsword__malric.json" assert { type: "json" };
 import MAUL_IMPORT from "./weapons/maul.json" assert { type: "json" };
 import MESSER_IMPORT from "./weapons/messer.json" assert { type: "json" };
 import MORNING_STAR_IMPORT from "./weapons/morning_star.json" assert { type: "json" };
@@ -37,16 +42,21 @@ import SPEAR_IMPORT from "./weapons/spear.json" assert { type: "json" };
 import WAR_AXE_IMPORT from "./weapons/war_axe.json" assert { type: "json" };
 import WAR_CLUB_IMPORT from "./weapons/war_club.json" assert { type: "json" };
 import WARHAMMER_IMPORT from "./weapons/warhammer.json" assert { type: "json" };
+
 import { Weapon } from "./weapon.js" assert { type: "json" };
 
+export const ARGONS_SWORD = ARGONS_SWORD_IMPORT as Weapon;
 export const AXE = AXE_IMPORT as Weapon;
 export const BATTLE_AXE = BATTLE_AXE_IMPORT as Weapon;
+export const CANDELABRA = CANDELABRA_IMPORT as Weapon;
 export const CUDGEL = CUDGEL_IMPORT as Weapon;
 export const DAGGER = DAGGER_IMPORT as Weapon;
 export const DANE_AXE = DANE_AXE_IMPORT as Weapon;
 export const EXECUTIONERS_AXE = EXECUTIONERS_AXE_IMPORT as Weapon;
 export const FALCHION = FALCHION_IMPORT as Weapon;
+export const FISTS = FISTS_IMPORT as Weapon;
 export const GLAIVE = GLAIVE_IMPORT as Weapon;
+export const GOEDENDAG = GOEDENDAG_IMPORT as Weapon;
 export const GREATSWORD = GREATSWORD_IMPORT as Weapon;
 export const HALBERD = HALBERD_IMPORT as Weapon;
 export const HATCHET = HATCHET_IMPORT as Weapon;
@@ -59,6 +69,7 @@ export const KNIFE = KNIFE_IMPORT as Weapon;
 export const LONGSWORD = LONGSWORD_IMPORT as Weapon;
 export const MACE = MACE_IMPORT as Weapon;
 export const MALLET = MALLET_IMPORT as Weapon;
+export const MALRICS_GREATSWORD = MALRICS_GREATSWORD_IMPORT as Weapon;
 export const MAUL = MAUL_IMPORT as Weapon;
 export const MESSER = MESSER_IMPORT as Weapon;
 export const MORNING_STAR = MORNING_STAR_IMPORT as Weapon;
@@ -80,15 +91,19 @@ export const WAR_CLUB = WAR_CLUB_IMPORT as Weapon;
 export const WARHAMMER = WARHAMMER_IMPORT as Weapon;
 
 export const ALL_WEAPONS: Weapon[] = [
+  ARGONS_SWORD,
   AXE,
   BATTLE_AXE,
+  CANDELABRA,
   CUDGEL,
   CAVALRY_SWORD, 
   DAGGER,
   DANE_AXE,
   EXECUTIONERS_AXE,
   FALCHION,
+  FISTS,
   GLAIVE,
+  GOEDENDAG,
   GREATSWORD,
   HALBERD,
   HATCHET,
@@ -100,6 +115,7 @@ export const ALL_WEAPONS: Weapon[] = [
   LONGSWORD,
   MACE,
   MALLET,
+  MALRICS_GREATSWORD,
   MAUL,
   MESSER,
   MORNING_STAR,

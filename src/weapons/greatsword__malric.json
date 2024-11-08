@@ -1,5 +1,16 @@
 {
+  "id": "gsm",
   "name": "Greatsword_ Malric",
+  "aliases": [
+    "Malric's Greatsword",
+    "Greatsword"
+  ],
+  "weaponTypes": [
+    "Axe",
+    "Two Handed",
+    "Champion Weapon"
+  ],
+  "damageType": "Cut",
   "attacks": {
     "slash": {
       "light": {
@@ -31,7 +42,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 15.0
       },
       "heavy": {
         "holding": 350.0,
@@ -62,8 +74,11 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
-      }
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 21.0
+      },
+      "range": 234.26306,
+      "altRange": 207.52408
     },
     "overhead": {
       "light": {
@@ -95,7 +110,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 21.0
       },
       "heavy": {
         "holding": 350.0,
@@ -126,8 +142,11 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
-      }
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 27.0
+      },
+      "range": 213.82138,
+      "altRange": 227.59204
     },
     "stab": {
       "light": {
@@ -159,7 +178,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 15.0
       },
       "heavy": {
         "holding": 350.0,
@@ -190,8 +210,11 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
-      }
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 21.0
+      },
+      "range": 205.49118,
+      "altRange": 214.13683
     },
     "special": {
       "holding": 350.0,
@@ -222,7 +245,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": -1.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 30.0
     },
     "throw": {
       "holding": 800.0,
@@ -253,7 +277,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": -1.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 18.0
     },
     "sprintAttack": {
       "holding": -1,
@@ -284,7 +309,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": -1.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 30.0
     },
     "sprintCharge": {
       "holding": -1,
@@ -315,7 +341,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": 0.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 18.0
     },
     "average": {
       "light": {
@@ -345,7 +372,8 @@
         "weaponTipCheckReverse": -1.0,
         "weaponTipCheckReverseAlt": -1.0,
         "weaponTipCheckDisable": -1.0,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 17.0
       },
       "heavy": {
         "holding": 350.0,
@@ -374,8 +402,17 @@
         "weaponTipCheckReverse": -1.0,
         "weaponTipCheckReverseAlt": -1.0,
         "weaponTipCheckDisable": -1.0,
-        "comboFromBlocked": -1.0
-      }
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 23.0
+      },
+      "range": 217.85853999999998,
+      "altRange": 216.41765
     }
-  }
+  },
+  "classes": [
+    "Knight"
+  ],
+  "subclasses": [
+    "Officer"
+  ]
 }

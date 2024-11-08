@@ -1,5 +1,12 @@
 {
+  "id": "gdd",
   "name": "Goedendag",
+  "weaponTypes": [
+    "Two Handed",
+    "Mace",
+    "Club"
+  ],
+  "damageType": "Blunt",
   "attacks": {
     "slash": {
       "light": {
@@ -9,7 +16,7 @@
         "recovery": 1300.0,
         "combo": 250.0,
         "riposte": 250.0,
-        "damage": 40.0,
+        "damage": 45.0,
         "turnLimitStrength": 47.5,
         "verticalTurnLimitStrength": 50.0,
         "reverseTurnLimitStrength": 50.0,
@@ -31,16 +38,17 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 16.875
       },
       "heavy": {
         "holding": 350.0,
-        "windup": 700.0,
-        "release": 500.0,
+        "windup": 625.0,
+        "release": 550.0,
         "recovery": 1450.0,
         "combo": 250.0,
         "riposte": 500.0,
-        "damage": 55.0,
+        "damage": 65.0,
         "turnLimitStrength": 50.0,
         "verticalTurnLimitStrength": 50.0,
         "reverseTurnLimitStrength": 50.0,
@@ -62,20 +70,21 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 24.375
       },
-      "range": 202.378,
-      "altRange": 198.163
+      "range": 191.88905,
+      "altRange": 189.8455
     },
     "overhead": {
       "light": {
         "holding": 350.0,
-        "windup": 500.0,
-        "release": 450.0,
+        "windup": 475.0,
+        "release": 500.0,
         "recovery": 1300.0,
         "combo": 250.0,
         "riposte": 250.0,
-        "damage": 45.0,
+        "damage": 55.0,
         "turnLimitStrength": 45.0,
         "verticalTurnLimitStrength": 50.0,
         "reverseTurnLimitStrength": 50.0,
@@ -97,16 +106,17 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 20.625
       },
       "heavy": {
         "holding": 350.0,
-        "windup": 800.0,
-        "release": 450.0,
+        "windup": 625.0,
+        "release": 550.0,
         "recovery": 1450.0,
         "combo": 250.0,
         "riposte": 500.0,
-        "damage": 60.0,
+        "damage": 75.0,
         "turnLimitStrength": 47.5,
         "verticalTurnLimitStrength": 50.0,
         "reverseTurnLimitStrength": 50.0,
@@ -128,52 +138,22 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 28.125
       },
-      "range": 193.755,
-      "altRange": 193.124
+      "range": 173.84775,
+      "altRange": 175.36174
     },
     "stab": {
       "light": {
         "holding": 350.0,
         "windup": 425.0,
-        "release": 350.0,
-        "recovery": 1200.0,
-        "combo": 325.0,
-        "riposte": 250.0,
-        "damage": 55.0,
-        "turnLimitStrength": 50.0,
-        "verticalTurnLimitStrength": 50.0,
-        "reverseTurnLimitStrength": -1.0,
-        "feint": 0.175,
-        "thwack": 350.0,
-        "hitSuccess": -1.0,
-        "blocked": 0.75,
-        "worldHit": -1.0,
-        "staminaCost": 0.0,
-        "playRate": 1.0,
-        "drawStrength": -1.0,
-        "worldHitStartPercentage": -1.0,
-        "worldHitStopPercentage": -1.0,
-        "thwackOnHit": 0,
-        "hitSuccessOnHit": -1,
-        "direction": "-1",
-        "altDirection": "-1",
-        "cooldown": 0.0,
-        "weaponTipCheckReverse": -1,
-        "weaponTipCheckReverseAlt": -1,
-        "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
-      },
-      "heavy": {
-        "holding": 350.0,
-        "windup": 725.0,
         "release": 400.0,
-        "recovery": 1250.0,
-        "combo": 325.0,
-        "riposte": 500.0,
-        "damage": 75.0,
-        "turnLimitStrength": 52.5,
+        "recovery": 1200.0,
+        "combo": 250.0,
+        "riposte": 250.0,
+        "damage": 60.0,
+        "turnLimitStrength": 50.0,
         "verticalTurnLimitStrength": 50.0,
         "reverseTurnLimitStrength": -1.0,
         "feint": 0.175,
@@ -194,10 +174,43 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 22.5
       },
-      "range": 195.8,
-      "altRange": 195.983
+      "heavy": {
+        "holding": 350.0,
+        "windup": 625.0,
+        "release": 450.0,
+        "recovery": 1250.0,
+        "combo": 250.0,
+        "riposte": 500.0,
+        "damage": 80.0,
+        "turnLimitStrength": 52.5,
+        "verticalTurnLimitStrength": 50.0,
+        "reverseTurnLimitStrength": -1.0,
+        "feint": 0.175,
+        "thwack": 450.0,
+        "hitSuccess": -1.0,
+        "blocked": 0.75,
+        "worldHit": -1.0,
+        "staminaCost": 0.0,
+        "playRate": 1.0,
+        "drawStrength": -1.0,
+        "worldHitStartPercentage": -1.0,
+        "worldHitStopPercentage": -1.0,
+        "thwackOnHit": 0,
+        "hitSuccessOnHit": -1,
+        "direction": "-1",
+        "altDirection": "-1",
+        "cooldown": 0.0,
+        "weaponTipCheckReverse": -1,
+        "weaponTipCheckReverseAlt": -1,
+        "weaponTipCheckDisable": -1,
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 30.0
+      },
+      "range": 181.97882,
+      "altRange": 179.26663
     },
     "jab": {
       "holding": -1.0,
@@ -209,7 +222,8 @@
       "damage": 10.0,
       "turnLimitStrength": 37.5,
       "verticalTurnLimitStrength": 50.0,
-      "reverseTurnLimitStrength": -1.0
+      "reverseTurnLimitStrength": -1.0,
+      "staminaDamage": 3.75
     },
     "shove": {
       "holding": -1.0,
@@ -221,7 +235,8 @@
       "damage": 5.0,
       "turnLimitStrength": 50.0,
       "verticalTurnLimitStrength": 50.0,
-      "reverseTurnLimitStrength": -1.0
+      "reverseTurnLimitStrength": -1.0,
+      "staminaDamage": 1.875
     },
     "throw": {
       "holding": 500.0,
@@ -252,7 +267,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": -1.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 18.75
     },
     "special": {
       "holding": 350.0,
@@ -261,7 +277,7 @@
       "recovery": 1200.0,
       "combo": 200.0,
       "riposte": 1250.0,
-      "damage": 85.0,
+      "damage": 90.0,
       "turnLimitStrength": 50.0,
       "verticalTurnLimitStrength": 50.0,
       "reverseTurnLimitStrength": -1.0,
@@ -284,7 +300,8 @@
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
       "comboFromBlocked": -1.0,
-      "range": 158.437
+      "range": 158.437,
+      "staminaDamage": 33.75
     },
     "sprintAttack": {
       "holding": -1.0,
@@ -315,7 +332,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": -1.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 31.875
     },
     "sprintShove": {
       "holding": -1.0,
@@ -327,7 +345,8 @@
       "damage": 20.0,
       "turnLimitStrength": 72.5,
       "verticalTurnLimitStrength": -1.0,
-      "reverseTurnLimitStrength": -1.0
+      "reverseTurnLimitStrength": -1.0,
+      "staminaDamage": 7.5
     },
     "sprintCharge": {
       "holding": -1.0,
@@ -340,7 +359,7 @@
       "turnLimitStrength": 70.0,
       "verticalTurnLimitStrength": -1.0,
       "reverseTurnLimitStrength": -1.0,
-      "feint": 0.0,
+      "feint": -1.0,
       "thwack": -1.0,
       "hitSuccess": -1.0,
       "blocked": -1.0,
@@ -358,7 +377,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": 0.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 16.875
     },
     "horseSpecial": {
       "holding": -1.0,
@@ -370,22 +390,23 @@
       "damage": 50.0,
       "turnLimitStrength": -1.0,
       "verticalTurnLimitStrength": -1.0,
-      "reverseTurnLimitStrength": -1.0
+      "reverseTurnLimitStrength": -1.0,
+      "staminaDamage": 18.75
     },
     "average": {
       "light": {
         "holding": 350.0,
-        "windup": 441.6666666666667,
-        "release": 425.0,
+        "windup": 433.3333333333333,
+        "release": 458.3333333333333,
         "recovery": 1266.6666666666667,
-        "combo": 275.0,
+        "combo": 250.0,
         "riposte": 250.0,
-        "damage": 46.666666666666664,
+        "damage": 53.333333333333336,
         "turnLimitStrength": 47.5,
         "verticalTurnLimitStrength": 50.0,
         "reverseTurnLimitStrength": 33.0,
         "feint": 0.17499999999999996,
-        "thwack": 1083.3333333333333,
+        "thwack": 1100.0,
         "hitSuccess": -1.0,
         "blocked": 0.75,
         "worldHit": -1.0,
@@ -400,21 +421,22 @@
         "weaponTipCheckReverse": -1.0,
         "weaponTipCheckReverseAlt": -1.0,
         "weaponTipCheckDisable": -1.0,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 20.0
       },
       "heavy": {
         "holding": 350.0,
-        "windup": 741.6666666666666,
-        "release": 450.0,
+        "windup": 625.0,
+        "release": 516.6666666666666,
         "recovery": 1383.3333333333333,
-        "combo": 275.0,
+        "combo": 250.0,
         "riposte": 500.0,
-        "damage": 63.333333333333336,
+        "damage": 73.33333333333333,
         "turnLimitStrength": 50.0,
         "verticalTurnLimitStrength": 50.0,
         "reverseTurnLimitStrength": 33.0,
         "feint": 0.17499999999999996,
-        "thwack": 1166.6666666666667,
+        "thwack": 1183.3333333333333,
         "hitSuccess": -1.0,
         "blocked": 0.75,
         "worldHit": -1.0,
@@ -429,8 +451,18 @@
         "weaponTipCheckReverse": -1.0,
         "weaponTipCheckReverseAlt": -1.0,
         "weaponTipCheckDisable": -1.0,
-        "comboFromBlocked": -1.0
-      }
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 27.5
+      },
+      "range": 182.57187333333334,
+      "altRange": 181.49128999999996
     }
-  }
+  },
+  "classes": [
+    "Footman"
+  ],
+  "subclasses": [
+    "Engineer",
+    "Poleman"
+  ]
 }

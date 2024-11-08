@@ -15,50 +15,94 @@ REQUIRED_HEADERS = [
     "Stab",
     "Alt Stab",
     "Overhead",
-    "Alt Overhead",
-    "Special",
+    "Alt Overhead"
 ]
-
 
 # Function to check if a value is "null" or "undefined" in a way that shouldn't update JSON
 def is_valid_value(value):
     return value is not None and not (isinstance(value, float) and math.isnan(value))
 
+changelog = {}
+
+def add_changelog_entry(weapon_name, field_name, old_value, new_value):
+    """
+    Add an entry to the changelog directory for a value change
+    """
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    changelog_dir = "changelog"
+    
+    # Create changelog directory if it doesn't exist
+    if not os.path.exists(changelog_dir):
+        os.makedirs(changelog_dir)
+    
+    # Create changelog entry
+    changelog[weapon_name + "." + field_name] = {
+        "old_value": old_value,
+        "new_value": new_value
+    }
+    
+    # Write to changelog file
+    changelog_file = f"{changelog_dir}/change_{timestamp}.json"
+    with open(changelog_file, "w") as f:
+        json.dump(entry, f, indent=2)
 
 # Function to update the JSON file with new range data
 def update_json_with_ranges(json_file_path, ranges):
+    """
+    Update JSON file with new range data and track changes in changelog
+    """
+    # Read the current data
     with open(json_file_path, "r") as json_file:
         data = json.load(json_file)
-
-        # Update the relevant attack range fields only if the CSV value is valid
-        if "attacks" in data:
-            attacks = data["attacks"]
-
-            if "slash" in attacks:
-                if is_valid_value(ranges["Slash"]):
-                    attacks["slash"]["range"] = ranges["Slash"]
-                if is_valid_value(ranges["Alt Slash"]):
-                    attacks["slash"]["altRange"] = ranges["Alt Slash"]
-
-            if "stab" in attacks:
-                if is_valid_value(ranges["Stab"]):
-                    attacks["stab"]["range"] = ranges["Stab"]
-                if is_valid_value(ranges["Alt Stab"]):
-                    attacks["stab"]["altRange"] = ranges["Alt Stab"]
-
-            if "overhead" in attacks:
-                if is_valid_value(ranges["Overhead"]):
-                    attacks["overhead"]["range"] = ranges["Overhead"]
-                if is_valid_value(ranges["Alt Overhead"]):
-                    attacks["overhead"]["altRange"] = ranges["Alt Overhead"]
-
-            if "special" in attacks and is_valid_value(ranges["Special"]):
-                attacks["special"]["range"] = ranges["Special"]
-
+        
+    # Get weapon name from the file
+    weapon_name = os.path.splitext(os.path.basename(json_file_path))[0]
+    
+    # Update the relevant attack range fields and track changes
+    if "attacks" in data:
+        attacks = data["attacks"]
+        
+        # Define attack types and their corresponding range fields
+        attack_types = {
+            "slash": ("Slash", "Alt Slash"),
+            "stab": ("Stab", "Alt Stab"),
+            "overhead": ("Overhead", "Alt Overhead")
+        }
+        
+        # Process each attack type
+        for attack_type, (normal_range, alt_range) in attack_types.items():
+            if attack_type in attacks:
+                # Normal range update
+                if is_valid_value(ranges[normal_range]):
+                    old_value = attacks[attack_type].get("range")
+                    new_value = ranges[normal_range]
+                    
+                    if old_value != new_value:
+                        attacks[attack_type]["range"] = new_value
+                        add_changelog_entry(
+                            weapon_name,
+                            f"{attack_type}_range",
+                            old_value,
+                            new_value
+                        )
+                
+                # Alt range update
+                if is_valid_value(ranges[alt_range]):
+                    old_value = attacks[attack_type].get("altRange")
+                    new_value = ranges[alt_range]
+                    
+                    if old_value != new_value:
+                        attacks[attack_type]["altRange"] = new_value
+                        add_changelog_entry(
+                            weapon_name,
+                            f"{attack_type}_alt_range",
+                            old_value,
+                            new_value
+                        )
+    
     # Save the updated data back to the JSON file
     with open(json_file_path, "w") as json_file:
         json.dump(data, json_file, indent=2)
-
 
 # Function to validate the CSV file
 def validate_csv_headers(df):
@@ -95,7 +139,6 @@ def process_csv_and_update_json(csv_file_path, json_dir):
                     "Alt Stab": row["Alt Stab"],
                     "Overhead": row["Overhead"],
                     "Alt Overhead": row["Alt Overhead"],
-                    "Special": row["Special"],
                 }
                 update_json_with_ranges(json_file_path, range_data)
                 print(f"Updated {weapon_name} with new range data.")
@@ -114,14 +157,24 @@ def process_csv_and_update_json(csv_file_path, json_dir):
 
 if __name__ == "__main__":
     # Ensure CSV file path and JSON directory path are provided as input
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 4:
         script_name = sys.argv[0]
-        print(f"Usage: {script_name} <path_to_csv_file> <path_to_json_dir>")
+        print(f"Usage: {script_name} <path_to_csv_file> <path_to_json_dir> <path_to_changelog_file>")
         sys.exit(1)
 
     # Get the CSV file path and JSON directory path from the command-line arguments
     csv_file_path = sys.argv[1]
     json_dir = sys.argv[2]
+    changelog_path = sys.argv[3]
 
     # Process the CSV and update the JSON files
     process_csv_and_update_json(csv_file_path, json_dir)
+
+    # Write the changelog to a file
+    changelog_string = ""
+    for key, v in changelog.items():
+        changelog_string += f"{key}: {v.old_value} -> {v.new_value}\n"
+
+    with open(changelog_path, "w") as changelog_file:
+        changelog_file.write(changelog_string)
+

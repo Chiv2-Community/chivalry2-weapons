@@ -5,10 +5,10 @@ export type Attacks = {
   slash: Swing;
   overhead: Swing;
   stab: Swing;
-  sprintAttack: SpecialAttack;
-  sprintCharge: SpecialAttack;
-  special: SpecialAttack;
-  throw: SpecialAttack;
+  sprintAttack?: SpecialAttack;
+  sprintCharge?: SpecialAttack;
+  special?: SpecialAttack;
+  throw?: SpecialAttack;
 };
 
 export type Weapon = {

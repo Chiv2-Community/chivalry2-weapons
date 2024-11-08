@@ -1,5 +1,17 @@
 {
+  "id": "fs",
+  "aliases": [
+    "Fisticuffs",
+    "Fist",
+    "Hands",
+    "Bare hands",
+    "Unarmed"
+  ],
   "name": "Fists",
+  "weaponTypes": [
+    "Two Handed"
+  ],
+  "damageType": "Cut",
   "attacks": {
     "slash": {
       "light": {
@@ -31,7 +43,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 6.0
       },
       "heavy": {
         "holding": 350.0,
@@ -62,10 +75,11 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 7.5
       },
-      "range": 109.441,
-      "altRange": 113.738
+      "range": 114.46807,
+      "altRange": 112.58423
     },
     "overhead": {
       "light": {
@@ -97,7 +111,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 7.5
       },
       "heavy": {
         "holding": 350.0,
@@ -128,10 +143,11 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 9.9
       },
-      "range": 120.265,
-      "altRange": 116.172
+      "range": 113.04025,
+      "altRange": 113.56718
     },
     "stab": {
       "light": {
@@ -163,7 +179,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 9.0
       },
       "heavy": {
         "holding": 350.0,
@@ -194,10 +211,11 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 9.9
       },
-      "range": 110.221,
-      "altRange": 111.325
+      "range": 109.79572,
+      "altRange": 109.90487
     },
     "jab": {
       "holding": -1.0,
@@ -209,7 +227,8 @@
       "damage": 10.0,
       "turnLimitStrength": 37.5,
       "verticalTurnLimitStrength": 50.0,
-      "reverseTurnLimitStrength": -1.0
+      "reverseTurnLimitStrength": -1.0,
+      "staminaDamage": 3.0
     },
     "shove": {
       "holding": -1.0,
@@ -221,7 +240,8 @@
       "damage": 5.0,
       "turnLimitStrength": 50.0,
       "verticalTurnLimitStrength": 50.0,
-      "reverseTurnLimitStrength": -1.0
+      "reverseTurnLimitStrength": -1.0,
+      "staminaDamage": 1.5
     },
     "sprintAttack": {
       "holding": -1.0,
@@ -234,7 +254,7 @@
       "turnLimitStrength": 57.5,
       "verticalTurnLimitStrength": -1.0,
       "reverseTurnLimitStrength": -1.0,
-      "feint": 0.0,
+      "feint": -1.0,
       "thwack": 400.0,
       "hitSuccess": 1.0,
       "blocked": 0.75,
@@ -252,7 +272,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": -1.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 12.0
     },
     "sprintShove": {
       "holding": -1.0,
@@ -264,7 +285,8 @@
       "damage": 20.0,
       "turnLimitStrength": 72.5,
       "verticalTurnLimitStrength": -1.0,
-      "reverseTurnLimitStrength": -1.0
+      "reverseTurnLimitStrength": -1.0,
+      "staminaDamage": 6.0
     },
     "average": {
       "light": {
@@ -294,7 +316,8 @@
         "weaponTipCheckReverse": -1.0,
         "weaponTipCheckReverseAlt": -1.0,
         "weaponTipCheckDisable": -1.0,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 7.5
       },
       "heavy": {
         "holding": 350.0,
@@ -323,8 +346,63 @@
         "weaponTipCheckReverse": -1.0,
         "weaponTipCheckReverseAlt": -1.0,
         "weaponTipCheckDisable": -1.0,
-        "comboFromBlocked": -1.0
-      }
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 9.1
+      },
+      "range": 112.43468,
+      "altRange": 112.01876
+    },
+    "sprintCharge": {
+      "holding": -1.0,
+      "windup": 600.0,
+      "release": 400.0,
+      "recovery": 1000.0,
+      "combo": 150.0,
+      "riposte": 600.0,
+      "damage": 40.0,
+      "turnLimitStrength": 57.5,
+      "verticalTurnLimitStrength": -1.0,
+      "reverseTurnLimitStrength": -1.0,
+      "feint": -1.0,
+      "thwack": 400.0,
+      "hitSuccess": 1.0,
+      "blocked": 0.75,
+      "worldHit": -1.0,
+      "staminaCost": 15.0,
+      "playRate": 1.0,
+      "drawStrength": -1.0,
+      "worldHitStartPercentage": -1.0,
+      "worldHitStopPercentage": -1.0,
+      "thwackOnHit": 0,
+      "hitSuccessOnHit": -1,
+      "direction": "-1",
+      "altDirection": "-1",
+      "cooldown": 2.25,
+      "weaponTipCheckReverse": -1,
+      "weaponTipCheckReverseAlt": -1,
+      "weaponTipCheckDisable": -1,
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 12.0
     }
-  }
+  },
+  "classes": [
+    "Archer",
+    "Vanguard",
+    "Footman",
+    "Knight"
+  ],
+  "subclasses": [
+    "Longbowman",
+    "Crossbowman",
+    "Skirmisher",
+    "Devastator",
+    "Raider",
+    "Ambusher",
+    "Poleman",
+    "Man at Arms",
+    "Engineer",
+    "Officer",
+    "Guardian",
+    "Crusader"
+  ]
 }

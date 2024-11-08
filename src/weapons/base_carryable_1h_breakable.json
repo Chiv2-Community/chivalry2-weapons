@@ -302,7 +302,7 @@
       "turnLimitStrength": 70.0,
       "verticalTurnLimitStrength": -1.0,
       "reverseTurnLimitStrength": -1.0,
-      "feint": 0.0,
+      "feint": -1.0,
       "thwack": -1.0,
       "hitSuccess": -1.0,
       "blocked": -1.0,
@@ -320,7 +320,7 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": 0.0
+      "comboFromBlocked": -1.0
     },
     "average": {
       "light": {

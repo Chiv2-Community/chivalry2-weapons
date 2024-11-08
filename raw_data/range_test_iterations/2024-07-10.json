@@ -1,0 +1,1128 @@
+{
+  "header": {
+    "type": "Version2",
+    "package_file_version": 518,
+    "engine_version": {
+      "major": 4,
+      "minor": 25,
+      "patch": 0,
+      "change_list": 2147742088,
+      "branch": "++chivalry2+gold_stable_minimal"
+    },
+    "custom_version_format": 3,
+    "custom_versions": {
+      "7E7C71E2-D344-F552-4053-0C955E0315B3": 3,
+      "FB0C82A7-5943-A720-142C-548C50CF2396": 3,
+      "CCCEB91A-1369-0000-7548-0000FB513D20": 100,
+      "FA7AF5FC-8342-7650-58E6-A9B9322DA0FF": 61,
+      "7C59278E-344D-80DB-0E24-4196BE806CB1": 1,
+      "392B198B-0246-5758-51C3-72B9E0A725B4": 1,
+      "22D5549C-BE4F-26A8-4607-2194D082B461": 30,
+      "E432D8B0-0D4F-891F-B77E-CFACA24AFD36": 10,
+      "2843C6E1-534D-2CA2-868E-6CA38CBD1764": 0,
+      "3CC15E37-FB48-E406-F084-00B57E712A26": 4,
+      "ED68B0E4-E942-94F4-0BDA-31A241BB462E": 38,
+      "3F74FCCF-8044-B043-DF14-919373201D17": 37,
+      "B5492BB0-E944-20BB-B732-04A36003E452": 2,
+      "5C10E4A4-B549-A159-C440-C5A7EEDF7E54": 0,
+      "C931C839-DC47-E65A-179C-449A7C8E1C3E": 0,
+      "331BF078-984F-EAEB-EA84-B4B9A25AB9CC": 4,
+      "0F383166-E043-4D2D-27CF-09805AA95669": 0,
+      "9F8BF812-FC4A-7588-0CD9-7CA629BD3A38": 43,
+      "4CE75A7B-104C-70D2-9857-58A95A2A210B": 12,
+      "186929D7-DD4B-D61D-A864-E29D8438C13C": 3,
+      "7852A1C2-FE4A-E7BF-FF90-176C55F71D53": 1,
+      "D4A3AC6E-C14C-EC40-ED8B-86B7C58F4209": 3,
+      "DD75E529-2746-A3E0-76D2-109DEADC2C23": 17,
+      "5DA643AF-4749-D37F-8E3E-739805BBC1D9": 7,
+      "EC6C266B-8F4B-C71E-D9E4-0BA307FC4209": 1,
+      "613DF70D-EA47-3FA2-E989-27B79A49410C": 1,
+      "86181D60-844F-64AC-DED3-16AAD6C7EA0D": 31,
+      "D6BCFF9D-5801-4F49-8212-21E288A8923C": 10,
+      "ACD0AEF2-6F41-FE9A-7FAA-6486FCD626FA": 1,
+      "0B1F4F17-A545-C6B4-E82E-3FB17D91FBD0": 10,
+      "834AF935-6C40-58E2-F509-18A37C241096": 37,
+      "6EC18FB6-E242-1B8B-5C21-53B4FE448805": 1,
+      "0685E1B2-C2CF-7342-BBF4-4EA507BA8B75": 1,
+      "50326854-AF48-9980-9698-C88BB7F9ADFB": 0,
+      "194D0C43-7049-5471-699B-6987E5B090DF": 14,
+      "BD32FEAA-144C-9553-255E-6AB6DDD13210": 1,
+      "8EE1AF23-584E-E14C-52C2-618DB7BE53B9": 11,
+      "EAB762A4-3A4E-99F4-1FEC-C199B2E12482": 2,
+      "BDFDB52E-104D-AC01-8FF3-3681DAA59333": 5,
+      "4F359D50-2F49-E6F6-B285-49A71C633C07": 0,
+      "E79E7F71-3A49-B0E9-3291-B3880781381B": 6,
+      "40EB564A-DC11-F510-7E34-D392E76AC9B2": 2,
+      "004A8AD7-9746-58E8-B519-A8BAB4467D48": 17,
+      "D46AD0CD-C346-CEA9-DC16-B893C63C811B": 1,
+      "86F87955-1F4C-3A93-7B08-BA832FB96163": 1,
+      "52BE2F61-0B40-53DA-914F-0D917C85B19F": 1,
+      "607D8863-E811-DC65-1511-A5B03E38C619": 3,
+      "367A23A4-C941-EACA-F818-A28FF31B6858": 4,
+      "753F4E80-494B-8870-068C-D6A4DCB67E3C": 5,
+      "F20A68FB-A34B-EF59-B519-A8BA3D44C873": 2,
+      "0EB75099-174E-1AB4-0DFA-CCBBD67F8157": 1
+    },
+    "save_game_class_name": "/Game/Mods/Maps/weaponLength/WeaponData.WeaponData_C"
+  },
+  "properties": {
+    "WeaponData": {
+      "type": "MapProperty",
+      "value_type": "FloatProperty",
+      "str_props": {
+        "AXE-Slash": {
+          "type": "FloatProperty",
+          "value": 154.29996
+        },
+        "AXE-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 160.311
+        },
+        "AXE-Stab": {
+          "type": "FloatProperty",
+          "value": 175.49374
+        },
+        "AXE-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 181.68544
+        },
+        "AXE-Overhead": {
+          "type": "FloatProperty",
+          "value": 147.82063
+        },
+        "AXE-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 158.65196
+        },
+        "BATTLE AXE-Slash": {
+          "type": "FloatProperty",
+          "value": 181.83571
+        },
+        "BATTLE AXE-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 181.81503
+        },
+        "BATTLE AXE-Stab": {
+          "type": "FloatProperty",
+          "value": 170.49419
+        },
+        "BATTLE AXE-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 165.73956
+        },
+        "BATTLE AXE-Overhead": {
+          "type": "FloatProperty",
+          "value": 179.17424
+        },
+        "BATTLE AXE-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 166.56393
+        },
+        "CANDELABRA-Slash": {
+          "type": "FloatProperty",
+          "value": 243.63326
+        },
+        "CANDELABRA-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 231.43567
+        },
+        "CANDELABRA-Stab": {
+          "type": "FloatProperty",
+          "value": 248.39423
+        },
+        "CANDELABRA-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 253.27185
+        },
+        "CANDELABRA-Overhead": {
+          "type": "FloatProperty",
+          "value": 204.19438
+        },
+        "CANDELABRA-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 219.38058
+        },
+        "CUDGEL-Slash": {
+          "type": "FloatProperty",
+          "value": 148.43651
+        },
+        "CUDGEL-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 153.28552
+        },
+        "CUDGEL-Stab": {
+          "type": "FloatProperty",
+          "value": 169.60988
+        },
+        "CUDGEL-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 175.83388
+        },
+        "CUDGEL-Overhead": {
+          "type": "FloatProperty",
+          "value": 145.83125
+        },
+        "CUDGEL-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 151.55583
+        },
+        "DAGGER-Slash": {
+          "type": "FloatProperty",
+          "value": 142.69188
+        },
+        "DAGGER-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 148.00502
+        },
+        "DAGGER-Stab": {
+          "type": "FloatProperty",
+          "value": 163.7519
+        },
+        "DAGGER-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 170.05461
+        },
+        "DAGGER-Overhead": {
+          "type": "FloatProperty",
+          "value": 140.35501
+        },
+        "DAGGER-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 146.67323
+        },
+        "DANE AXE-Slash": {
+          "type": "FloatProperty",
+          "value": 189.97368
+        },
+        "DANE AXE-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 188.4235
+        },
+        "DANE AXE-Stab": {
+          "type": "FloatProperty",
+          "value": 178.9397
+        },
+        "DANE AXE-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 176.34969
+        },
+        "DANE AXE-Overhead": {
+          "type": "FloatProperty",
+          "value": 182.35857
+        },
+        "DANE AXE-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 174.08688
+        },
+        "EXECUTIONERS AXE-Slash": {
+          "type": "FloatProperty",
+          "value": 219.51657
+        },
+        "EXECUTIONERS AXE-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 217.86536
+        },
+        "EXECUTIONERS AXE-Stab": {
+          "type": "FloatProperty",
+          "value": 210.24203
+        },
+        "EXECUTIONERS AXE-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 207.22656
+        },
+        "EXECUTIONERS AXE-Overhead": {
+          "type": "FloatProperty",
+          "value": 204.21727
+        },
+        "EXECUTIONERS AXE-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 204.36859
+        },
+        "FALCHION-Slash": {
+          "type": "FloatProperty",
+          "value": 173.16882
+        },
+        "FALCHION-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 176.73645
+        },
+        "FALCHION-Stab": {
+          "type": "FloatProperty",
+          "value": 193.0036
+        },
+        "FALCHION-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 199.05347
+        },
+        "FALCHION-Overhead": {
+          "type": "FloatProperty",
+          "value": 165.2532
+        },
+        "FALCHION-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 174.57542
+        },
+        "GLAIVE-Slash": {
+          "type": "FloatProperty",
+          "value": 246.63309
+        },
+        "GLAIVE-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 218.1777
+        },
+        "GLAIVE-Stab": {
+          "type": "FloatProperty",
+          "value": 253.66136
+        },
+        "GLAIVE-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 261.7244
+        },
+        "GLAIVE-Overhead": {
+          "type": "FloatProperty",
+          "value": 259.3626
+        },
+        "GLAIVE-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 262.1145
+        },
+        "GOEDENDAG-Slash": {
+          "type": "FloatProperty",
+          "value": 191.88905
+        },
+        "GOEDENDAG-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 189.8455
+        },
+        "GOEDENDAG-Stab": {
+          "type": "FloatProperty",
+          "value": 181.97882
+        },
+        "GOEDENDAG-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 179.26663
+        },
+        "GOEDENDAG-Overhead": {
+          "type": "FloatProperty",
+          "value": 173.84775
+        },
+        "GOEDENDAG-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 175.36174
+        },
+        "GREATSWORD-Slash": {
+          "type": "FloatProperty",
+          "value": 234.26308
+        },
+        "GREATSWORD-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 207.52417
+        },
+        "GREATSWORD-Stab": {
+          "type": "FloatProperty",
+          "value": 205.49118
+        },
+        "GREATSWORD-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 214.13683
+        },
+        "GREATSWORD-Overhead": {
+          "type": "FloatProperty",
+          "value": 213.82138
+        },
+        "GREATSWORD-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 227.59204
+        },
+        "Lions Bane-Slash": {
+          "type": "FloatProperty",
+          "value": 234.26306
+        },
+        "Lions Bane-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 207.52408
+        },
+        "Lions Bane-Stab": {
+          "type": "FloatProperty",
+          "value": 205.49118
+        },
+        "Lions Bane-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 214.13683
+        },
+        "Lions Bane-Overhead": {
+          "type": "FloatProperty",
+          "value": 213.82138
+        },
+        "Lions Bane-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 227.59204
+        },
+        "HALBERD-Slash": {
+          "type": "FloatProperty",
+          "value": 241.33958
+        },
+        "HALBERD-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 212.83804
+        },
+        "HALBERD-Stab": {
+          "type": "FloatProperty",
+          "value": 249.26233
+        },
+        "HALBERD-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 257.47104
+        },
+        "HALBERD-Overhead": {
+          "type": "FloatProperty",
+          "value": 254.6012
+        },
+        "HALBERD-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 257.06927
+        },
+        "HEAVY CAVALRY SWORD-Slash": {
+          "type": "FloatProperty",
+          "value": 199.33054
+        },
+        "HEAVY CAVALRY SWORD-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 191.85559
+        },
+        "HEAVY CAVALRY SWORD-Stab": {
+          "type": "FloatProperty",
+          "value": 222.17738
+        },
+        "HEAVY CAVALRY SWORD-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 228.60298
+        },
+        "HEAVY CAVALRY SWORD-Overhead": {
+          "type": "FloatProperty",
+          "value": 194.84593
+        },
+        "HEAVY CAVALRY SWORD-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 202.28557
+        },
+        "HEAVY MACE-Slash": {
+          "type": "FloatProperty",
+          "value": 206.41544
+        },
+        "HEAVY MACE-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 204.57399
+        },
+        "HEAVY MACE-Stab": {
+          "type": "FloatProperty",
+          "value": 197.00275
+        },
+        "HEAVY MACE-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 194.12
+        },
+        "HEAVY MACE-Overhead": {
+          "type": "FloatProperty",
+          "value": 197.56145
+        },
+        "HEAVY MACE-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 191.06593
+        },
+        "HIGHLAND SWORD-Slash": {
+          "type": "FloatProperty",
+          "value": 228.62549
+        },
+        "HIGHLAND SWORD-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 227.35745
+        },
+        "HIGHLAND SWORD-Stab": {
+          "type": "FloatProperty",
+          "value": 202.60776
+        },
+        "HIGHLAND SWORD-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 196.58841
+        },
+        "HIGHLAND SWORD-Overhead": {
+          "type": "FloatProperty",
+          "value": 215.11009
+        },
+        "HIGHLAND SWORD-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 229.70149
+        },
+        "JAVELIN-Slash": {
+          "type": "FloatProperty",
+          "value": 215.66267
+        },
+        "JAVELIN-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 222.36438
+        },
+        "JAVELIN-Stab": {
+          "type": "FloatProperty",
+          "value": 240.34404
+        },
+        "JAVELIN-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 240.91072
+        },
+        "JAVELIN-Overhead": {
+          "type": "FloatProperty",
+          "value": 214.14117
+        },
+        "JAVELIN-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 194.16002
+        },
+        "KATARS-Slash": {
+          "type": "FloatProperty",
+          "value": 156.52014
+        },
+        "KATARS-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 177.52061
+        },
+        "KATARS-Stab": {
+          "type": "FloatProperty",
+          "value": 160.76028
+        },
+        "KATARS-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 171.70154
+        },
+        "KATARS-Overhead": {
+          "type": "FloatProperty",
+          "value": 155.72444
+        },
+        "KATARS-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 162.30573
+        },
+        "KNIFE-Slash": {
+          "type": "FloatProperty",
+          "value": 131.21382
+        },
+        "KNIFE-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 137.60815
+        },
+        "KNIFE-Stab": {
+          "type": "FloatProperty",
+          "value": 152.01309
+        },
+        "KNIFE-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 158.40833
+        },
+        "KNIFE-Overhead": {
+          "type": "FloatProperty",
+          "value": 129.53645
+        },
+        "KNIFE-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 136.23555
+        },
+        "LONGSWORD-Slash": {
+          "type": "FloatProperty",
+          "value": 196.13673
+        },
+        "LONGSWORD-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 190.71544
+        },
+        "LONGSWORD-Stab": {
+          "type": "FloatProperty",
+          "value": 205.7156
+        },
+        "LONGSWORD-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 208.55128
+        },
+        "LONGSWORD-Overhead": {
+          "type": "FloatProperty",
+          "value": 185.86803
+        },
+        "LONGSWORD-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 199.92816
+        },
+        "Argon's Sword-Slash": {
+          "type": "FloatProperty",
+          "value": 196.13686
+        },
+        "Argon's Sword-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 190.71544
+        },
+        "Argon's Sword-Stab": {
+          "type": "FloatProperty",
+          "value": 205.71562
+        },
+        "Argon's Sword-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 208.55133
+        },
+        "Argon's Sword-Overhead": {
+          "type": "FloatProperty",
+          "value": 185.86807
+        },
+        "Argon's Sword-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 199.92809
+        },
+        "MACE-Slash": {
+          "type": "FloatProperty",
+          "value": 169.89227
+        },
+        "MACE-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 174.89825
+        },
+        "MACE-Stab": {
+          "type": "FloatProperty",
+          "value": 191.07372
+        },
+        "MACE-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 197.11081
+        },
+        "MACE-Overhead": {
+          "type": "FloatProperty",
+          "value": 163.30936
+        },
+        "MACE-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 172.74818
+        },
+        "MAUL-Slash": {
+          "type": "FloatProperty",
+          "value": 186.11
+        },
+        "MAUL-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 184.61292
+        },
+        "MAUL-Stab": {
+          "type": "FloatProperty",
+          "value": 175.77835
+        },
+        "MAUL-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 172.85817
+        },
+        "MAUL-Overhead": {
+          "type": "FloatProperty",
+          "value": 180.56447
+        },
+        "MAUL-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 170.82088
+        },
+        "MESSER-Slash": {
+          "type": "FloatProperty",
+          "value": 206.3931
+        },
+        "MESSER-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 201.12152
+        },
+        "MESSER-Stab": {
+          "type": "FloatProperty",
+          "value": 216.68356
+        },
+        "MESSER-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 219.21213
+        },
+        "MESSER-Overhead": {
+          "type": "FloatProperty",
+          "value": 199.2454
+        },
+        "MESSER-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 209.64183
+        },
+        "MORNING STAR-Slash": {
+          "type": "FloatProperty",
+          "value": 166.9694
+        },
+        "MORNING STAR-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 172.14935
+        },
+        "MORNING STAR-Stab": {
+          "type": "FloatProperty",
+          "value": 188.18105
+        },
+        "MORNING STAR-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 194.19957
+        },
+        "MORNING STAR-Overhead": {
+          "type": "FloatProperty",
+          "value": 163.59764
+        },
+        "MORNING STAR-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 170.01595
+        },
+        "PICK AXE-Slash": {
+          "type": "FloatProperty",
+          "value": 153.6611
+        },
+        "PICK AXE-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 159.73558
+        },
+        "PICK AXE-Stab": {
+          "type": "FloatProperty",
+          "value": 174.8325
+        },
+        "PICK AXE-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 180.98172
+        },
+        "PICK AXE-Overhead": {
+          "type": "FloatProperty",
+          "value": 150.74727
+        },
+        "PICK AXE-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 156.40205
+        },
+        "POLEHAMMER-Slash": {
+          "type": "FloatProperty",
+          "value": 218.38776
+        },
+        "POLEHAMMER-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 190.67181
+        },
+        "POLEHAMMER-Stab": {
+          "type": "FloatProperty",
+          "value": 224.88187
+        },
+        "POLEHAMMER-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 232.58636
+        },
+        "POLEHAMMER-Overhead": {
+          "type": "FloatProperty",
+          "value": 230.55086
+        },
+        "POLEHAMMER-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 233.39764
+        },
+        "POLE AXE-Slash": {
+          "type": "FloatProperty",
+          "value": 208.85464
+        },
+        "POLE AXE-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 180.42038
+        },
+        "POLE AXE-Stab": {
+          "type": "FloatProperty",
+          "value": 214.09605
+        },
+        "POLE AXE-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 221.50575
+        },
+        "POLE AXE-Overhead": {
+          "type": "FloatProperty",
+          "value": 220.49916
+        },
+        "POLE AXE-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 223.67592
+        },
+        "QUARTERSTAFF-Slash": {
+          "type": "FloatProperty",
+          "value": 165.00572
+        },
+        "QUARTERSTAFF-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 148.61249
+        },
+        "QUARTERSTAFF-Stab": {
+          "type": "FloatProperty",
+          "value": 203.63922
+        },
+        "QUARTERSTAFF-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 217.37973
+        },
+        "QUARTERSTAFF-Overhead": {
+          "type": "FloatProperty",
+          "value": 249.17784
+        },
+        "QUARTERSTAFF-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 250.09935
+        },
+        "RAPIER-Slash": {
+          "type": "FloatProperty",
+          "value": 182.7536
+        },
+        "RAPIER-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 181.82368
+        },
+        "RAPIER-Stab": {
+          "type": "FloatProperty",
+          "value": 201.19595
+        },
+        "RAPIER-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 208.2054
+        },
+        "RAPIER-Overhead": {
+          "type": "FloatProperty",
+          "value": 182.74905
+        },
+        "RAPIER-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 188.39598
+        },
+        "SHORT SWORD-Slash": {
+          "type": "FloatProperty",
+          "value": 174.9176
+        },
+        "SHORT SWORD-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 177.96776
+        },
+        "SHORT SWORD-Stab": {
+          "type": "FloatProperty",
+          "value": 194.77501
+        },
+        "SHORT SWORD-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 200.83427
+        },
+        "SHORT SWORD-Overhead": {
+          "type": "FloatProperty",
+          "value": 170.0801
+        },
+        "SHORT SWORD-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 175.70186
+        },
+        "SHOVEL-Slash": {
+          "type": "FloatProperty",
+          "value": 163.33588
+        },
+        "SHOVEL-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 162.93823
+        },
+        "SHOVEL-Stab": {
+          "type": "FloatProperty",
+          "value": 152.50323
+        },
+        "SHOVEL-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 149.76741
+        },
+        "SHOVEL-Overhead": {
+          "type": "FloatProperty",
+          "value": 160.85
+        },
+        "SHOVEL-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 148.26733
+        },
+        "SLEDGE HAMMER-Slash": {
+          "type": "FloatProperty",
+          "value": 163.53238
+        },
+        "SLEDGE HAMMER-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 163.5056
+        },
+        "SLEDGE HAMMER-Stab": {
+          "type": "FloatProperty",
+          "value": 152.55928
+        },
+        "SLEDGE HAMMER-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 149.76935
+        },
+        "SLEDGE HAMMER-Overhead": {
+          "type": "FloatProperty",
+          "value": 161.09914
+        },
+        "SLEDGE HAMMER-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 148.63968
+        },
+        "SPEAR-Slash": {
+          "type": "FloatProperty",
+          "value": 284.2464
+        },
+        "SPEAR-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 271.41528
+        },
+        "SPEAR-Stab": {
+          "type": "FloatProperty",
+          "value": 288.3927
+        },
+        "SPEAR-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 292.74628
+        },
+        "SPEAR-Overhead": {
+          "type": "FloatProperty",
+          "value": 241.76045
+        },
+        "SPEAR-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 259.35193
+        },
+        "SWORD-Slash": {
+          "type": "FloatProperty",
+          "value": 184.31886
+        },
+        "SWORD-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 187.1662
+        },
+        "SWORD-Stab": {
+          "type": "FloatProperty",
+          "value": 204.112
+        },
+        "SWORD-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 210.43234
+        },
+        "SWORD-Overhead": {
+          "type": "FloatProperty",
+          "value": 179.44798
+        },
+        "SWORD-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 184.4208
+        },
+        "THROWING AXE-Slash": {
+          "type": "FloatProperty",
+          "value": 126.084915
+        },
+        "THROWING AXE-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 132.66588
+        },
+        "THROWING AXE-Stab": {
+          "type": "FloatProperty",
+          "value": 146.89264
+        },
+        "THROWING AXE-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 153.25769
+        },
+        "THROWING AXE-Overhead": {
+          "type": "FloatProperty",
+          "value": 124.34473
+        },
+        "THROWING AXE-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 131.29189
+        },
+        "FIST-Slash": {
+          "type": "FloatProperty",
+          "value": 114.46807
+        },
+        "FIST-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 112.58423
+        },
+        "FIST-Stab": {
+          "type": "FloatProperty",
+          "value": 109.79572
+        },
+        "FIST-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 109.90487
+        },
+        "FIST-Overhead": {
+          "type": "FloatProperty",
+          "value": 113.04025
+        },
+        "FIST-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 113.56718
+        },
+        "MALLET-Slash": {
+          "type": "FloatProperty",
+          "value": 121.25197
+        },
+        "MALLET-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 127.76465
+        },
+        "MALLET-Stab": {
+          "type": "FloatProperty",
+          "value": 141.89417
+        },
+        "MALLET-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 148.33101
+        },
+        "MALLET-Overhead": {
+          "type": "FloatProperty",
+          "value": 119.904915
+        },
+        "MALLET-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 127.0286
+        },
+        "TWO HANDED HAMMER-Slash": {
+          "type": "FloatProperty",
+          "value": 204.34193
+        },
+        "TWO HANDED HAMMER-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 202.41418
+        },
+        "TWO HANDED HAMMER-Stab": {
+          "type": "FloatProperty",
+          "value": 194.73242
+        },
+        "TWO HANDED HAMMER-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 191.3019
+        },
+        "TWO HANDED HAMMER-Overhead": {
+          "type": "FloatProperty",
+          "value": 195.38632
+        },
+        "TWO HANDED HAMMER-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 188.86328
+        },
+        "WARHAMMER-Slash": {
+          "type": "FloatProperty",
+          "value": 155.34613
+        },
+        "WARHAMMER-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 161.37222
+        },
+        "WARHAMMER-Stab": {
+          "type": "FloatProperty",
+          "value": 176.45601
+        },
+        "WARHAMMER-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 182.58324
+        },
+        "WARHAMMER-Overhead": {
+          "type": "FloatProperty",
+          "value": 148.77385
+        },
+        "WARHAMMER-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 159.62111
+        },
+        "WAR AXE-Slash": {
+          "type": "FloatProperty",
+          "value": 200.83551
+        },
+        "WAR AXE-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 198.94542
+        },
+        "WAR AXE-Stab": {
+          "type": "FloatProperty",
+          "value": 191.20413
+        },
+        "WAR AXE-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 187.89357
+        },
+        "WAR AXE-Overhead": {
+          "type": "FloatProperty",
+          "value": 191.93466
+        },
+        "WAR AXE-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 185.36375
+        },
+        "WAR CLUB-Slash": {
+          "type": "FloatProperty",
+          "value": 230.85042
+        },
+        "WAR CLUB-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 228.47644
+        },
+        "WAR CLUB-Stab": {
+          "type": "FloatProperty",
+          "value": 222.32191
+        },
+        "WAR CLUB-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 219.49792
+        },
+        "WAR CLUB-Overhead": {
+          "type": "FloatProperty",
+          "value": 214.53116
+        },
+        "WAR CLUB-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 216.54808
+        },
+        "ONE HANDED SPEAR-Slash": {
+          "type": "FloatProperty",
+          "value": 250.43562
+        },
+        "ONE HANDED SPEAR-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 257.34106
+        },
+        "ONE HANDED SPEAR-Stab": {
+          "type": "FloatProperty",
+          "value": 257.43997
+        },
+        "ONE HANDED SPEAR-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 275.27426
+        },
+        "ONE HANDED SPEAR-Overhead": {
+          "type": "FloatProperty",
+          "value": 248.98463
+        },
+        "ONE HANDED SPEAR-Alt Overhead": {
+          "type": "FloatProperty",
+          "value": 227.2158
+        },
+        "HATCHET-Slash": {
+          "type": "FloatProperty",
+          "value": 129.96704
+        },
+        "HATCHET-Alt Slash": {
+          "type": "FloatProperty",
+          "value": 136.576
+        },
+        "HATCHET-Stab": {
+          "type": "FloatProperty",
+          "value": 150.62366
+        },
+        "HATCHET-Alt Stab": {
+          "type": "FloatProperty",
+          "value": 157.09615
+        },
+        "HATCHET-Overhead": {
+          "type": "FloatProperty",
+          "value": 128.14351
+        }
+      }
+    }
+  }
+}

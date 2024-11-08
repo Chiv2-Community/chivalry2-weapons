@@ -1,5 +1,12 @@
 {
+  "id": "als",
   "name": "Longsword_ Argon_ Citadel",
+  "weaponTypes": [
+    "Sword",
+    "Two Handed",
+    "Champion Weapon"
+  ],
+  "damageType": "Cut",
   "attacks": {
     "slash": {
       "light": {
@@ -31,7 +38,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 12.0
       },
       "heavy": {
         "holding": 350.0,
@@ -62,8 +70,11 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
-      }
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 18.0
+      },
+      "range": 196.13686,
+      "altRange": 190.71544
     },
     "overhead": {
       "light": {
@@ -95,7 +106,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 15.0
       },
       "heavy": {
         "holding": 350.0,
@@ -126,8 +138,11 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
-      }
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 21.0
+      },
+      "range": 185.86807,
+      "altRange": 199.92809
     },
     "stab": {
       "light": {
@@ -159,7 +174,8 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 16.5
       },
       "heavy": {
         "holding": 350.0,
@@ -190,8 +206,11 @@
         "weaponTipCheckReverse": -1,
         "weaponTipCheckReverseAlt": -1,
         "weaponTipCheckDisable": -1,
-        "comboFromBlocked": -1.0
-      }
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 19.5
+      },
+      "range": 205.71562,
+      "altRange": 208.55133
     },
     "special": {
       "holding": 350.0,
@@ -222,7 +241,8 @@
       "weaponTipCheckReverse": 1,
       "weaponTipCheckReverseAlt": 1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": -1.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 24.0
     },
     "throw": {
       "holding": 400.0,
@@ -253,7 +273,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": -1.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 15.0
     },
     "sprintAttack": {
       "holding": -1,
@@ -284,7 +305,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": -1.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 24.0
     },
     "sprintCharge": {
       "holding": -1,
@@ -315,7 +337,8 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": 0.0
+      "comboFromBlocked": -1.0,
+      "staminaDamage": 15.0
     },
     "average": {
       "light": {
@@ -345,7 +368,8 @@
         "weaponTipCheckReverse": -1.0,
         "weaponTipCheckReverseAlt": -1.0,
         "weaponTipCheckDisable": -1.0,
-        "comboFromBlocked": -1.0
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 14.5
       },
       "heavy": {
         "holding": 350.0,
@@ -374,8 +398,17 @@
         "weaponTipCheckReverse": -1.0,
         "weaponTipCheckReverseAlt": -1.0,
         "weaponTipCheckDisable": -1.0,
-        "comboFromBlocked": -1.0
-      }
+        "comboFromBlocked": -1.0,
+        "staminaDamage": 19.5
+      },
+      "range": 195.90685,
+      "altRange": 199.73162000000002
     }
-  }
+  },
+  "classes": [
+    "Knight"
+  ],
+  "subclasses": [
+    "Officer"
+  ]
 }

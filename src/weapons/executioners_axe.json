@@ -44,8 +44,8 @@
         "comboFromBlocked": -1.0,
         "staminaDamage": 14.850000000000001
       },
-      "range": 231.444,
-      "altRange": 225.463,
+      "range": 219.51657,
+      "altRange": 217.86536,
       "heavy": {
         "damage": 70,
         "holding": 350.0,
@@ -112,8 +112,8 @@
         "comboFromBlocked": -1.0,
         "staminaDamage": 19.8
       },
-      "range": 222.833,
-      "altRange": 220.242,
+      "range": 204.21727,
+      "altRange": 204.36859,
       "heavy": {
         "damage": 70,
         "holding": 350.0,
@@ -180,8 +180,8 @@
         "comboFromBlocked": -1.0,
         "staminaDamage": 9.9
       },
-      "range": 225.406,
-      "altRange": 223.632,
+      "range": 210.24203,
+      "altRange": 207.22656,
       "heavy": {
         "damage": 50,
         "holding": 350.0,
@@ -373,8 +373,8 @@
         "comboFromBlocked": -1.0,
         "staminaDamage": 20.900000000000002
       },
-      "range": 25.666666666666668,
-      "altRange": 24.666666666666668
+      "range": 211.32529,
+      "altRange": 209.82017000000005
     },
     "sprintCharge": {
       "holding": -1.0,
@@ -383,7 +383,7 @@
       "recovery": -1,
       "combo": 200.0,
       "riposte": -1.0,
-      "feint": 0.0,
+      "feint": -1.0,
       "thwack": -1.0,
       "hitSuccess": -1.0,
       "blocked": -1.0,
@@ -405,7 +405,7 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": 0.0,
+      "comboFromBlocked": -1.0,
       "staminaDamage": 13.200000000000001
     }
   },

@@ -11,6 +11,11 @@ from derived_stats import make_average_attack, make_stamina_damage
 def seconds_to_millis(n):
     return n * 1000 if n != -1 else -1
 
+WEAPON_NAME_OVERRIDES = {
+    "Longsword_Argon_Citadel": "Argon's Sword",
+
+}
+
 STAT_TRANSFORMS = {
     "windup": seconds_to_millis,
     "release": seconds_to_millis,
@@ -82,6 +87,8 @@ def process_weapon_item(name_parts, attack_type, item, weapon_defaults, weapons)
         weapon_defaults[name_parts[0]] = item
     else:
         weapon_name = name_parts[0].replace("Weapon_", "")
+        
+
         if weapon_name not in weapons:
             weapons[weapon_name] = {"name": weapon_name, "attacks": {}}
         weapons[weapon_name]["attacks"] = process_attack(attack_type, item, weapons[weapon_name]["attacks"])
@@ -110,6 +117,9 @@ def derive_stats(weapon):
         make_stamina_damage(weapon)
 
     make_average_attack(weapon)
+
+    if "sprintCharge" not in weapon["attacks"]:
+        weapon["attacks"]["sprintCharge"] = weapon["attacks"]["sprintAttack"]
 
 def apply_defaults(weapons, attack_defaults):
     for weapon, weapon_data in weapons.items():

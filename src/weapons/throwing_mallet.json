@@ -11,8 +11,8 @@
   "damageType": "Blunt",
   "attacks": {
     "slash": {
-      "range": 13,
-      "altRange": 14,
+      "range": 121.25197,
+      "altRange": 127.76465,
       "light": {
         "windup": 200.0,
         "damage": 35,
@@ -79,8 +79,8 @@
       }
     },
     "overhead": {
-      "range": 10,
-      "altRange": 12,
+      "range": 119.904915,
+      "altRange": 127.0286,
       "light": {
         "windup": 200.0,
         "damage": 40,
@@ -147,8 +147,8 @@
       }
     },
     "stab": {
-      "range": 10,
-      "altRange": 11,
+      "range": 141.89417,
+      "altRange": 148.33101,
       "light": {
         "windup": 200.0,
         "damage": 35,
@@ -289,7 +289,7 @@
       "turnLimitStrength": 57.5,
       "verticalTurnLimitStrength": -1.0,
       "reverseTurnLimitStrength": -1.0,
-      "feint": 0.0,
+      "feint": -1.0,
       "thwack": 400.0,
       "hitSuccess": 1.0,
       "blocked": 0.75,
@@ -371,8 +371,8 @@
         "comboFromBlocked": -1.0,
         "staminaDamage": 18.75
       },
-      "range": 11.0,
-      "altRange": 12.333333333333334
+      "range": 127.68368500000001,
+      "altRange": 134.37475333333333
     },
     "sprintCharge": {
       "holding": -1.0,
@@ -403,7 +403,7 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": 0.0,
+      "comboFromBlocked": -1.0,
       "staminaDamage": 11.25
     }
   },

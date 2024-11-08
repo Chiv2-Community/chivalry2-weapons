@@ -3,9 +3,7 @@
 weaponList := [
     "axe",
     "battleaxe",
-    "bow",
     "carryable_candelabra",
-    "changelog",
     "crab_katars",
     "cudgel",
     "dagger",
@@ -23,9 +21,9 @@ weaponList := [
     "heavyshield",
     "highlandsword",
     "javelin",
-    "katars",
-    "knife",
-    "lance",
+    "katars", 
+    "knife", 
+;    "lance", TODO
     "longsword",
     "longsword_argon_citadel",
     "mace",
@@ -51,7 +49,7 @@ weaponList := [
     "warhammer",
     "waraxe",
     "warclub",
-    "fists",
+    "fists"
 ]
 
 ; Initialize GDI+ for screenshot functionality
@@ -87,22 +85,20 @@ actions := [
 
 for weaponName in weaponList {
     for action in actions {
-        GiveWeapon(weaponName)
+        ; GiveWeapon(weaponName)
         
         Send("{w Down}")
         Sleep(5000)
         Send("{w Up}")
 
         Loop 20 {
-            ; Some weapons are breakable, so we give them to ourselves every iteration just in case.
-
             Sleep(4000)
             Send(action.key)
             Sleep(1100)
 
-            screenshotPath := screenshotDir "\" weaponName "-" action.name "-" A_Index ".png"
-            CaptureScreen(screenshotPath)
-            GiveWeapon(weaponName)
+            ; screenshotPath := screenshotDir "\" weaponName "-" action.name "-" A_Index ".png"
+            ; CaptureScreen(screenshotPath)
+            ; GiveWeapon(weaponName)
         }
 
 

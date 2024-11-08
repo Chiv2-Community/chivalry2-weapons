@@ -8,8 +8,8 @@
   "damageType": "Chop",
   "attacks": {
     "slash": {
-      "range": 161.447,
-      "altRange": 157.067,
+      "range": 154.29996,
+      "altRange": 160.311,
       "light": {
         "windup": 175.0,
         "damage": 50,
@@ -76,8 +76,8 @@
       }
     },
     "overhead": {
-      "range": 158.416,
-      "altRange": 147.305,
+      "range": 147.82063,
+      "altRange": 158.65196,
       "light": {
         "windup": 175.0,
         "damage": 55,
@@ -144,8 +144,8 @@
       }
     },
     "stab": {
-      "range": 183.871,
-      "altRange": 190.784,
+      "range": 175.49374,
+      "altRange": 181.68544,
       "light": {
         "windup": 200.0,
         "damage": 35,
@@ -287,7 +287,7 @@
       "turnLimitStrength": 57.5,
       "verticalTurnLimitStrength": -1.0,
       "reverseTurnLimitStrength": -1.0,
-      "feint": 0.0,
+      "feint": -1.0,
       "thwack": 400.0,
       "hitSuccess": 1.0,
       "blocked": 0.75,
@@ -369,8 +369,8 @@
         "comboFromBlocked": -1.0,
         "staminaDamage": 19.8
       },
-      "range": 17.666666666666668,
-      "altRange": 18.333333333333332
+      "range": 159.20477666666667,
+      "altRange": 166.8828
     },
     "sprintCharge": {
       "holding": -1.0,
@@ -401,7 +401,7 @@
       "weaponTipCheckReverse": -1,
       "weaponTipCheckReverseAlt": -1,
       "weaponTipCheckDisable": -1,
-      "comboFromBlocked": 0.0,
+      "comboFromBlocked": -1.0,
       "staminaDamage": 13.200000000000001
     }
   },

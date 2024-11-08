@@ -1,33 +1,82 @@
-Carryable_ Candelabra:
-	attacks.sprintCharge: None -> {
-            "holding": -1,
-            "windup": -1,
-            "release": -1,
-            "recovery": -1,
-            "combo": 200.0,
-            "riposte": -1,
-            "feint": -1.0,
-            "thwack": -1,
-            "hitSuccess": -1.0,
-            "blocked": -1.0,
-            "worldHit": -1.0,
-            "damage": 30.0,
-            "staminaCost": 10.0,
-            "playRate": 1.0,
-            "drawStrength": -1.0,
-            "worldHitStartPercentage": -1.0,
-            "worldHitStopPercentage": -1.0,
-            "turnLimitStrength": 70.0,
-            "verticalTurnLimitStrength": -1.0,
-            "reverseTurnLimitStrength": -1.0,
-            "thwackOnHit": 0,
-            "hitSuccessOnHit": -1,
-            "direction": "-1",
-            "altDirection": "-1",
-            "cooldown": 0.0,
-            "weaponTipCheckReverse": -1,
-            "weaponTipCheckReverseAlt": -1,
-            "weaponTipCheckDisable": -1,
-            "comboFromBlocked": -1.0,
-            "staminaDamage": 9.0
-}
+GreatswordMounted:
+	name: Greatsword Mounted -> GreatswordMounted
+HighlandSword:
+	name: Highland Sword -> HighlandSword
+PoleAxe:
+	name: Pole Axe -> PoleAxe
+DaneAxe:
+	name: Dane Axe -> DaneAxe
+BattleAxe:
+	name: Battle Axe -> BattleAxe
+WarAxe:
+	name: War Axe -> WarAxe
+ExecutionersAxe:
+	name: Executioners Axe -> ExecutionersAxe
+HeavyMace:
+	name: Heavy Mace -> HeavyMace
+WarClub:
+	name: War Club -> WarClub
+TwoHandedHammer:
+	name: Two Handed Hammer -> TwoHandedHammer
+JavelinMounted:
+	name: Javelin Mounted -> JavelinMounted
+LanceMounted:
+	name: Lance Mounted -> LanceMounted
+SwordMounted:
+	name: Sword Mounted -> SwordMounted
+FalchionMounted:
+	name: Falchion Mounted -> FalchionMounted
+FlachionMounted:
+	name: Flachion Mounted -> FlachionMounted
+ShortSword:
+	name: Short Sword -> ShortSword
+MorningStar:
+	name: Morning Star -> MorningStar
+OneHandedSpear:
+	name: One Handed Spear -> OneHandedSpear
+HeavyCavalrySword:
+	name: Heavy Cavalry Sword -> HeavyCavalrySword
+HeavyCavalrySwordMounted:
+	name: Heavy Cavalry Sword Mounted -> HeavyCavalrySwordMounted
+Longsword_Argon:
+	name: Longsword_ Argon -> Longsword_Argon
+Longsword_Argon_EasterEgg:
+	name: Longsword_ Argon_ Easter Egg -> Longsword_Argon_EasterEgg
+Argon's Sword:
+	name: Longsword_ Argon_ Citadel -> Argon's Sword
+Lion's Bane:
+	name: Greatsword_ Malric -> Lion's Bane
+Claw_Katars:
+	name: Claw_ Katars -> Claw_Katars
+LightShield:
+	name: Light Shield -> LightShield
+MediumShield:
+	name: Medium Shield -> MediumShield
+HeavyShield:
+	name: Heavy Shield -> HeavyShield
+WarBow:
+	name: War Bow -> WarBow
+HeavyCrossbow:
+	name: Heavy Crossbow -> HeavyCrossbow
+ThrowingKnife:
+	name: Throwing Knife -> ThrowingKnife
+ThrowingAxe:
+	name: Throwing Axe -> ThrowingAxe
+ThrowingMallet:
+	name: Throwing Mallet -> ThrowingMallet
+BaseCarryable_2hLoot:
+	name: Base Carryable_2h Loot -> BaseCarryable_2hLoot
+BaseCarryable_TwoHanded:
+	name: Base Carryable_ Two Handed -> BaseCarryable_TwoHanded
+BaseCarryable_OneHanded:
+	name: Base Carryable_ One Handed -> BaseCarryable_OneHanded
+BaseOneHanded:
+	name: Base One Handed -> BaseOneHanded
+BaseTwoHanded:
+	name: Base Two Handed -> BaseTwoHanded
+BaseCarryable_2hBreakable:
+	name: Base Carryable_2h Breakable -> BaseCarryable_2hBreakable
+BaseCarryable_1hBreakable:
+	name: Base Carryable_1h Breakable -> BaseCarryable_1hBreakable
+Candelabra:
+	name: Carryable_ Candelabra -> Candelabra

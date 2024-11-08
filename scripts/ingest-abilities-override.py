@@ -13,8 +13,13 @@ def seconds_to_millis(n):
 
 WEAPON_NAME_OVERRIDES = {
     "Longsword_Argon_Citadel": "Argon's Sword",
-
+    "Greatsword_Malric": "Lion's Bane",
+    "Carryable_Candelabra": "Candelabra",
 }
+
+def adapt_name(name: str) -> str:
+    """Adapt weapon name to match the JSON file name."""
+    return WEAPON_NAME_OVERRIDES[name] if name in WEAPON_NAME_OVERRIDES else name
 
 STAT_TRANSFORMS = {
     "windup": seconds_to_millis,
@@ -144,7 +149,7 @@ def write_to_file(data, foldername, changelog_location):
         merged_weapons = []
         for weapon in data:
             path = foldername + "/" + pascal_to_camel(weapon["name"]) + ".json"
-            weapon["name"] = pascal_to_space(weapon["name"])
+            weapon["name"] = adapt_name(weapon["name"])
             exists = os.path.isfile(path)
             existing_data = {}
             if exists:

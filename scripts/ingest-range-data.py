@@ -28,23 +28,12 @@ def add_changelog_entry(weapon_name, field_name, old_value, new_value):
     """
     Add an entry to the changelog directory for a value change
     """
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    changelog_dir = "changelog"
-    
-    # Create changelog directory if it doesn't exist
-    if not os.path.exists(changelog_dir):
-        os.makedirs(changelog_dir)
-    
     # Create changelog entry
     changelog[weapon_name + "." + field_name] = {
         "old_value": old_value,
         "new_value": new_value
     }
     
-    # Write to changelog file
-    changelog_file = f"{changelog_dir}/change_{timestamp}.json"
-    with open(changelog_file, "w") as f:
-        json.dump(entry, f, indent=2)
 
 # Function to update the JSON file with new range data
 def update_json_with_ranges(json_file_path, ranges):

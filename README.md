@@ -8,10 +8,12 @@ Add the npm package to your project: https://www.npmjs.com/package/chivalry2-wea
 Review the classes in src. Not much is documented, but it should be fairly straight forward. 
 The weapon class maps 1:1 with the json files.
 
-## Updating weapon stats
+## Updating weapon attack data
 
-1. Obtain AbilitiesOverride.json from the game files somehow. I've used FModel with great success
-2. Run `python3 scripts/ingest.py --input_json /path/to/AbilitiesOverride.json --output_dir src/weapons --changelog_location changelog.txt` from the project root directory
+1. Obtain AbilitiesOverride.json from the game files somehow. I've used FModel with great success.
+2. Place it in the `raw_data` directory
+3. Run `ingest-new-data.bat` from the project root directory
+4. Submit a pull request
 
 Changelog.txt will contain a readable set of stat changes.
 

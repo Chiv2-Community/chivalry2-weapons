@@ -412,6 +412,6 @@
   "subclasses": [
     "Skirmisher",
     "Man at Arms",
-    "Crusader"
+    "Guardian"
   ]
 }

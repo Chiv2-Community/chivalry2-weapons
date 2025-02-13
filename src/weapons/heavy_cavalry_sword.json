@@ -462,6 +462,7 @@
     "Knight"
   ],
   "subclasses": [
-    "Guardian"
+    "Guardian",
+    "Man at Arms"
   ]
 }

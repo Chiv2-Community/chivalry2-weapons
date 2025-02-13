@@ -458,9 +458,11 @@
     }
   },
   "classes": [
-    "Knight"
+    "Knight",
+    "Footman"
   ],
   "subclasses": [
-    "Officer"
+    "Crusader",
+    "Poleman"
   ]
 }

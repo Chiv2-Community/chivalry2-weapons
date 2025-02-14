@@ -2,6 +2,12 @@
   "name": "chivalry2-weapons",
   "description": "Chivalry 2 weapons data",
   "author": "Jacob Barber",
+  "contributors": [
+    "Austin Wilkins (https://github.com/amwilkins)",
+    "Ian Clarkson (https://github.com/aardvarkk)",
+    "ShiveringCow",
+    "DrLong (https://github.com/ARoese)"
+  ],
   "license": "GPL3",
   "type": "module",
   "version": "1.0.4",
